@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo安装运行</title>
+    <url>/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/</url>
+    <content><![CDATA[<h1 id="安装-Node-js-和-Git"><a href="#安装-Node-js-和-Git" class="headerlink" title="安装 Node.js 和 Git"></a><strong>安装 Node.js 和 Git</strong></h1><p>确保你的系统上已经安装了 Node.js 和 Git。你可以从它们的官方网站上下载并安装：</p>
+<ol>
+<li><a class="link"   href="https://nodejs.org/" >Node.js 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://git-scm.com/" >Git 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ol>
+<h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a><strong>安装 Hexo</strong></h1><p>安装完成 Node.js 和 Git 后，在命令行中使用 npm（Node.js 的包管理器）安装 Hexo。打开命令行工具（Terminal 或 Command Prompt）并运行以下命令：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a><strong>创建博客</strong></h1><p>选择一个合适的目录位置，在命令行中执行以下命令来创建一个新的 Hexo 博客：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init myblog</span><br><span class="line"><span class="built_in">cd</span> myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="运行博客"><a href="#运行博客" class="headerlink" title="运行博客"></a><strong>运行博客</strong></h1><p>在博客目录下执行以下命令启动本地服务器：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>这将启动一个本地服务器，显示博客的预览。访问 <a class="link"   href="http://localhost:4000/" >http://localhost:4000/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 可以查看你的博客。</p>
+<h1 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a><strong>创建新文章</strong></h1><p>使用以下命令创建一篇新文章：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>这将在 <strong><code>source/_posts</code></strong> 目录中创建一个新的 Markdown 文件，用于撰写你的新文章。</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
-    <url>/2022/09/28/hello-world/</url>
+    <url>/2022/09/28/Hexo/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
@@ -22,77 +52,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-Methods</title>
-    <url>/2023/11/07/Java/Java-Methods/</url>
-    <content><![CDATA[<h1 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h1><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
-<ol>
-<li><p><strong>无参数无返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f1</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 下面这个方法也没有返回值，虽然用到了 return</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (...) &#123;</span><br><span class="line">        <span class="keyword">return</span>;  <span class="comment">// 表示结束方法的执行,下方的输出语句不会执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>有参数无返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f2</span><span class="params">(Parameter <span class="number">1</span>, ..., Parameter n)</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>无参数有返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f3</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>有返回值有参数方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f4</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h1 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h1><p>静态方法（Static Methods）是与类本身相关联的方法，而不是与类的实例（对象）相关联。它们属于类，而不是属于类的实例。</p>
-<p>以下是关于静态方法的一些重要特点：</p>
-<ol>
-<li><strong>定义静态方法：</strong> <ol>
-<li>静态方法的定义在方法签名中通常包括 <code>static</code> 关键字。</li>
-<li>它们可以访问类级别的成员变量和其他静态方法，<strong>但不能访问实例级别的成员变量或方法</strong>。</li>
-</ol>
-</li>
-<li><strong>无法访问实例变量：</strong><ol>
-<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。</li>
-<li>而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
-</ol>
-</li>
-</ol>
-<h1 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h1><p>方法重写（Method Overriding）是面向对象编程中的一种重要概念，它允许子类在继承自父类的方法的基础上重新定义（覆盖）这些方法，以满足子类的特定需求。方法重写是多态性的一个重要示例，它允许在运行时动态地选择要执行的方法，具体的方法取决于对象的类型。</p>
-<p>以下是方法重写的一些关键规则和注意事项：</p>
-<ol>
-<li><strong>方法重写的规则：</strong><ol>
-<li><strong>方法的名称</strong>、<strong>参数列表</strong>和<strong>返回类型</strong>必须与父类中的被重写方法相同。</li>
-<li>访问修饰符可以相同或更宽松，但不能更严格（例如，父类的方法是 <code>public</code>，子类的可以是 <code>public</code> 或 <code>protected</code>，但不能是 <code>private</code>）。</li>
-<li>子类方法不能抛出比父类方法更多的已检查异常。</li>
-<li>子类方法不能缩小父类方法的访问权限。</li>
-</ol>
-</li>
-<li><strong>@Override 注解</strong>：为了明确标识方法是重写的，可以使用 <code>@Override</code> 注解来标记子类中的重写方法。这是可选的，但推荐使用。</li>
-</ol>
-<p><strong>Code：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">animal</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        animal.makeSound(); <span class="comment">// 输出：&quot;Dog barks&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>在上述示例中，<code>Dog</code> 类重写了 <code>Animal</code> 类中的 <code>makeSound</code> 方法。即使通过 <code>Animal</code> 类的引用创建了一个 <code>Dog</code> 对象，但在运行时会选择执行 <code>Dog</code> 类中的重写方法，因为它是对象的实际类型。这是方法重写的一个典型示例。</p>
-<h1 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h1><p>方法重载是指在同一个类中定义多个相同方法名，但是参数列表不同的方法。</p>
-<p><strong>方法名相同</strong></p>
-<ol>
-<li><strong>参数个数</strong>可以不同</li>
-<li><strong>参数类型</strong>可以不同</li>
-<li><strong>方法修饰符</strong>可以不同，但是不作为重载的参考。</li>
-</ol>
-<p>方法重载是实现<strong>编译时多态性</strong>的一种方法。</p>
-<p><strong>特点</strong>:</p>
-<ol>
-<li>方法重载要求方法名相同但参数列表不同。</li>
-<li>返回类型可以相同也可以不同，但方法重载不能仅根据返回类型来区分，否则JVM无法确定调用哪个方法。</li>
-<li>方法重载可以在同一个类中进行，也可以在父类和子类之间进行。</li>
-<li>方法重载与方法的返回值无关，<strong>仅与参数相关</strong>。</li>
-</ol>
-<p><strong>Code：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathOperations</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -188,6 +147,77 @@
 </li>
 </ol>
 <!-- More info: [Deployment](https://hexo.io/docs/one-command-deployment.html) -->]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-Methods</title>
+    <url>/2023/11/07/Java/Java-Methods/</url>
+    <content><![CDATA[<h1 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h1><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
+<ol>
+<li><p><strong>无参数无返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f1</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 下面这个方法也没有返回值，虽然用到了 return</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (...) &#123;</span><br><span class="line">        <span class="keyword">return</span>;  <span class="comment">// 表示结束方法的执行,下方的输出语句不会执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>有参数无返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f2</span><span class="params">(Parameter <span class="number">1</span>, ..., Parameter n)</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>无参数有返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f3</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>有返回值有参数方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f4</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h1 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h1><p>静态方法（Static Methods）是与类本身相关联的方法，而不是与类的实例（对象）相关联。它们属于类，而不是属于类的实例。</p>
+<p>以下是关于静态方法的一些重要特点：</p>
+<ol>
+<li><strong>定义静态方法：</strong> <ol>
+<li>静态方法的定义在方法签名中通常包括 <code>static</code> 关键字。</li>
+<li>它们可以访问类级别的成员变量和其他静态方法，<strong>但不能访问实例级别的成员变量或方法</strong>。</li>
+</ol>
+</li>
+<li><strong>无法访问实例变量：</strong><ol>
+<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。</li>
+<li>而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
+</ol>
+</li>
+</ol>
+<h1 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h1><p>方法重写（Method Overriding）是面向对象编程中的一种重要概念，它允许子类在继承自父类的方法的基础上重新定义（覆盖）这些方法，以满足子类的特定需求。方法重写是多态性的一个重要示例，它允许在运行时动态地选择要执行的方法，具体的方法取决于对象的类型。</p>
+<p>以下是方法重写的一些关键规则和注意事项：</p>
+<ol>
+<li><strong>方法重写的规则：</strong><ol>
+<li><strong>方法的名称</strong>、<strong>参数列表</strong>和<strong>返回类型</strong>必须与父类中的被重写方法相同。</li>
+<li>访问修饰符可以相同或更宽松，但不能更严格（例如，父类的方法是 <code>public</code>，子类的可以是 <code>public</code> 或 <code>protected</code>，但不能是 <code>private</code>）。</li>
+<li>子类方法不能抛出比父类方法更多的已检查异常。</li>
+<li>子类方法不能缩小父类方法的访问权限。</li>
+</ol>
+</li>
+<li><strong>@Override 注解</strong>：为了明确标识方法是重写的，可以使用 <code>@Override</code> 注解来标记子类中的重写方法。这是可选的，但推荐使用。</li>
+</ol>
+<p><strong>Code：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">animal</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        animal.makeSound(); <span class="comment">// 输出：&quot;Dog barks&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>在上述示例中，<code>Dog</code> 类重写了 <code>Animal</code> 类中的 <code>makeSound</code> 方法。即使通过 <code>Animal</code> 类的引用创建了一个 <code>Dog</code> 对象，但在运行时会选择执行 <code>Dog</code> 类中的重写方法，因为它是对象的实际类型。这是方法重写的一个典型示例。</p>
+<h1 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h1><p>方法重载是指在同一个类中定义多个相同方法名，但是参数列表不同的方法。</p>
+<p><strong>方法名相同</strong></p>
+<ol>
+<li><strong>参数个数</strong>可以不同</li>
+<li><strong>参数类型</strong>可以不同</li>
+<li><strong>方法修饰符</strong>可以不同，但是不作为重载的参考。</li>
+</ol>
+<p>方法重载是实现<strong>编译时多态性</strong>的一种方法。</p>
+<p><strong>特点</strong>:</p>
+<ol>
+<li>方法重载要求方法名相同但参数列表不同。</li>
+<li>返回类型可以相同也可以不同，但方法重载不能仅根据返回类型来区分，否则JVM无法确定调用哪个方法。</li>
+<li>方法重载可以在同一个类中进行，也可以在父类和子类之间进行。</li>
+<li>方法重载与方法的返回值无关，<strong>仅与参数相关</strong>。</li>
+</ol>
+<p><strong>Code：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathOperations</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
       <categories>
         <category>Java</category>
       </categories>
