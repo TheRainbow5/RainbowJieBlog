@@ -31,6 +31,30 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/09/28/Hexo/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java-注解（Annotation）</title>
     <url>/2023/11/07/Java/Advanced-Application/Java-%E6%B3%A8%E8%A7%A3Annotation/</url>
     <content><![CDATA[<h2 id="Override"><a href="#Override" class="headerlink" title="@Override"></a>@Override</h2><p>**<code>@Override</code>**它用于标记一个方法是要覆盖（重写）父类或接口中的方法。</p>
@@ -164,13 +188,13 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C21.png"
+                     data-src="/images/21.png"
                       alt="Alt text"
                 ></p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C22.png"
+                     data-src="/images/22.png"
                       alt="Alt text"
                 ></p>
 <h3 id="包装类和基本数据的转换"><a href="#包装类和基本数据的转换" class="headerlink" title="包装类和基本数据的转换"></a>包装类和基本数据的转换</h3><ol>
@@ -200,7 +224,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C23.png"
+                     data-src="/images/23.png"
                       alt="Alt text"
                 ></p>
 <p>Serializable：子类可以实现串行化，可以在网络传输；</p>
@@ -219,7 +243,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C24.png"
+                     data-src="/images/24.png"
                       alt="Alt text"
                 ></p>
 <ol>
@@ -242,7 +266,7 @@
 <h2 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h2><p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C25.png"
+                     data-src="/images/25.png"
                       alt="Alt text"
                 ></p>
 <ol>
@@ -253,14 +277,14 @@
 <li><p>在父类中，AbstractStringBuilder有属性<code>char[] value</code>，用于存储字符，不是final修饰；<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C26.png"
+                     data-src="/images/26.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p>StringBuffer是一个$final$类，无法被继承<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C27.png"
+                     data-src="/images/27.png"
                       alt="Alt text"
                 ></p>
 </li>
@@ -283,33 +307,33 @@
 <li><p>初始化char[]数组的容量为**<code>str.length() + 16</code>**<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C28.png"
+                     data-src="/images/28.png"
                       alt="Alt text"
                 ></p>
 <p> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C29.png"
+                     data-src="/images/29.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p>执行append方法，将字符串添加到char[]数组，可以看到<code>append(String str)</code>方法被$synchronized$修饰，所以StringBuffer是<strong>线程安全</strong>的。<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C30.png"
+                     data-src="/images/30.png"
                       alt="Alt text"
                 ></p>
 <p> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C31.png"
+                     data-src="/images/31.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p>最后完成数据存储<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C32.png"
+                     data-src="/images/32.png"
                       alt="Alt text"
                 ></p>
 </li>
@@ -331,7 +355,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C33.png"
+                     data-src="/images/33.png"
                       alt="Alt text"
                 ></p>
 <ol>
@@ -343,21 +367,21 @@
 <li><p>StringBuilder是final类，无法被继承；<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C34.png"
+                     data-src="/images/34.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p>字符序列存放AbstractStringBuilder的char[] value数组，因此存放在堆中。<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C35.png"
+                     data-src="/images/35.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p>StringBuilder所有的方法没有互斥处理（synchronized），因此推荐在单线程的情况下使用；<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CAdvanced-Application%5C36.png"
+                     data-src="/images/36.png"
                       alt="Alt text"
                 ></p>
 </li>
@@ -400,101 +424,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-什么是方法（Methods）？</title>
-    <url>/2023/11/07/Java/Basic/Java-Methods/</url>
-    <content><![CDATA[<h2 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h2><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
-<ol>
-<li><p><strong>无参数无返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f1</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 下面这个方法也没有返回值，虽然用到了 return</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (...) &#123;</span><br><span class="line">        <span class="keyword">return</span>;  <span class="comment">// 表示结束方法的执行,下方的输出语句不会执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>有参数无返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f2</span><span class="params">(Parameter <span class="number">1</span>, ..., Parameter n)</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>无参数有返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f3</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>有返回值有参数方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f4</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h2 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h2><p>静态方法（Static Methods）是与类本身相关联的方法，而不是与类的实例（对象）相关联。它们属于类，而不是属于类的实例。</p>
-<p>以下是关于静态方法的一些重要特点：</p>
-<ol>
-<li><strong>定义静态方法：</strong> <ol>
-<li>静态方法的定义在方法签名中通常包括 <code>static</code> 关键字。</li>
-<li>它们可以访问类级别的成员变量和其他静态方法，<strong>但不能访问实例级别的成员变量或方法</strong>。</li>
-</ol>
-</li>
-<li><strong>无法访问实例变量：</strong><ol>
-<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。</li>
-<li>而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
-</ol>
-</li>
-</ol>
-<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写（Method Overriding）是面向对象编程中的一种重要概念，它允许子类在继承自父类的方法的基础上重新定义（覆盖）这些方法，以满足子类的特定需求。方法重写是多态性的一个重要示例，它允许在运行时动态地选择要执行的方法，具体的方法取决于对象的类型。</p>
-<p>以下是方法重写的一些关键规则和注意事项：</p>
-<ol>
-<li><strong>方法重写的规则：</strong><ol>
-<li><strong>方法的名称</strong>、<strong>参数列表</strong>和<strong>返回类型</strong>必须与父类中的被重写方法相同。</li>
-<li>访问修饰符可以相同或更宽松，但不能更严格（例如，父类的方法是 <code>public</code>，子类的可以是 <code>public</code> 或 <code>protected</code>，但不能是 <code>private</code>）。</li>
-<li>子类方法不能抛出比父类方法更多的已检查异常。</li>
-<li>子类方法不能缩小父类方法的访问权限。</li>
-</ol>
-</li>
-<li><strong>@Override 注解</strong>：为了明确标识方法是重写的，可以使用 <code>@Override</code> 注解来标记子类中的重写方法。这是可选的，但推荐使用。</li>
-</ol>
-<p><strong>Code：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">animal</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        animal.makeSound(); <span class="comment">// 输出：&quot;Dog barks&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>在上述示例中，<code>Dog</code> 类重写了 <code>Animal</code> 类中的 <code>makeSound</code> 方法。即使通过 <code>Animal</code> 类的引用创建了一个 <code>Dog</code> 对象，但在运行时会选择执行 <code>Dog</code> 类中的重写方法，因为它是对象的实际类型。这是方法重写的一个典型示例。</p>
-<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><p>方法重载是指在同一个类中定义多个相同方法名，但是参数列表不同的方法。</p>
-<p><strong>方法名相同</strong></p>
-<ol>
-<li><strong>参数个数</strong>可以不同</li>
-<li><strong>参数类型</strong>可以不同</li>
-<li><strong>方法修饰符</strong>可以不同，但是不作为重载的参考。</li>
-</ol>
-<p>方法重载是实现<strong>编译时多态性</strong>的一种方法。</p>
-<p><strong>特点</strong>:</p>
-<ol>
-<li>方法重载要求方法名相同但参数列表不同。</li>
-<li>返回类型可以相同也可以不同，但方法重载不能仅根据返回类型来区分，否则JVM无法确定调用哪个方法。</li>
-<li>方法重载可以在同一个类中进行，也可以在父类和子类之间进行。</li>
-<li>方法重载与方法的返回值无关，<strong>仅与参数相关</strong>。</li>
-</ol>
-<p><strong>Code：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathOperations</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/09/28/Hexo/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -836,51 +765,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-变量（Variable）</title>
-    <url>/2023/11/07/Java/Basic/Java-Variable/</url>
-    <content><![CDATA[<h2 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h2><p>成员变量（Instance Variables）和局部变量（Local Variables）是在编程中两种不同的变量类型，它们在作用域、生命周期和用途上有很大的区别。</p>
-<ol>
-<li><strong>访问修饰符</strong><ol>
-<li>成员变量：可以被（public、private、protected、default）修饰</li>
-<li>局部变量：只能在定义的范围内访问，没有访问修饰符</li>
-</ol>
-</li>
-<li><strong>存储方式</strong><ol>
-<li>成员变量：如果是static修饰属于类信息，则存储在方法区，反之，是属于实例，存储在堆中。</li>
-<li>局部变量：存储在虚拟栈。</li>
-</ol>
-</li>
-<li><strong>生命周期</strong><ol>
-<li>成员变量：是对象的一部分，随着对象的创建而存在。</li>
-<li>局部变量：随着方法的调用而存在，随着方法的调用结束而消亡。</li>
-</ol>
-</li>
-<li><strong>初始化</strong><ol>
-<li>成员变量：成员变量可以有默认初始值，如果没有显式初始化，它们将具有默认值（如0、false或null，具体取决于数据类型）。</li>
-<li>局部变量：局部变量必须显式初始化，否则编译器将报错。它们不具有默认初始值。</li>
-</ol>
-</li>
-</ol>
-<p><strong>成员变量与局部变量代码示例：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">VariableExample</span> &#123;</span><br><span class="line">    <span class="comment">// 成员变量</span></span><br><span class="line">    <span class="keyword">private</span> String name;     <span class="comment">//存储在堆</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> id;       <span class="comment">//存储在方法区</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 方法中的局部变量</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">method</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">10</span>;                <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot;Hello, world!&quot;</span>; <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        System.out.println(num1);</span><br><span class="line">        System.out.println(str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="静态变量"><a href="#静态变量" class="headerlink" title="静态变量"></a>静态变量</h2><p>静态变量也就是被<code>static</code>关键字修饰的变量。它可以被类的所有实例共享，无论一个类创建了多少个对象，它们都共享同一份静态变量。</p>
-<p>也就是说，静态变量只会被分配一次内存，即使创建多个对象，这样可以节省内存。</p>
-<p>以下是关于静态变量的一些重要特点：</p>
-<ol>
-<li><strong>访问方式</strong>：静态变量可以通过类名来访问，而不需要创建类的实例。例如，<code>ClassName.staticVariable</code>。</li>
-<li>静态变量会被 <code>final</code> 关键字修饰成为常量。</li>
-<li><strong>静态代码块：</strong>也属于静态变量的一部分，程序运行过程中只会被分配一次内存，只执行一次。</li>
-</ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">staticVariable</span> <span class="operator">=</span> <span class="number">42</span>; <span class="comment">// 静态变量的声明和初始化</span></span><br><span class="line">    </span><br><span class="line">		<span class="comment">//静态代码块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        staticVariable = <span class="number">100</span>;   <span class="comment">// 静态块中的初始化</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java-Object类</title>
     <url>/2023/11/07/Java/Object-Oriented/Java-Object/</url>
     <content><![CDATA[<h2 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h2><p>Object类是一个特殊的类，是所有类的父类。主要提供了一下几个方法</p>
@@ -974,6 +858,122 @@
  <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">MyObject</span> <span class="keyword">implements</span> <span class="title class_">Serializable</span> &#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="type">int</span> value;</span><br><span class="line">        <span class="keyword">private</span> MyObject nestedObject;   <span class="comment">//引用类型对象</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// Constructor, getters, and setters</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> MyObject <span class="title function_">deepCopy</span><span class="params">(MyObject object)</span> &#123;</span><br><span class="line">        <span class="type">MyObject</span> <span class="variable">copy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyObject</span>();</span><br><span class="line">        copy.setValue(object.getValue());</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (object.getNestedObject() != <span class="literal">null</span>) &#123;</span><br><span class="line">            copy.setNestedObject(deepCopy(object.getNestedObject()));</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> copy;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
 </ol>
 ]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-变量（Variable）</title>
+    <url>/2023/11/07/Java/Basic/Java-Variable/</url>
+    <content><![CDATA[<h2 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h2><p>成员变量（Instance Variables）和局部变量（Local Variables）是在编程中两种不同的变量类型，它们在作用域、生命周期和用途上有很大的区别。</p>
+<ol>
+<li><strong>访问修饰符</strong><ol>
+<li>成员变量：可以被（public、private、protected、default）修饰</li>
+<li>局部变量：只能在定义的范围内访问，没有访问修饰符</li>
+</ol>
+</li>
+<li><strong>存储方式</strong><ol>
+<li>成员变量：如果是static修饰属于类信息，则存储在方法区，反之，是属于实例，存储在堆中。</li>
+<li>局部变量：存储在虚拟栈。</li>
+</ol>
+</li>
+<li><strong>生命周期</strong><ol>
+<li>成员变量：是对象的一部分，随着对象的创建而存在。</li>
+<li>局部变量：随着方法的调用而存在，随着方法的调用结束而消亡。</li>
+</ol>
+</li>
+<li><strong>初始化</strong><ol>
+<li>成员变量：成员变量可以有默认初始值，如果没有显式初始化，它们将具有默认值（如0、false或null，具体取决于数据类型）。</li>
+<li>局部变量：局部变量必须显式初始化，否则编译器将报错。它们不具有默认初始值。</li>
+</ol>
+</li>
+</ol>
+<p><strong>成员变量与局部变量代码示例：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">VariableExample</span> &#123;</span><br><span class="line">    <span class="comment">// 成员变量</span></span><br><span class="line">    <span class="keyword">private</span> String name;     <span class="comment">//存储在堆</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> id;       <span class="comment">//存储在方法区</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 方法中的局部变量</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">method</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">10</span>;                <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot;Hello, world!&quot;</span>; <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        System.out.println(num1);</span><br><span class="line">        System.out.println(str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="静态变量"><a href="#静态变量" class="headerlink" title="静态变量"></a>静态变量</h2><p>静态变量也就是被<code>static</code>关键字修饰的变量。它可以被类的所有实例共享，无论一个类创建了多少个对象，它们都共享同一份静态变量。</p>
+<p>也就是说，静态变量只会被分配一次内存，即使创建多个对象，这样可以节省内存。</p>
+<p>以下是关于静态变量的一些重要特点：</p>
+<ol>
+<li><strong>访问方式</strong>：静态变量可以通过类名来访问，而不需要创建类的实例。例如，<code>ClassName.staticVariable</code>。</li>
+<li>静态变量会被 <code>final</code> 关键字修饰成为常量。</li>
+<li><strong>静态代码块：</strong>也属于静态变量的一部分，程序运行过程中只会被分配一次内存，只执行一次。</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">staticVariable</span> <span class="operator">=</span> <span class="number">42</span>; <span class="comment">// 静态变量的声明和初始化</span></span><br><span class="line">    </span><br><span class="line">		<span class="comment">//静态代码块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        staticVariable = <span class="number">100</span>;   <span class="comment">// 静态块中的初始化</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-什么是方法（Methods）？</title>
+    <url>/2023/11/07/Java/Basic/Java-Methods/</url>
+    <content><![CDATA[<h2 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h2><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
+<ol>
+<li><p><strong>无参数无返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f1</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 下面这个方法也没有返回值，虽然用到了 return</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (...) &#123;</span><br><span class="line">        <span class="keyword">return</span>;  <span class="comment">// 表示结束方法的执行,下方的输出语句不会执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>有参数无返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f2</span><span class="params">(Parameter <span class="number">1</span>, ..., Parameter n)</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>无参数有返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f3</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>有返回值有参数方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f4</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h2 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h2><p>静态方法（Static Methods）是与类本身相关联的方法，而不是与类的实例（对象）相关联。它们属于类，而不是属于类的实例。</p>
+<p>以下是关于静态方法的一些重要特点：</p>
+<ol>
+<li><strong>定义静态方法：</strong> <ol>
+<li>静态方法的定义在方法签名中通常包括 <code>static</code> 关键字。</li>
+<li>它们可以访问类级别的成员变量和其他静态方法，<strong>但不能访问实例级别的成员变量或方法</strong>。</li>
+</ol>
+</li>
+<li><strong>无法访问实例变量：</strong><ol>
+<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。</li>
+<li>而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
+</ol>
+</li>
+</ol>
+<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写（Method Overriding）是面向对象编程中的一种重要概念，它允许子类在继承自父类的方法的基础上重新定义（覆盖）这些方法，以满足子类的特定需求。方法重写是多态性的一个重要示例，它允许在运行时动态地选择要执行的方法，具体的方法取决于对象的类型。</p>
+<p>以下是方法重写的一些关键规则和注意事项：</p>
+<ol>
+<li><strong>方法重写的规则：</strong><ol>
+<li><strong>方法的名称</strong>、<strong>参数列表</strong>和<strong>返回类型</strong>必须与父类中的被重写方法相同。</li>
+<li>访问修饰符可以相同或更宽松，但不能更严格（例如，父类的方法是 <code>public</code>，子类的可以是 <code>public</code> 或 <code>protected</code>，但不能是 <code>private</code>）。</li>
+<li>子类方法不能抛出比父类方法更多的已检查异常。</li>
+<li>子类方法不能缩小父类方法的访问权限。</li>
+</ol>
+</li>
+<li><strong>@Override 注解</strong>：为了明确标识方法是重写的，可以使用 <code>@Override</code> 注解来标记子类中的重写方法。这是可选的，但推荐使用。</li>
+</ol>
+<p><strong>Code：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">animal</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        animal.makeSound(); <span class="comment">// 输出：&quot;Dog barks&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>在上述示例中，<code>Dog</code> 类重写了 <code>Animal</code> 类中的 <code>makeSound</code> 方法。即使通过 <code>Animal</code> 类的引用创建了一个 <code>Dog</code> 对象，但在运行时会选择执行 <code>Dog</code> 类中的重写方法，因为它是对象的实际类型。这是方法重写的一个典型示例。</p>
+<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><p>方法重载是指在同一个类中定义多个相同方法名，但是参数列表不同的方法。</p>
+<p><strong>方法名相同</strong></p>
+<ol>
+<li><strong>参数个数</strong>可以不同</li>
+<li><strong>参数类型</strong>可以不同</li>
+<li><strong>方法修饰符</strong>可以不同，但是不作为重载的参考。</li>
+</ol>
+<p>方法重载是实现<strong>编译时多态性</strong>的一种方法。</p>
+<p><strong>特点</strong>:</p>
+<ol>
+<li>方法重载要求方法名相同但参数列表不同。</li>
+<li>返回类型可以相同也可以不同，但方法重载不能仅根据返回类型来区分，否则JVM无法确定调用哪个方法。</li>
+<li>方法重载可以在同一个类中进行，也可以在父类和子类之间进行。</li>
+<li>方法重载与方法的返回值无关，<strong>仅与参数相关</strong>。</li>
+</ol>
+<p><strong>Code：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathOperations</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
       <categories>
         <category>Java</category>
       </categories>
