@@ -62,13 +62,13 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C21.png"
+                     data-src="/source%5Cimages%5C21.png"
                       alt="Alt text"
                 ></p>
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C22.png"
+                     data-src="/source%5Cimages%5C22.png"
                       alt="Alt text"
                 ></p>
 <h3 id="包装类和基本数据的转换"><a href="#包装类和基本数据的转换" class="headerlink" title="包装类和基本数据的转换"></a>包装类和基本数据的转换</h3><ol>
@@ -98,7 +98,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C23.png"
+                     data-src="/source%5Cimages%5C23.png"
                       alt="Alt text"
                 ></p>
 <p>Serializable：子类可以实现串行化，可以在网络传输；</p>
@@ -117,7 +117,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C24.png"
+                     data-src="/source%5Cimages%5C24.png"
                       alt="Alt text"
                 ></p>
 <ol>
@@ -140,7 +140,7 @@
 <h2 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h2><p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C25.png"
+                     data-src="/source%5Cimages%5C25.png"
                       alt="Alt text"
                 ></p>
 <ol>
@@ -151,14 +151,14 @@
 <li><p>在父类中，AbstractStringBuilder有属性<code>char[] value</code>，用于存储字符，不是final修饰；<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C26.png"
+                     data-src="/source%5Cimages%5C26.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p>StringBuffer是一个$final$类，无法被继承<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C27.png"
+                     data-src="/source%5Cimages%5C27.png"
                       alt="Alt text"
                 ></p>
 </li>
@@ -181,33 +181,33 @@
 <li><p>初始化char[]数组的容量为**<code>str.length() + 16</code>**<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C28.png"
+                     data-src="/source%5Cimages%5C28.png"
                       alt="Alt text"
                 ></p>
 <p> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C29.png"
+                     data-src="/source%5Cimages%5C29.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p>执行append方法，将字符串添加到char[]数组，可以看到<code>append(String str)</code>方法被$synchronized$修饰，所以StringBuffer是<strong>线程安全</strong>的。<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C30.png"
+                     data-src="/source%5Cimages%5C30.png"
                       alt="Alt text"
                 ></p>
 <p> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C31.png"
+                     data-src="/source%5Cimages%5C31.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p>最后完成数据存储<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C32.png"
+                     data-src="/source%5Cimages%5C32.png"
                       alt="Alt text"
                 ></p>
 </li>
@@ -229,7 +229,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C33.png"
+                     data-src="/source%5Cimages%5C33.png"
                       alt="Alt text"
                 ></p>
 <ol>
@@ -241,21 +241,21 @@
 <li><p>StringBuilder是final类，无法被继承；<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C34.png"
+                     data-src="/source%5Cimages%5C34.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p>字符序列存放AbstractStringBuilder的char[] value数组，因此存放在堆中。<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C35.png"
+                     data-src="/source%5Cimages%5C35.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p>StringBuilder所有的方法没有互斥处理（synchronized），因此推荐在单线程的情况下使用；<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/RainbowBlog%5Csource%5Cimages%5C36.png"
+                     data-src="/source%5Cimages%5C36.png"
                       alt="Alt text"
                 ></p>
 </li>
