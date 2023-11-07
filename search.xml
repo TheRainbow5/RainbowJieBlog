@@ -540,7 +540,7 @@
                      lazyload
                      src="/images/loading.svg"
                      data-src="/images/37.png"
-                      alt="图片描述" width="300"
+                      alt="图片描述" width="400"
                 >
  </li>
 <li><p>用户如果需要连接不同的数据库就要创建不同的对象，不方便后期代码的维护。</p>
@@ -555,7 +555,7 @@
                      lazyload
                      src="/images/loading.svg"
                      data-src="/images/38.png"
-                      alt="图片描述" width="100"
+                      alt="图片描述" width="400"
                 >
 
 
