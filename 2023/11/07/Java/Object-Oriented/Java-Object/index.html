@@ -25,16 +25,16 @@
 <meta property="og:site_name" content="Rainbow">
 <meta property="og:description" content="在Java中，每个类都直接或间接地继承自 Object 类，它是所有Java类的超类。Object 类中包含一些通用的方法，如 toString()、equals() 等，这些方法被所有对象继承。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/ebaf12f3-e205-4426-bf94-3c343223184c/Untitled.png">
-<meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/77592585-8e29-4b23-be5b-3977bdf3ddcb/Untitled.png">
-<meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/9d468d46-f8a6-4e79-8a96-01f29aec225a/Untitled.png">
-<meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/29383a1b-db04-4aa9-b4f8-ceaa88e02148/Untitled.png">
+<meta property="og:image" content="http://example.com/images%5C39.png">
+<meta property="og:image" content="http://example.com/images%5C40.png">
+<meta property="og:image" content="http://example.com/images%5C41.png">
+<meta property="og:image" content="http://example.com/images%5C42.png">
 <meta property="article:published_time" content="2023-11-07T11:51:29.000Z">
-<meta property="article:modified_time" content="2023-11-07T12:01:30.842Z">
+<meta property="article:modified_time" content="2023-11-07T13:02:22.487Z">
 <meta property="article:author" content="RainbowJie">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/ebaf12f3-e205-4426-bf94-3c343223184c/Untitled.png">
+<meta name="twitter:image" content="http://example.com/images%5C39.png">
     
     
     <!--- Icon Part-->
@@ -396,8 +396,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-11-07 20:01:30</span>
-            <span class="mobile">2023-11-07 20:01:30</span>
+            <span class="desktop">2023-11-07 21:02:22</span>
+            <span class="mobile">2023-11-07 21:02:22</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -467,18 +467,18 @@
 <li>对于<strong>基本数据类型</strong>来说，<code>==</code> 比较的是<strong>内容</strong>。</li>
 <li>对于<strong>引用数据类型</strong>来说，<code>==</code> 比较的是对象的<strong>内存地址</strong>。</li>
 </ol>
-<p><strong><code>equals()</code></strong> 不能用于判断基本数据类型的变量，只能用来判断两个对象是否相等。</p>
-<p><code>**equals()**</code> 方法存在两种使用情况：</p>
+<p><code>equals()</code> 不能用于判断基本数据类型的变量，只能用来判断两个对象是否相等。</p>
+<p><code>equals()</code> 方法存在两种使用情况：</p>
 <ol>
 <li><strong>类没有重写了equals()方法</strong>：比较两个对象的内存地址。</li>
 <li><strong>类重写了equals()方法</strong>：一般都会重写该方法用于比较对象的属性<strong>。</strong></li>
 </ol>
-<p><strong>String</strong>类型，默认重写了**<code>equls()</code>**方法，使用时比较的是内容。</p>
+<p><strong>String</strong>类型，默认重写了<code>equls()</code>方法，使用时比较的是内容。</p>
 <h2 id="hashCode-方法"><a href="#hashCode-方法" class="headerlink" title="hashCode()方法"></a>hashCode()方法</h2><p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/ebaf12f3-e205-4426-bf94-3c343223184c/Untitled.png"
-                      alt="Untitled"
+                     data-src="/images%5C39.png"
+                      alt="Alt text"
                 ></p>
 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span>&#123;&#125;</span><br></pre></td></tr></table></figure></div>
 
@@ -487,43 +487,37 @@
 <li>两个引用，如果指向不是同一个对象，则哈希值不相同；</li>
 <li>哈希值并不是内存地址，哈希值是使用对象的内存地址计算哈希码。</li>
 </ol>
-<aside>
-💡 **为什么有`hashCode()`方法？**
-
+<p>💡 <strong>为什么有<code>hashCode()</code>方法？</strong></p>
 <ol>
 <li><strong>快速查找和存储</strong>：通过使用哈希码，可以将对象分散到数组中的不同位置，从而实现高效的数据访问</li>
-<li><strong>性能优化</strong>：使用哈希码可以提高集合和映射操作的性能。</aside></li>
+<li><strong>性能优化</strong>：使用哈希码可以提高集合和映射操作的性能。</li>
 </ol>
-<h2 id="toString-方法"><a href="#toString-方法" class="headerlink" title="toString()方法"></a>toString()方法</h2><p>在Java中，**<code>Object</code><strong>类的</strong><code>toString()</code>**方法用于返回表示对象的字符串。</p>
-<p>默认情况下，**<code>toString()</code><strong>方法返回一个字符串，其中包含了</strong>对象的类名<strong>和</strong>对象的哈希码的十六进制**表示。</p>
+<h2 id="toString-方法"><a href="#toString-方法" class="headerlink" title="toString()方法"></a>toString()方法</h2><p>在Java中，<code>Object</code>类的<code>toString()</code>方法用于返回表示对象的字符串。<br>默认情况下，<code>toString()</code>方法返回一个字符串，其中包含了<strong>对象的类名</strong>和<strong>对象的哈希码的十六进制</strong>表示。</p>
 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> getClass().getName() + <span class="string">&quot;@&quot;</span> + Integer.toHexString(hashCode());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-<p>同时，我也也可以重写**<code>toString()</code>**方法来输出自定义的内容。</p>
+<p>同时，我也也可以重写<code>toString()</code>方法来输出自定义的内容。</p>
 <h2 id="Clone-方法"><a href="#Clone-方法" class="headerlink" title="Clone()方法"></a>Clone()方法</h2><p><code>clone()</code> 方法主要用于创建对象的拷贝，但在 Java 中存在浅拷贝和深拷贝两种不同的拷贝方式，而引用拷贝通常是指浅拷贝中的一种情况。</p>
 <p>让我们解释这三种拷贝方式：</p>
 <ol>
-<li><p><strong>深拷贝</strong>：完全复制整个对象，包括对象中所包含的引用对象。</p>
-<p> <img  
+<li><p><strong>深拷贝</strong>：完全复制整个对象，包括对象中所包含的引用对象。<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/77592585-8e29-4b23-be5b-3977bdf3ddcb/Untitled.png"
-                      alt="Untitled"
+                     data-src="/images%5C40.png"
+                      alt="Alt text"
                 ></p>
 </li>
-<li><p><strong>浅拷贝</strong>：在堆上创建一个新对象，如果内部存在引用类型的对象，则拷贝对象和原对象共用同一个内部引用对象。</p>
-<p> <img  
+<li><p><strong>浅拷贝</strong>：在堆上创建一个新对象，如果内部存在引用类型的对象，则拷贝对象和原对象共用同一个内部引用对象。<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/9d468d46-f8a6-4e79-8a96-01f29aec225a/Untitled.png"
-                      alt="Untitled"
+                     data-src="/images%5C41.png"
+                      alt="Alt text"
                 ></p>
 </li>
-<li><p><strong>引用拷贝</strong>：原对象和拷贝对象的内部引用对象相同。</p>
-<p> <img  
+<li><p><strong>引用拷贝</strong>：原对象和拷贝对象的内部引用对象相同。<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/29383a1b-db04-4aa9-b4f8-ceaa88e02148/Untitled.png"
-                      alt="Untitled"
+                     data-src="/images%5C42.png"
+                      alt="Alt text"
                 ></p>
 </li>
 </ol>
@@ -563,7 +557,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-11-07 20:01:30
+                    :</strong> 2023-11-07 21:02:22
             </li>
         
         <li>
