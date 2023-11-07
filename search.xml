@@ -220,7 +220,7 @@
 <li><p>现在客户端有时需要连接不同的数据库，但是每个数据库的驱动链接方式都不同，如下图所示：<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5C37.png"
+                     data-src="/images/37.png"
                       alt="Alt text"
                 ></p>
 </li>
@@ -235,7 +235,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5C38.png"
+                     data-src="/images/38.png"
                       alt="Alt text"
                 ></p>
 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">demo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">DBconnect</span> <span class="variable">dBconnect</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Mysql</span>();   <span class="comment">//向上转型</span></span><br><span class="line">        dBconnect.connectDB();</span><br><span class="line"></span><br><span class="line">        <span class="type">DBconnect</span> <span class="variable">dBconnect1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MongoDB</span>();  </span><br><span class="line">        dBconnect1.connectDB();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//创建连接数据库接口</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">DBconnect</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">connectDB</span><span class="params">()</span>;   <span class="comment">//定义链接数据库的抽象方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
@@ -271,7 +271,7 @@
 <h2 id="hashCode-方法"><a href="#hashCode-方法" class="headerlink" title="hashCode()方法"></a>hashCode()方法</h2><p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5C39.png"
+                     data-src="/images/39.png"
                       alt="Alt text"
                 ></p>
 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span>&#123;&#125;</span><br></pre></td></tr></table></figure></div>
@@ -296,21 +296,21 @@
 <li><p><strong>深拷贝</strong>：完全复制整个对象，包括对象中所包含的引用对象。<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5C40.png"
+                     data-src="/images/40.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p><strong>浅拷贝</strong>：在堆上创建一个新对象，如果内部存在引用类型的对象，则拷贝对象和原对象共用同一个内部引用对象。<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5C41.png"
+                     data-src="/images/41.png"
                       alt="Alt text"
                 ></p>
 </li>
 <li><p><strong>引用拷贝</strong>：原对象和拷贝对象的内部引用对象相同。<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5C42.png"
+                     data-src="/images/42.png"
                       alt="Alt text"
                 ></p>
 </li>
