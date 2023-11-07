@@ -28,7 +28,7 @@
 <meta property="og:image" content="http://example.com/images/37.png">
 <meta property="og:image" content="http://example.com/images/38.png">
 <meta property="article:published_time" content="2023-11-07T11:40:33.201Z">
-<meta property="article:modified_time" content="2023-11-07T13:12:11.523Z">
+<meta property="article:modified_time" content="2023-11-07T13:15:03.620Z">
 <meta property="article:author" content="RainbowJie">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
@@ -394,8 +394,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-11-07 21:12:11</span>
-            <span class="mobile">2023-11-07 21:12:11</span>
+            <span class="desktop">2023-11-07 21:15:03</span>
+            <span class="mobile">2023-11-07 21:15:03</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -563,13 +563,14 @@
 </ol>
 <h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p><strong>场景引入</strong>：</p>
 <ol>
-<li><p>现在客户端有时需要连接不同的数据库，但是每个数据库的驱动链接方式都不同，如下图所示：<br> <img  
+<li><p>现在客户端有时需要连接不同的数据库，但是每个数据库的驱动链接方式都不同，如下图所示：</p>
+ <img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="/images/37.png"
-                      alt="Alt text"
-                ></p>
-</li>
+                      alt="图片描述" width="300"
+                >
+ </li>
 <li><p>用户如果需要连接不同的数据库就要创建不同的对象，不方便后期代码的维护。</p>
 </li>
 </ol>
@@ -578,12 +579,14 @@
 <li>此时就可以使用一个接口，统一管理数据库的连接。</li>
 <li>用户只需要传入数据库对象，接口可以自动判断需要连接哪个数据库，如下图所示</li>
 </ol>
-<p><img  
+<img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="/images/38.png"
-                      alt="Alt text"
-                ></p>
+                      alt="图片描述" width="300"
+                >
+
+
 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">demo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">DBconnect</span> <span class="variable">dBconnect</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Mysql</span>();   <span class="comment">//向上转型</span></span><br><span class="line">        dBconnect.connectDB();</span><br><span class="line"></span><br><span class="line">        <span class="type">DBconnect</span> <span class="variable">dBconnect1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MongoDB</span>();  </span><br><span class="line">        dBconnect1.connectDB();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//创建连接数据库接口</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">DBconnect</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">connectDB</span><span class="params">()</span>;   <span class="comment">//定义链接数据库的抽象方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Mysql</span> <span class="keyword">implements</span> <span class="title class_">DBconnect</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">connectDB</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;连接MySQL&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MongoDB</span> <span class="keyword">implements</span> <span class="title class_">DBconnect</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">connectDB</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;连接MongoDB&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
@@ -602,7 +605,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-11-07 21:12:11
+                    :</strong> 2023-11-07 21:15:03
             </li>
         
         <li>
