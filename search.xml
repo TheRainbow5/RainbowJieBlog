@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo安装运行</title>
-    <url>/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/</url>
-    <content><![CDATA[<h2 id="安装-Node-js-和-Git"><a href="#安装-Node-js-和-Git" class="headerlink" title="安装 Node.js 和 Git"></a><strong>安装 Node.js 和 Git</strong></h2><p>确保你的系统上已经安装了 Node.js 和 Git。你可以从它们的官方网站上下载并安装：</p>
-<ol>
-<li><a class="link"   href="https://nodejs.org/" >Node.js 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li><a class="link"   href="https://git-scm.com/" >Git 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-</ol>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a><strong>安装 Hexo</strong></h2><p>安装完成 Node.js 和 Git 后，在命令行中使用 npm（Node.js 的包管理器）安装 Hexo。打开命令行工具（Terminal 或 Command Prompt）并运行以下命令：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a><strong>创建博客</strong></h2><p>选择一个合适的目录位置，在命令行中执行以下命令来创建一个新的 Hexo 博客：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init myblog</span><br><span class="line"><span class="built_in">cd</span> myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="运行博客"><a href="#运行博客" class="headerlink" title="运行博客"></a><strong>运行博客</strong></h2><p>在博客目录下执行以下命令启动本地服务器：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>这将启动一个本地服务器，显示博客的预览。访问 <a class="link"   href="http://localhost:4000/" >http://localhost:4000/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 可以查看你的博客。</p>
-<h2 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a><strong>创建新文章</strong></h2><p>使用以下命令创建一篇新文章：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>这将在 <strong><code>source/_posts</code></strong> 目录中创建一个新的 Markdown 文件，用于撰写你的新文章。</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/09/28/Hexo/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
@@ -301,6 +271,36 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo安装运行</title>
+    <url>/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/</url>
+    <content><![CDATA[<h2 id="安装-Node-js-和-Git"><a href="#安装-Node-js-和-Git" class="headerlink" title="安装 Node.js 和 Git"></a><strong>安装 Node.js 和 Git</strong></h2><p>确保你的系统上已经安装了 Node.js 和 Git。你可以从它们的官方网站上下载并安装：</p>
+<ol>
+<li><a class="link"   href="https://nodejs.org/" >Node.js 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   href="https://git-scm.com/" >Git 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+</ol>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a><strong>安装 Hexo</strong></h2><p>安装完成 Node.js 和 Git 后，在命令行中使用 npm（Node.js 的包管理器）安装 Hexo。打开命令行工具（Terminal 或 Command Prompt）并运行以下命令：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a><strong>创建博客</strong></h2><p>选择一个合适的目录位置，在命令行中执行以下命令来创建一个新的 Hexo 博客：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init myblog</span><br><span class="line"><span class="built_in">cd</span> myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="运行博客"><a href="#运行博客" class="headerlink" title="运行博客"></a><strong>运行博客</strong></h2><p>在博客目录下执行以下命令启动本地服务器：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>这将启动一个本地服务器，显示博客的预览。访问 <a class="link"   href="http://localhost:4000/" >http://localhost:4000/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 可以查看你的博客。</p>
+<h2 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a><strong>创建新文章</strong></h2><p>使用以下命令创建一篇新文章：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>这将在 <strong><code>source/_posts</code></strong> 目录中创建一个新的 Markdown 文件，用于撰写你的新文章。</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java-注解（Annotation）</title>
     <url>/2023/11/07/Java/Advanced-Application/Java-%E6%B3%A8%E8%A7%A3Annotation/</url>
     <content><![CDATA[<h2 id="Override"><a href="#Override" class="headerlink" title="@Override"></a>@Override</h2><p>**<code>@Override</code>**它用于标记一个方法是要覆盖（重写）父类或接口中的方法。</p>
@@ -418,6 +418,60 @@
 
 <h3 id="Documented"><a href="#Documented" class="headerlink" title="@Documented"></a>@Documented</h3><p>@Documented 注解表示该注解应该被包含在Java文档中。</p>
 <h3 id="Inherited"><a href="#Inherited" class="headerlink" title="@Inherited"></a>@Inherited</h3><p>如果某个类使用了被@Inherited修饰的Annotation，则其子类将自动具有该注解</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-什么是类（Class）？</title>
+    <url>/2023/11/07/Java/Object-Oriented/Java-Class/</url>
+    <content><![CDATA[<h2 id="快速理解"><a href="#快速理解" class="headerlink" title="快速理解"></a>快速理解</h2><p>对象表示具有<strong>状态</strong>和<strong>行为</strong>的实体，例如：一辆汽车是一个对象，汽车的颜色、价格。。</p>
+<p>更具体的就是</p>
+<ol>
+<li><strong>状态（类的属性）</strong>：车的颜色、价格。。</li>
+<li><strong>行为（类的方法）</strong>：车可以前进、倒车、加速等行为；</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">hosue</span>&#123;</span><br><span class="line">	<span class="comment">//状态</span></span><br><span class="line">    String address;     <span class="comment">//</span></span><br><span class="line">   	String color;</span><br><span class="line">   	<span class="type">double</span> area;</span><br><span class="line">    <span class="comment">//行为</span></span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">openDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">closeDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line"> ...</span><br><span class="line"> ... </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>细节说明：</strong></p>
+<ol>
+<li>类名必须和文件名相同。</li>
+</ol>
+<h2 id="构造方法的特点"><a href="#构造方法的特点" class="headerlink" title="构造方法的特点"></a>构造方法的特点</h2><ol>
+<li>名字和类名相同</li>
+<li>不能被void修饰</li>
+<li>可以进行重载，这就是为什么有无参构造和有参构造</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">		String name;</span><br><span class="line">    Animal()&#123;&#125;   <span class="comment">//无参构造</span></span><br><span class="line">		Animal(String name)&#123;  <span class="comment">//有参构造</span></span><br><span class="line">			。。。	</span><br><span class="line">	&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="类相关操作"><a href="#类相关操作" class="headerlink" title="类相关操作"></a>类相关操作</h2><h3 id="初始化类变量有哪些方式？"><a href="#初始化类变量有哪些方式？" class="headerlink" title="初始化类变量有哪些方式？"></a>初始化类变量有哪些方式？</h3><ol>
+<li><p><strong>初始化自定义变量</strong></p>
+<p> 在变量定义时直接对变量进行赋值初始化。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">10</span>; <span class="comment">// 在定义时直接初始化变量 x 为 10</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>构造器初始化变量</strong></p>
+<p> 在类的构造函数（构造器）中对成员变量进行初始化。构造函数是在创建对象时调用的特殊方法。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> y;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyClass</span><span class="params">()</span> &#123;</span><br><span class="line">        y = <span class="number">20</span>; <span class="comment">// 在构造器中初始化变量 y 为 20</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>代码块中初始化</strong></p>
+<p> 使用初始化块（包括静态初始化块和非静态初始化块）来对成员变量进行初始化。静态初始化块用于静态变量的初始化，非静态初始化块用于实例变量的初始化。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">AnotherClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> z;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 非静态初始化块</span></span><br><span class="line">    &#123;</span><br><span class="line">        z = <span class="number">30</span>; <span class="comment">// 在初始化块中初始化变量 z 为 30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"><a href="#获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。" class="headerlink" title="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"></a><strong>获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。</strong></h3><ol>
+<li><p><strong>通过类的 <code>.class</code> 属性获取：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = MyClass.class; <span class="comment">// MyClass 是你要获取 Class 对象的类名</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>使用 <code>getClass()</code> 方法获取对象的 Class 对象：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">MyClass</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">Class&lt;?&gt; classObj = obj.getClass();</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>使用 <code>Class.forName()</code> 方法根据类名获取：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = Class.forName(<span class="string">&quot;com.example.MyClass&quot;</span>); <span class="comment">// 根据类的全限定名获取 Class 对象</span></span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<p>这种方法都可以用来获取特定类的 <code>Class</code> 对象，但它们的应用场景有所不同。<code>.class</code> 属性和 <code>Class.forName()</code> 用于编译时或者运行时动态地获取类的 <code>Class</code> 对象，而 <code>getClass()</code> 方法通常用于已经存在对象的情况下获取其 <code>Class</code> 对象。</p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -572,155 +626,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-Object类</title>
-    <url>/2023/11/07/Java/Object-Oriented/Java-Object/</url>
-    <content><![CDATA[<h2 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h2><p>Object类是一个特殊的类，是所有类的父类。主要提供了一下几个方法</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于返回当前运行时对象的 Class 对象，使用了 final 关键字修饰，故不允许子类重写。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> Class&lt;?&gt; getClass()</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于返回对象的哈希码，主要使用在哈希表中，比如 JDK 中的HashMap。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 用于比较 2 个对象的内存地址是否相等，String 类对该方法进行了重写以用于比较字符串的值是否相等。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">equals</span><span class="params">(Object obj)</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于创建并返回当前对象的一份拷贝。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">native</span> Object <span class="title function_">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 返回类的名字实例的哈希码的 16 进制的字符串。建议 Object 所有的子类都重写这个方法。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，并且不能重写。唤醒一个在此对象监视器上等待的线程(监视器相当于就是锁的概念)。如果有多个线程在等待只会任意唤醒一个。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notify</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，并且不能重写。跟 notify 一样，唯一的区别就是会唤醒在此对象监视器上等待的所有线程，而不是一个线程。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notifyAll</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native方法，并且不能重写。暂停线程的执行。注意：sleep 方法没有释放锁，而 wait 方法释放了锁 ，timeout 是等待时间。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout)</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 多了 nanos 参数，这个参数表示额外时间（以纳秒为单位，范围是 0-999999）。 所以超时的时间还需要加上 nanos 纳秒。。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout, <span class="type">int</span> nanos)</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 跟之前的2个wait方法一样，只不过该方法一直等待，没有超时时间这个概念</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 实例被垃圾回收器回收的时候触发的操作</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">finalize</span><span class="params">()</span> <span class="keyword">throws</span> Throwable &#123; &#125;</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="和-equals-的区别"><a href="#和-equals-的区别" class="headerlink" title="&#x3D;&#x3D; 和 equals() 的区别"></a><strong><strong>&#x3D;&#x3D; 和 equals() 的区别</strong></strong></h2><p><strong><code>==</code></strong> 对于基本类型和引用类型的作用效果是不同的：</p>
-<ol>
-<li>对于<strong>基本数据类型</strong>来说，<code>==</code> 比较的是<strong>内容</strong>。</li>
-<li>对于<strong>引用数据类型</strong>来说，<code>==</code> 比较的是对象的<strong>内存地址</strong>。</li>
-</ol>
-<p><code>equals()</code> 不能用于判断基本数据类型的变量，只能用来判断两个对象是否相等。</p>
-<p><code>equals()</code> 方法存在两种使用情况：</p>
-<ol>
-<li><strong>类没有重写了equals()方法</strong>：比较两个对象的内存地址。</li>
-<li><strong>类重写了equals()方法</strong>：一般都会重写该方法用于比较对象的属性<strong>。</strong></li>
-</ol>
-<p><strong>String</strong>类型，默认重写了<code>equls()</code>方法，使用时比较的是内容。</p>
-<h2 id="hashCode-方法"><a href="#hashCode-方法" class="headerlink" title="hashCode()方法"></a>hashCode()方法</h2><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/39.png"
-                      alt="Alt text"
-                ></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span>&#123;&#125;</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li>两个引用，如果指向同一个对象，则哈希值相同；</li>
-<li>两个引用，如果指向不是同一个对象，则哈希值不相同；</li>
-<li>哈希值并不是内存地址，哈希值是使用对象的内存地址计算哈希码。</li>
-</ol>
-<p>💡 <strong>为什么有<code>hashCode()</code>方法？</strong></p>
-<ol>
-<li><strong>快速查找和存储</strong>：通过使用哈希码，可以将对象分散到数组中的不同位置，从而实现高效的数据访问</li>
-<li><strong>性能优化</strong>：使用哈希码可以提高集合和映射操作的性能。</li>
-</ol>
-<h2 id="toString-方法"><a href="#toString-方法" class="headerlink" title="toString()方法"></a>toString()方法</h2><p>在Java中，<code>Object</code>类的<code>toString()</code>方法用于返回表示对象的字符串。<br>默认情况下，<code>toString()</code>方法返回一个字符串，其中包含了<strong>对象的类名</strong>和<strong>对象的哈希码的十六进制</strong>表示。</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> getClass().getName() + <span class="string">&quot;@&quot;</span> + Integer.toHexString(hashCode());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>同时，我也也可以重写<code>toString()</code>方法来输出自定义的内容。</p>
-<h2 id="Clone-方法"><a href="#Clone-方法" class="headerlink" title="Clone()方法"></a>Clone()方法</h2><p><code>clone()</code> 方法主要用于创建对象的拷贝，但在 Java 中存在浅拷贝和深拷贝两种不同的拷贝方式，而引用拷贝通常是指浅拷贝中的一种情况。</p>
-<p>让我们解释这三种拷贝方式：</p>
-<ol>
-<li><p><strong>深拷贝</strong>：完全复制整个对象，包括对象中所包含的引用对象。<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/40.png"
-                      alt="Alt text"
-                ></p>
-</li>
-<li><p><strong>浅拷贝</strong>：在堆上创建一个新对象，如果内部存在引用类型的对象，则拷贝对象和原对象共用同一个内部引用对象。<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/41.png"
-                      alt="Alt text"
-                ></p>
-</li>
-<li><p><strong>引用拷贝</strong>：原对象和拷贝对象的内部引用对象相同。<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/42.png"
-                      alt="Alt text"
-                ></p>
-</li>
-</ol>
-<h3 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h3><p>在Java中，要执行浅拷贝，可以使用以下方法：</p>
-<ol>
-<li><p><strong>使用 <code>clone()</code> 方法</strong>：某些类实现了 <code>Cloneable</code> 接口，可以通过 重写<code>clone()</code> 方法来创建对象的浅拷贝。这包括数组和一些标准类，如 <code>String</code>。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 使用 clone() 方法进行浅拷贝</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> <span class="keyword">implements</span> <span class="title class_">Cloneable</span> &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> MyClass <span class="title function_">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException &#123;</span><br><span class="line">        <span class="keyword">return</span> (MyClass) <span class="built_in">super</span>.clone();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>手动实现浅拷贝：你可以编写自定义代码来创建一个新对象并复制原始对象的字段值。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 手动实现浅拷贝</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> MyClass <span class="title function_">shallowCopy</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">MyClass</span> <span class="variable">copy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">        copy.field1 = <span class="built_in">this</span>.field1;</span><br><span class="line">        copy.field2 = <span class="built_in">this</span>.field2;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">        <span class="keyword">return</span> copy;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h3 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h3><p>在 Java 中，深拷贝是一种复制对象，包括对象本身及其所有嵌套对象的所有属性。</p>
-<p>深拷贝的目的是创建一个新的对象，使其在内存中独立于原始对象，而不共享引用对象。</p>
-<p>在 Java 中，实现深拷贝的方法通常包括以下几种：</p>
-<ol>
-<li><p><strong>使用序列化和反序列化</strong>：通过将对象序列化为字节数组，然后反序列化为新对象，可以实现深拷贝。这需要确保所有对象及其嵌套对象都是可序列化的。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.ByteArrayInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ByteArrayOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectOutputStream;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">deepCopy</span><span class="params">(T object)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">ByteArrayOutputStream</span> <span class="variable">bos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ByteArrayOutputStream</span>();</span><br><span class="line">            <span class="type">ObjectOutputStream</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ObjectOutputStream</span>(bos);</span><br><span class="line">            out.writeObject(object);</span><br><span class="line">            out.flush();</span><br><span class="line"></span><br><span class="line">            <span class="type">ByteArrayInputStream</span> <span class="variable">bis</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ByteArrayInputStream</span>(bos.toByteArray());</span><br><span class="line">            <span class="type">ObjectInputStream</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ObjectInputStream</span>(bis);</span><br><span class="line">            <span class="keyword">return</span> (T) in.readObject();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p> 请注意，要使对象可序列化，它必须实现 <code>Serializable</code> 接口。</p>
-</li>
-<li><p><strong>使用第三方库</strong>：Java中有一些第三方库，如 Apache Commons Lang 或 Gson，提供了深拷贝方法。这些库通常提供了更简单的方式来实现深拷贝。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.commons.lang3.SerializationUtils;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">deepCopy</span><span class="params">(T object)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> SerializationUtils.clone(object);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>自定义递归复制</strong>：手动编写递归方法，遍历对象及其嵌套对象的属性，并创建新的对象进行复制。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">MyObject</span> <span class="keyword">implements</span> <span class="title class_">Serializable</span> &#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="type">int</span> value;</span><br><span class="line">        <span class="keyword">private</span> MyObject nestedObject;   <span class="comment">//引用类型对象</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// Constructor, getters, and setters</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> MyObject <span class="title function_">deepCopy</span><span class="params">(MyObject object)</span> &#123;</span><br><span class="line">        <span class="type">MyObject</span> <span class="variable">copy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyObject</span>();</span><br><span class="line">        copy.setValue(object.getValue());</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (object.getNestedObject() != <span class="literal">null</span>) &#123;</span><br><span class="line">            copy.setNestedObject(deepCopy(object.getNestedObject()));</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> copy;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-什么是类（Class）？</title>
-    <url>/2023/11/07/Java/Object-Oriented/Java-Class/</url>
-    <content><![CDATA[<h2 id="快速理解"><a href="#快速理解" class="headerlink" title="快速理解"></a>快速理解</h2><p>对象表示具有<strong>状态</strong>和<strong>行为</strong>的实体，例如：一辆汽车是一个对象，汽车的颜色、价格。。</p>
-<p>更具体的就是</p>
-<ol>
-<li><strong>状态（类的属性）</strong>：车的颜色、价格。。</li>
-<li><strong>行为（类的方法）</strong>：车可以前进、倒车、加速等行为；</li>
-</ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">hosue</span>&#123;</span><br><span class="line">	<span class="comment">//状态</span></span><br><span class="line">    String address;     <span class="comment">//</span></span><br><span class="line">   	String color;</span><br><span class="line">   	<span class="type">double</span> area;</span><br><span class="line">    <span class="comment">//行为</span></span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">openDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">closeDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line"> ...</span><br><span class="line"> ... </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>细节说明：</strong></p>
-<ol>
-<li>类名必须和文件名相同。</li>
-</ol>
-<h2 id="构造方法的特点"><a href="#构造方法的特点" class="headerlink" title="构造方法的特点"></a>构造方法的特点</h2><ol>
-<li>名字和类名相同</li>
-<li>不能被void修饰</li>
-<li>可以进行重载，这就是为什么有无参构造和有参构造</li>
-</ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">		String name;</span><br><span class="line">    Animal()&#123;&#125;   <span class="comment">//无参构造</span></span><br><span class="line">		Animal(String name)&#123;  <span class="comment">//有参构造</span></span><br><span class="line">			。。。	</span><br><span class="line">	&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="类相关操作"><a href="#类相关操作" class="headerlink" title="类相关操作"></a>类相关操作</h2><h3 id="初始化类变量有哪些方式？"><a href="#初始化类变量有哪些方式？" class="headerlink" title="初始化类变量有哪些方式？"></a>初始化类变量有哪些方式？</h3><ol>
-<li><p><strong>初始化自定义变量</strong></p>
-<p> 在变量定义时直接对变量进行赋值初始化。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">10</span>; <span class="comment">// 在定义时直接初始化变量 x 为 10</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>构造器初始化变量</strong></p>
-<p> 在类的构造函数（构造器）中对成员变量进行初始化。构造函数是在创建对象时调用的特殊方法。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> y;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyClass</span><span class="params">()</span> &#123;</span><br><span class="line">        y = <span class="number">20</span>; <span class="comment">// 在构造器中初始化变量 y 为 20</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>代码块中初始化</strong></p>
-<p> 使用初始化块（包括静态初始化块和非静态初始化块）来对成员变量进行初始化。静态初始化块用于静态变量的初始化，非静态初始化块用于实例变量的初始化。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">AnotherClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> z;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 非静态初始化块</span></span><br><span class="line">    &#123;</span><br><span class="line">        z = <span class="number">30</span>; <span class="comment">// 在初始化块中初始化变量 z 为 30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h3 id="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"><a href="#获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。" class="headerlink" title="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"></a><strong>获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。</strong></h3><ol>
-<li><p><strong>通过类的 <code>.class</code> 属性获取：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = MyClass.class; <span class="comment">// MyClass 是你要获取 Class 对象的类名</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>使用 <code>getClass()</code> 方法获取对象的 Class 对象：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">MyClass</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">Class&lt;?&gt; classObj = obj.getClass();</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>使用 <code>Class.forName()</code> 方法根据类名获取：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = Class.forName(<span class="string">&quot;com.example.MyClass&quot;</span>); <span class="comment">// 根据类的全限定名获取 Class 对象</span></span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<p>这种方法都可以用来获取特定类的 <code>Class</code> 对象，但它们的应用场景有所不同。<code>.class</code> 属性和 <code>Class.forName()</code> 用于编译时或者运行时动态地获取类的 <code>Class</code> 对象，而 <code>getClass()</code> 方法通常用于已经存在对象的情况下获取其 <code>Class</code> 对象。</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java-Basical-knowledge</title>
     <url>/2023/11/07/Java/Basic/Java-Basical-knowledge/</url>
     <content><![CDATA[<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><table>
@@ -852,6 +757,101 @@
 </li>
 </ol>
 <!-- More info: [Deployment](https://hexo.io/docs/one-command-deployment.html) -->]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-Object类</title>
+    <url>/2023/11/07/Java/Object-Oriented/Java-Object/</url>
+    <content><![CDATA[<h2 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h2><p>Object类是一个特殊的类，是所有类的父类。主要提供了一下几个方法</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于返回当前运行时对象的 Class 对象，使用了 final 关键字修饰，故不允许子类重写。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> Class&lt;?&gt; getClass()</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于返回对象的哈希码，主要使用在哈希表中，比如 JDK 中的HashMap。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 用于比较 2 个对象的内存地址是否相等，String 类对该方法进行了重写以用于比较字符串的值是否相等。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">equals</span><span class="params">(Object obj)</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于创建并返回当前对象的一份拷贝。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">native</span> Object <span class="title function_">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 返回类的名字实例的哈希码的 16 进制的字符串。建议 Object 所有的子类都重写这个方法。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，并且不能重写。唤醒一个在此对象监视器上等待的线程(监视器相当于就是锁的概念)。如果有多个线程在等待只会任意唤醒一个。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notify</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，并且不能重写。跟 notify 一样，唯一的区别就是会唤醒在此对象监视器上等待的所有线程，而不是一个线程。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notifyAll</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native方法，并且不能重写。暂停线程的执行。注意：sleep 方法没有释放锁，而 wait 方法释放了锁 ，timeout 是等待时间。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout)</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 多了 nanos 参数，这个参数表示额外时间（以纳秒为单位，范围是 0-999999）。 所以超时的时间还需要加上 nanos 纳秒。。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout, <span class="type">int</span> nanos)</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 跟之前的2个wait方法一样，只不过该方法一直等待，没有超时时间这个概念</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 实例被垃圾回收器回收的时候触发的操作</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">finalize</span><span class="params">()</span> <span class="keyword">throws</span> Throwable &#123; &#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="和-equals-的区别"><a href="#和-equals-的区别" class="headerlink" title="&#x3D;&#x3D; 和 equals() 的区别"></a><strong><strong>&#x3D;&#x3D; 和 equals() 的区别</strong></strong></h2><p><strong><code>==</code></strong> 对于基本类型和引用类型的作用效果是不同的：</p>
+<ol>
+<li>对于<strong>基本数据类型</strong>来说，<code>==</code> 比较的是<strong>内容</strong>。</li>
+<li>对于<strong>引用数据类型</strong>来说，<code>==</code> 比较的是对象的<strong>内存地址</strong>。</li>
+</ol>
+<p><code>equals()</code> 不能用于判断基本数据类型的变量，只能用来判断两个对象是否相等。</p>
+<p><code>equals()</code> 方法存在两种使用情况：</p>
+<ol>
+<li><strong>类没有重写了equals()方法</strong>：比较两个对象的内存地址。</li>
+<li><strong>类重写了equals()方法</strong>：一般都会重写该方法用于比较对象的属性<strong>。</strong></li>
+</ol>
+<p><strong>String</strong>类型，默认重写了<code>equls()</code>方法，使用时比较的是内容。</p>
+<h2 id="hashCode-方法"><a href="#hashCode-方法" class="headerlink" title="hashCode()方法"></a>hashCode()方法</h2><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/39.png"
+                      alt="Alt text"
+                ></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span>&#123;&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li>两个引用，如果指向同一个对象，则哈希值相同；</li>
+<li>两个引用，如果指向不是同一个对象，则哈希值不相同；</li>
+<li>哈希值并不是内存地址，哈希值是使用对象的内存地址计算哈希码。</li>
+</ol>
+<p>💡 <strong>为什么有<code>hashCode()</code>方法？</strong></p>
+<ol>
+<li><strong>快速查找和存储</strong>：通过使用哈希码，可以将对象分散到数组中的不同位置，从而实现高效的数据访问</li>
+<li><strong>性能优化</strong>：使用哈希码可以提高集合和映射操作的性能。</li>
+</ol>
+<h2 id="toString-方法"><a href="#toString-方法" class="headerlink" title="toString()方法"></a>toString()方法</h2><p>在Java中，<code>Object</code>类的<code>toString()</code>方法用于返回表示对象的字符串。<br>默认情况下，<code>toString()</code>方法返回一个字符串，其中包含了<strong>对象的类名</strong>和<strong>对象的哈希码的十六进制</strong>表示。</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> getClass().getName() + <span class="string">&quot;@&quot;</span> + Integer.toHexString(hashCode());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>同时，我也也可以重写<code>toString()</code>方法来输出自定义的内容。</p>
+<h2 id="Clone-方法"><a href="#Clone-方法" class="headerlink" title="Clone()方法"></a>Clone()方法</h2><p><code>clone()</code> 方法主要用于创建对象的拷贝，但在 Java 中存在浅拷贝和深拷贝两种不同的拷贝方式，而引用拷贝通常是指浅拷贝中的一种情况。</p>
+<p>让我们解释这三种拷贝方式：</p>
+<ol>
+<li><p><strong>深拷贝</strong>：完全复制整个对象，包括对象中所包含的引用对象。<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/40.png"
+                      alt="Alt text"
+                ></p>
+</li>
+<li><p><strong>浅拷贝</strong>：在堆上创建一个新对象，如果内部存在引用类型的对象，则拷贝对象和原对象共用同一个内部引用对象。<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/41.png"
+                      alt="Alt text"
+                ></p>
+</li>
+<li><p><strong>引用拷贝</strong>：原对象和拷贝对象的内部引用对象相同。<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/42.png"
+                      alt="Alt text"
+                ></p>
+</li>
+</ol>
+<h3 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h3><p>在Java中，要执行浅拷贝，可以使用以下方法：</p>
+<ol>
+<li><p><strong>使用 <code>clone()</code> 方法</strong>：某些类实现了 <code>Cloneable</code> 接口，可以通过 重写<code>clone()</code> 方法来创建对象的浅拷贝。这包括数组和一些标准类，如 <code>String</code>。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 使用 clone() 方法进行浅拷贝</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> <span class="keyword">implements</span> <span class="title class_">Cloneable</span> &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> MyClass <span class="title function_">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException &#123;</span><br><span class="line">        <span class="keyword">return</span> (MyClass) <span class="built_in">super</span>.clone();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>手动实现浅拷贝：你可以编写自定义代码来创建一个新对象并复制原始对象的字段值。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 手动实现浅拷贝</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> MyClass <span class="title function_">shallowCopy</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">MyClass</span> <span class="variable">copy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">        copy.field1 = <span class="built_in">this</span>.field1;</span><br><span class="line">        copy.field2 = <span class="built_in">this</span>.field2;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">        <span class="keyword">return</span> copy;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h3><p>在 Java 中，深拷贝是一种复制对象，包括对象本身及其所有嵌套对象的所有属性。</p>
+<p>深拷贝的目的是创建一个新的对象，使其在内存中独立于原始对象，而不共享引用对象。</p>
+<p>在 Java 中，实现深拷贝的方法通常包括以下几种：</p>
+<ol>
+<li><p><strong>使用序列化和反序列化</strong>：通过将对象序列化为字节数组，然后反序列化为新对象，可以实现深拷贝。这需要确保所有对象及其嵌套对象都是可序列化的。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.ByteArrayInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ByteArrayOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectOutputStream;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">deepCopy</span><span class="params">(T object)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">ByteArrayOutputStream</span> <span class="variable">bos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ByteArrayOutputStream</span>();</span><br><span class="line">            <span class="type">ObjectOutputStream</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ObjectOutputStream</span>(bos);</span><br><span class="line">            out.writeObject(object);</span><br><span class="line">            out.flush();</span><br><span class="line"></span><br><span class="line">            <span class="type">ByteArrayInputStream</span> <span class="variable">bis</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ByteArrayInputStream</span>(bos.toByteArray());</span><br><span class="line">            <span class="type">ObjectInputStream</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ObjectInputStream</span>(bis);</span><br><span class="line">            <span class="keyword">return</span> (T) in.readObject();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p> 请注意，要使对象可序列化，它必须实现 <code>Serializable</code> 接口。</p>
+</li>
+<li><p><strong>使用第三方库</strong>：Java中有一些第三方库，如 Apache Commons Lang 或 Gson，提供了深拷贝方法。这些库通常提供了更简单的方式来实现深拷贝。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.commons.lang3.SerializationUtils;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">deepCopy</span><span class="params">(T object)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> SerializationUtils.clone(object);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>自定义递归复制</strong>：手动编写递归方法，遍历对象及其嵌套对象的属性，并创建新的对象进行复制。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">MyObject</span> <span class="keyword">implements</span> <span class="title class_">Serializable</span> &#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="type">int</span> value;</span><br><span class="line">        <span class="keyword">private</span> MyObject nestedObject;   <span class="comment">//引用类型对象</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// Constructor, getters, and setters</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> MyObject <span class="title function_">deepCopy</span><span class="params">(MyObject object)</span> &#123;</span><br><span class="line">        <span class="type">MyObject</span> <span class="variable">copy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyObject</span>();</span><br><span class="line">        copy.setValue(object.getValue());</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (object.getNestedObject() != <span class="literal">null</span>) &#123;</span><br><span class="line">            copy.setNestedObject(deepCopy(object.getNestedObject()));</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> copy;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+]]></content>
       <categories>
         <category>Java</category>
       </categories>
