@@ -611,7 +611,7 @@
   </entry>
   <entry>
     <title>Java-常用类（Common Classes）</title>
-    <url>/2023/11/07/Java/Advanced-Application/Java-%E5%B8%B8%E7%94%A8%E7%B1%BB%EF%BC%88Common-Classes%EF%BC%89/</url>
+    <url>/2023/11/07/Java/Advanced-Application/Java-%E5%B8%B8%E7%94%A8%E7%B1%BBCommon-Classes/</url>
     <content><![CDATA[<h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><p>针对八种基本数据类型相应的引用类型</p>
 <p>Boolean、Character</p>
 <p><img  
@@ -857,7 +857,7 @@
   </entry>
   <entry>
     <title>Java-注解（Annotation）</title>
-    <url>/2023/11/07/Java/Advanced-Application/Java-%E6%B3%A8%E8%A7%A3%EF%BC%88Annotation%EF%BC%89/</url>
+    <url>/2023/11/07/Java/Advanced-Application/Java-%E6%B3%A8%E8%A7%A3Annotation/</url>
     <content><![CDATA[<h2 id="Override"><a href="#Override" class="headerlink" title="@Override"></a>@Override</h2><p>**<code>@Override</code>**它用于标记一个方法是要覆盖（重写）父类或接口中的方法。</p>
 <p>该注解只能用于方法</p>
 <p>Code：</p>
