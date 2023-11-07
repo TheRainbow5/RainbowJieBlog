@@ -296,9 +296,9 @@
 </ol>
 <p><strong>常见构造器</strong>：</p>
 <ol>
-<li>**<code>new StringBuffer()</code>**：无参数构造方法，创建一个空的 StringBuffer 对象，初始容量为 16 个字符。</li>
-<li>**<code>new StringBuffer(int capacity)</code>**：带有容量参数的构造方法，创建一个具有指定容量的 StringBuffer 对象。如果预计字符串将比较长，可以指定一个较大的容量以避免频繁的扩容操作。</li>
-<li>**<code>new StringBuffer(String str)</code>**：创建一个包含指定字符串内容的 StringBuffer 对象，初始容量为 **<code>str.length() + 16</code>**。</li>
+<li><code>new StringBuffer()</code>：无参数构造方法，创建一个空的 StringBuffer 对象，初始容量为 16 个字符。</li>
+<li><code>new StringBuffer(int capacity)</code>：带有容量参数的构造方法，创建一个具有指定容量的 StringBuffer 对象。如果预计字符串将比较长，可以指定一个较大的容量以避免频繁的扩容操作。</li>
+<li><code>new StringBuffer(String str)</code>：创建一个包含指定字符串内容的 StringBuffer 对象，初始容量为 <code>str.length() + 16</code>。</li>
 </ol>
 <p><strong>源码分析</strong>：</p>
 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>(<span class="string">&quot;hello&quot;</span>);</span><br></pre></td></tr></table></figure></div>
