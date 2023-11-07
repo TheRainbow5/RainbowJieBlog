@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/09/28/Hexo/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo安装运行</title>
     <url>/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/</url>
     <content><![CDATA[<h2 id="安装-Node-js-和-Git"><a href="#安装-Node-js-和-Git" class="headerlink" title="安装 Node.js 和 Git"></a><strong>安装 Node.js 和 Git</strong></h2><p>确保你的系统上已经安装了 Node.js 和 Git。你可以从它们的官方网站上下载并安装：</p>
@@ -46,6 +22,30 @@
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
 <p>这将在 <strong><code>source/_posts</code></strong> 目录中创建一个新的 Markdown 文件，用于撰写你的新文章。</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/09/28/Hexo/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
       <categories>
         <category>Hexo</category>
@@ -263,6 +263,151 @@
 <li><strong>静态代码块：</strong>也属于静态变量的一部分，程序运行过程中只会被分配一次内存，只执行一次。</li>
 </ol>
 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">staticVariable</span> <span class="operator">=</span> <span class="number">42</span>; <span class="comment">// 静态变量的声明和初始化</span></span><br><span class="line">    </span><br><span class="line">		<span class="comment">//静态代码块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        staticVariable = <span class="number">100</span>;   <span class="comment">// 静态块中的初始化</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-Object-Oriented</title>
+    <url>/2023/11/07/Java/Java-Object-Oriented/</url>
+    <content><![CDATA[<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写是指子类在继承父类的方法后，重新定义该方法以实现子类特定的行为。</p>
+<p>在方法重写中，子类使用与父类相同的方法名、返回类型和参数列表来覆盖（override）父类的方法。</p>
+<p>方法重写是实现<strong>运行时多态性（动态多态性）</strong>的一种方式。</p>
+<p><strong>特点</strong>：</p>
+<ol>
+<li>方法重写要求子类方法与父类方法有相同的方法签名（方法名、返回值类型、参数列表）。</li>
+<li>子类方法的访问修饰符不能比父类方法更严格。例如，如果父类方法是public，子类方法也必须是public，或者允许范围更大。</li>
+<li>子类方法不能使用比父类方法更窄的返回类型。返回类型可以是相同类型或其子类型（协变返回类型）。</li>
+<li>子类方法可以使用**<code>@Override</code>**注解来提醒编译器，表明它是对父类方法的重写，但这不是强制性的。</li>
+</ol>
+<p>如下代码所示：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Some generic sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Woof! Woof!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>在上述示例中，**<code>Dog</code><strong>类重写了</strong><code>Animal</code><strong>类的</strong><code>makeSound()</code>**方法，以实现不同的声音行为。</p>
+<aside>
+💡 **为什么是static修饰的方法，无法重写？**
+
+<ol>
+<li>因为static修饰的方法，属于类变量，不是对象实例，无法被重写。</aside></li>
+</ol>
+<h2 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h2><p>一个类有许多访问修饰符的属性</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">user</span> &#123;</span><br><span class="line">    <span class="comment">//user类的属性</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>在外部创建对象时，需要访问该类的属性则需要创建类对象，这个类对象称为对类的<strong>封装</strong>。</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Data</span>  <span class="comment">//快速实现getter、setter方法</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span>  <span class="comment">//快速实现有参构造器</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span>   <span class="comment">//快速实现无参构造器</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">user</span> &#123;</span><br><span class="line">    <span class="comment">//user类的属性</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>用户在创建user类的对象后，调用<code>**Getter**</code>、**<code>Setter</code>**方法时，不需要关心方法的底层实现原理。</p>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>允许一个类（称为子类或派生类）继承另一个类（称为父类或基类）的属性和方法。</p>
+<p>通过继承，子类可以重用父类的代码，并且还可以在子类中添加自己特定的行为和属性，从而实现代码的复用和扩展。</p>
+<p>要实现继承，需要使用关键字**<code>extends</code>**来指定一个类继承另一个类。语法如下：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ChildClass</span> <span class="keyword">extends</span> <span class="title class_">ParentClass</span> &#123;</span><br><span class="line">    <span class="comment">// 子类特有的属性和方法</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ParentClass</span> &#123;</span><br><span class="line">	....</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>在上述代码中，**<code>ChildClass</code><strong>是子类，</strong><code>ParentClass</code>**是父类。</p>
+<p><strong>特点</strong></p>
+<ol>
+<li><p><strong>子类通过<code>super</code>关键子访问父类非私有成员</strong></p>
+<p> 子类可以访问父类的非私有成员（属性和方法），</p>
+<p> 包括公共（public）、受保护（protected）和默认（默认访问修饰符，没有显式声明访问修饰符）访问级别的成员。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> id=<span class="number">0</span>;  <span class="comment">//子类无法调用</span></span><br><span class="line">    <span class="keyword">public</span> String name=<span class="string">&quot;Parent&quot;</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Some generic animal sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span>&#123;</span><br><span class="line">		String dogName=<span class="built_in">super</span>.name;   <span class="comment">//super调用父类的name属性</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>子类<strong>重写</strong>父类的方法</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> id=<span class="number">0</span>;  <span class="comment">//子类无法调用</span></span><br><span class="line">    <span class="keyword">public</span> String name=<span class="string">&quot;Parent&quot;</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Some generic animal sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span>&#123;</span><br><span class="line">		<span class="comment">//重写父类方法</span></span><br><span class="line">		<span class="meta">@Override</span>  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="built_in">super</span>.makeSound();    <span class="comment">//super调用父类的makeSound()方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><p>多态存在的必要条件</p>
+<ol>
+<li>有<strong>继承</strong>关系</li>
+<li>子类<strong>重写</strong>父类的方法</li>
+<li>父类引用指向子类</li>
+</ol>
+<p>如下代码所示：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span>&#123;</span><br><span class="line">		System.out.printfln(<span class="string">&quot;调用了父类方法&quot;</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span> <span class="keyword">extends</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">	<span class="meta">@Override</span> </span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span>&#123;           <span class="comment">//重写了父类的方法</span></span><br><span class="line">		System.out.printfln(<span class="string">&quot;调用了子类方法&quot;</span>)</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">hello</span><span class="params">()</span>&#123;</span><br><span class="line">			</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Person person=<span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line">person.test();             </span><br><span class="line"></span><br><span class="line">Person person=<span class="keyword">new</span> <span class="title class_">Student</span>();  <span class="comment">//父类引用指向子类，这就是多态</span></span><br><span class="line">person.test();                <span class="comment">//此时调用的是子类的方法 </span></span><br><span class="line"></span><br><span class="line">person.hello();               <span class="comment">//此时就会抛出异常，因为hello()是子类独有的方法，父类无法调用         </span></span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line"><span class="string">&quot;调用了父类方法&quot;</span></span><br><span class="line"><span class="string">&quot;调用了子类方法&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p><strong>特点</strong></p>
+<ol>
+<li><strong>父类只能调用子类中重写的方法，无法调用子类中独有的方法</strong>；</li>
+<li>父类调用方法的过程：先在子类中查找重写的方法，如果该方法没有被重写，则调用父类的方法。</li>
+</ol>
+<h2 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h2><p>抽象类（Abstract Class）是面向对象编程中的一个重要概念，它允许创建具有共享特征和行为的一组类，并为这些类提供一个通用的基类。</p>
+<p>抽象类存在的<strong>目的</strong>主要是作为其他类的<strong>父类</strong>。</p>
+<p>以下是关于抽象类的详细介绍：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">Parent</span>&#123;   <span class="comment">//抽象类</span></span><br><span class="line">    String name=<span class="string">&quot;rainbow&quot;</span>;               <span class="comment">//属性</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;吃东西&quot;</span>);   <span class="comment">//普通方法</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">hello</span><span class="params">()</span>;   <span class="comment">//抽象方法没有方法体</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li>如果一个类中存在被**<code>abstrct</code>**修饰的方法（抽象方法），则该类必须为抽象类；</li>
+<li>抽象方法不能有方法体**<code>&#123;&#125;</code>**；</li>
+<li>抽象类也是一个类，有属性、构造器、方法；</li>
+<li>抽象类中可以没有抽象方法；</li>
+<li><strong>抽象类不能被实例化</strong>：因为抽象类中包含未实现的抽象方法，无法提供完整的对象行为；</li>
+<li><strong>继承</strong>：其他类可以继承抽象类，子类必须实现抽象类中的抽象方法，除非子类也为**<code>abstrct</code>**类；</li>
+<li>抽象方法不能被 $private、final、static$ 关键字修饰；</li>
+<li><strong>模板</strong>：抽象类通常在设计模式中应用较多，抽象类可以用于实现<strong>模板</strong>方法模式，其中抽象类定义了一个算法的骨架，而将某些步骤的具体实现留给子类。</li>
+</ol>
+<h3 id="应用场景-模板模式"><a href="#应用场景-模板模式" class="headerlink" title="应用场景-模板模式"></a><strong>应用场景-模板模式</strong></h3><p><strong>场景引入</strong>：</p>
+<ol>
+<li>现在有多个类，每个类完成的功能不同；</li>
+<li>要求能过得到各自的完成时间；</li>
+<li>请编写实现</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">A</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">job</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">long</span> <span class="variable">startTime</span> <span class="operator">=</span> System.currentTimeMillis();   <span class="comment">//开始时间</span></span><br><span class="line"></span><br><span class="line">				<span class="comment">//A类的主要任务</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt;= <span class="number">800000</span>; i++) &#123;</span><br><span class="line">            num += i;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="type">long</span> <span class="variable">endTime</span> <span class="operator">=</span> System.currentTimeMillis();   <span class="comment">//结束时间</span></span><br><span class="line">        System.out.println(<span class="string">&quot;A执行了&quot;</span> + (endTime - startTime) + <span class="string">&quot;秒&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">job</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">long</span> <span class="variable">startTime</span> <span class="operator">=</span> System.currentTimeMillis();   <span class="comment">//开始时间</span></span><br><span class="line">	</span><br><span class="line">				<span class="comment">//B类的主要任务</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">600000</span>; i++) &#123; </span><br><span class="line">            num =num * i;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="type">long</span> <span class="variable">endTime</span> <span class="operator">=</span> System.currentTimeMillis();   <span class="comment">//结束时间</span></span><br><span class="line">        System.out.println(<span class="string">&quot;B执行了&quot;</span> + (endTime - startTime) + <span class="string">&quot;秒&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>上述代码存在的问题：</p>
+<ol>
+<li><strong>代码冗余</strong>：A和B类中计算时间的代码重复，如果有n个类，那么大大增加了不必要的代码量；</li>
+</ol>
+<p>为了解决这个问题，我们可以使用抽象类定义一个计算任务执行时间的模板，避免代码的冗余</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TemplateMode</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">A</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">A</span>();</span><br><span class="line">        a.calculateTime();   <span class="comment">//直接调用父类的方法</span></span><br><span class="line"></span><br><span class="line">        <span class="type">B</span> <span class="variable">b</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">B</span>();</span><br><span class="line">        b.calculateTime();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//定义抽象类</span></span><br><span class="line"><span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">calculateTimeTemplate</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">job</span><span class="params">()</span>;    <span class="comment">//定义抽象方法</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">calculateTime</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">long</span> <span class="variable">startTime</span> <span class="operator">=</span> System.currentTimeMillis();   <span class="comment">//开始时间</span></span><br><span class="line">        </span><br><span class="line">				job();      <span class="comment">//各个类执行的任务</span></span><br><span class="line">	</span><br><span class="line">        <span class="type">long</span> <span class="variable">endTime</span> <span class="operator">=</span> System.currentTimeMillis();   <span class="comment">//结束时间</span></span><br><span class="line">        System.out.println(<span class="string">&quot;任务执行了&quot;</span> + (endTime - startTime) + <span class="string">&quot;秒&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//各个类专注与执行自己的任务</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">A</span> <span class="keyword">extends</span> <span class="title class_">calculateTimeTemplate</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">job</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt;= <span class="number">800000</span>; i++) &#123;</span><br><span class="line">            num += i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">B</span> <span class="keyword">extends</span> <span class="title class_">calculateTimeTemplate</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">job</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">600000</span>; i++) &#123;</span><br><span class="line">            num += i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li><strong><code>calculateTimeTemplate</code></strong> 抽象类定义了一个抽象方法 **<code>job()</code>**，这个方法是模板方法模式中的抽象部分，要求具体子类实现。</li>
+<li><strong><code>calculateTimeTemplate</code></strong> 抽象类中的 <strong><code>calculateTime()</code></strong> 方法是一个模板方法，它包含了任务执行的计时逻辑。它记录了任务执行的时间。</li>
+<li><strong><code>A</code></strong> 类和 <strong><code>B</code></strong> 类都<strong>继承</strong>自 <strong><code>calculateTimeTemplate</code></strong> 抽象类，并实现了 <strong><code>job()</code></strong> 方法，两个类都专注于执行自己的任务。</li>
+</ol>
+<h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><p>在面向对象编程中，接口（Interface）是一种抽象的类别，它定义了一组方法的声明，但没有提供这些方法的具体实现。</p>
+<p>接口用于描述类应该具备的行为，以及这些行为的方法签名，但不包含方法体。下面是有关接口的主要概念和特点：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">demo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//2、接口无法实例化，而是通过多态调用方法</span></span><br><span class="line">        <span class="type">USB</span> <span class="variable">usb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Phone</span>();</span><br><span class="line">        usb.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//接口</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">USB</span> &#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">10</span>;   <span class="comment">//默认是public static final修饰</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//定义抽象方法，可以省略public abstract</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">start</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Phone</span> <span class="keyword">implements</span> <span class="title class_">USB</span> &#123;</span><br><span class="line">    <span class="comment">//1、子类必须实现接口的抽象方法</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">start</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;手机开始工作。&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li><strong>方法申明</strong>：每个方法都是 $public$ 修饰的抽象方法，可以省略<code>public abstract</code>关键字。</li>
+<li><strong>属性</strong>：接口可以定义属性，<code>int num = 10</code>，默认是$public\ static\ final$修饰；</li>
+<li><strong>实现</strong>：子类必须实现接口中的所有抽象方法；</li>
+<li><strong>多态</strong>：允许通过接口类型的引用调用子类重写的方法；</li>
+<li><strong>多实现</strong>：允许子类同时实现多个接口；</li>
+<li><strong>无法被实例化</strong>。</li>
+</ol>
+<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p><strong>场景引入</strong>：</p>
+<ol>
+<li><p>现在客户端有时需要连接不同的数据库，但是每个数据库的驱动链接方式都不同，如下图所示：</p>
+<p> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/09d38e73-33f4-430e-bc75-d131f7274d22/Untitled.png"
+                      alt="Untitled"
+                ></p>
+</li>
+<li><p>用户如果需要连接不同的数据库就要创建不同的对象，不方便后期代码的维护。</p>
+</li>
+</ol>
+<p><strong>解决方法：</strong></p>
+<ol>
+<li>此时就可以使用一个接口，统一管理数据库的连接。</li>
+<li>用户只需要传入数据库对象，接口可以自动判断需要连接哪个数据库，如下图所示</li>
+</ol>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/19a6459a-d386-498f-8f5d-8dd1662ed69a/Untitled.png"
+                      alt="Untitled"
+                ></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">demo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">DBconnect</span> <span class="variable">dBconnect</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Mysql</span>();   <span class="comment">//向上转型</span></span><br><span class="line">        dBconnect.connectDB();</span><br><span class="line"></span><br><span class="line">        <span class="type">DBconnect</span> <span class="variable">dBconnect1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MongoDB</span>();  </span><br><span class="line">        dBconnect1.connectDB();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//创建连接数据库接口</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">DBconnect</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">connectDB</span><span class="params">()</span>;   <span class="comment">//定义链接数据库的抽象方法</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Mysql</span> <span class="keyword">implements</span> <span class="title class_">DBconnect</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">connectDB</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;连接MySQL&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MongoDB</span> <span class="keyword">implements</span> <span class="title class_">DBconnect</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">connectDB</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;连接MongoDB&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">输出:</span><br><span class="line">连接MySQL</span><br><span class="line">连接MongoDB</span><br></pre></td></tr></table></figure></div>]]></content>
       <categories>
         <category>Java</category>
       </categories>
