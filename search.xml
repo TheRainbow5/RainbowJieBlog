@@ -3,49 +3,25 @@
   <entry>
     <title>Hexo安装运行</title>
     <url>/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/</url>
-    <content><![CDATA[<h1 id="安装-Node-js-和-Git"><a href="#安装-Node-js-和-Git" class="headerlink" title="安装 Node.js 和 Git"></a><strong>安装 Node.js 和 Git</strong></h1><p>确保你的系统上已经安装了 Node.js 和 Git。你可以从它们的官方网站上下载并安装：</p>
+    <content><![CDATA[<h2 id="安装-Node-js-和-Git"><a href="#安装-Node-js-和-Git" class="headerlink" title="安装 Node.js 和 Git"></a><strong>安装 Node.js 和 Git</strong></h2><p>确保你的系统上已经安装了 Node.js 和 Git。你可以从它们的官方网站上下载并安装：</p>
 <ol>
 <li><a class="link"   href="https://nodejs.org/" >Node.js 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li><a class="link"   href="https://git-scm.com/" >Git 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ol>
-<h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a><strong>安装 Hexo</strong></h1><p>安装完成 Node.js 和 Git 后，在命令行中使用 npm（Node.js 的包管理器）安装 Hexo。打开命令行工具（Terminal 或 Command Prompt）并运行以下命令：</p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a><strong>安装 Hexo</strong></h2><p>安装完成 Node.js 和 Git 后，在命令行中使用 npm（Node.js 的包管理器）安装 Hexo。打开命令行工具（Terminal 或 Command Prompt）并运行以下命令：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
 
-<h1 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a><strong>创建博客</strong></h1><p>选择一个合适的目录位置，在命令行中执行以下命令来创建一个新的 Hexo 博客：</p>
+<h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a><strong>创建博客</strong></h2><p>选择一个合适的目录位置，在命令行中执行以下命令来创建一个新的 Hexo 博客：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init myblog</span><br><span class="line"><span class="built_in">cd</span> myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
 
-<h1 id="运行博客"><a href="#运行博客" class="headerlink" title="运行博客"></a><strong>运行博客</strong></h1><p>在博客目录下执行以下命令启动本地服务器：</p>
+<h2 id="运行博客"><a href="#运行博客" class="headerlink" title="运行博客"></a><strong>运行博客</strong></h2><p>在博客目录下执行以下命令启动本地服务器：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
 
 <p>这将启动一个本地服务器，显示博客的预览。访问 <a class="link"   href="http://localhost:4000/" >http://localhost:4000/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 可以查看你的博客。</p>
-<h1 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a><strong>创建新文章</strong></h1><p>使用以下命令创建一篇新文章：</p>
+<h2 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a><strong>创建新文章</strong></h2><p>使用以下命令创建一篇新文章：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
 <p>这将在 <strong><code>source/_posts</code></strong> 目录中创建一个新的 Markdown 文件，用于撰写你的新文章。</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/09/28/Hexo/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
       <categories>
         <category>Hexo</category>
@@ -155,51 +131,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-Variable</title>
-    <url>/2023/11/07/Java/Java-Variable/</url>
-    <content><![CDATA[<h1 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h1><p>成员变量（Instance Variables）和局部变量（Local Variables）是在编程中两种不同的变量类型，它们在作用域、生命周期和用途上有很大的区别。</p>
-<ol>
-<li><strong>访问修饰符</strong><ol>
-<li>成员变量：可以被（public、private、protected、default）修饰</li>
-<li>局部变量：只能在定义的范围内访问，没有访问修饰符</li>
-</ol>
-</li>
-<li><strong>存储方式</strong><ol>
-<li>成员变量：如果是static修饰属于类信息，则存储在方法区，反之，是属于实例，存储在堆中。</li>
-<li>局部变量：存储在虚拟栈。</li>
-</ol>
-</li>
-<li><strong>生命周期</strong><ol>
-<li>成员变量：是对象的一部分，随着对象的创建而存在。</li>
-<li>局部变量：随着方法的调用而存在，随着方法的调用结束而消亡。</li>
-</ol>
-</li>
-<li><strong>初始化</strong><ol>
-<li>成员变量：成员变量可以有默认初始值，如果没有显式初始化，它们将具有默认值（如0、false或null，具体取决于数据类型）。</li>
-<li>局部变量：局部变量必须显式初始化，否则编译器将报错。它们不具有默认初始值。</li>
-</ol>
-</li>
-</ol>
-<p><strong>成员变量与局部变量代码示例：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">VariableExample</span> &#123;</span><br><span class="line">    <span class="comment">// 成员变量</span></span><br><span class="line">    <span class="keyword">private</span> String name;     <span class="comment">//存储在堆</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> id;       <span class="comment">//存储在方法区</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 方法中的局部变量</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">method</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">10</span>;                <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot;Hello, world!&quot;</span>; <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        System.out.println(num1);</span><br><span class="line">        System.out.println(str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h1 id="静态变量"><a href="#静态变量" class="headerlink" title="静态变量"></a>静态变量</h1><p>静态变量也就是被<code>static</code>关键字修饰的变量。它可以被类的所有实例共享，无论一个类创建了多少个对象，它们都共享同一份静态变量。</p>
-<p>也就是说，静态变量只会被分配一次内存，即使创建多个对象，这样可以节省内存。</p>
-<p>以下是关于静态变量的一些重要特点：</p>
-<ol>
-<li><strong>访问方式</strong>：静态变量可以通过类名来访问，而不需要创建类的实例。例如，<code>ClassName.staticVariable</code>。</li>
-<li>静态变量会被 <code>final</code> 关键字修饰成为常量。</li>
-<li><strong>静态代码块：</strong>也属于静态变量的一部分，程序运行过程中只会被分配一次内存，只执行一次。</li>
-</ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">staticVariable</span> <span class="operator">=</span> <span class="number">42</span>; <span class="comment">// 静态变量的声明和初始化</span></span><br><span class="line">    </span><br><span class="line">		<span class="comment">//静态代码块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        staticVariable = <span class="number">100</span>;   <span class="comment">// 静态块中的初始化</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java-Methods</title>
     <url>/2023/11/07/Java/Java-Methods/</url>
     <content><![CDATA[<h1 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h1><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
@@ -268,6 +199,75 @@
       </categories>
       <tags>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-Variable</title>
+    <url>/2023/11/07/Java/Java-Variable/</url>
+    <content><![CDATA[<h1 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h1><p>成员变量（Instance Variables）和局部变量（Local Variables）是在编程中两种不同的变量类型，它们在作用域、生命周期和用途上有很大的区别。</p>
+<ol>
+<li><strong>访问修饰符</strong><ol>
+<li>成员变量：可以被（public、private、protected、default）修饰</li>
+<li>局部变量：只能在定义的范围内访问，没有访问修饰符</li>
+</ol>
+</li>
+<li><strong>存储方式</strong><ol>
+<li>成员变量：如果是static修饰属于类信息，则存储在方法区，反之，是属于实例，存储在堆中。</li>
+<li>局部变量：存储在虚拟栈。</li>
+</ol>
+</li>
+<li><strong>生命周期</strong><ol>
+<li>成员变量：是对象的一部分，随着对象的创建而存在。</li>
+<li>局部变量：随着方法的调用而存在，随着方法的调用结束而消亡。</li>
+</ol>
+</li>
+<li><strong>初始化</strong><ol>
+<li>成员变量：成员变量可以有默认初始值，如果没有显式初始化，它们将具有默认值（如0、false或null，具体取决于数据类型）。</li>
+<li>局部变量：局部变量必须显式初始化，否则编译器将报错。它们不具有默认初始值。</li>
+</ol>
+</li>
+</ol>
+<p><strong>成员变量与局部变量代码示例：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">VariableExample</span> &#123;</span><br><span class="line">    <span class="comment">// 成员变量</span></span><br><span class="line">    <span class="keyword">private</span> String name;     <span class="comment">//存储在堆</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> id;       <span class="comment">//存储在方法区</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 方法中的局部变量</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">method</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">10</span>;                <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot;Hello, world!&quot;</span>; <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        System.out.println(num1);</span><br><span class="line">        System.out.println(str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="静态变量"><a href="#静态变量" class="headerlink" title="静态变量"></a>静态变量</h1><p>静态变量也就是被<code>static</code>关键字修饰的变量。它可以被类的所有实例共享，无论一个类创建了多少个对象，它们都共享同一份静态变量。</p>
+<p>也就是说，静态变量只会被分配一次内存，即使创建多个对象，这样可以节省内存。</p>
+<p>以下是关于静态变量的一些重要特点：</p>
+<ol>
+<li><strong>访问方式</strong>：静态变量可以通过类名来访问，而不需要创建类的实例。例如，<code>ClassName.staticVariable</code>。</li>
+<li>静态变量会被 <code>final</code> 关键字修饰成为常量。</li>
+<li><strong>静态代码块：</strong>也属于静态变量的一部分，程序运行过程中只会被分配一次内存，只执行一次。</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">staticVariable</span> <span class="operator">=</span> <span class="number">42</span>; <span class="comment">// 静态变量的声明和初始化</span></span><br><span class="line">    </span><br><span class="line">		<span class="comment">//静态代码块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        staticVariable = <span class="number">100</span>;   <span class="comment">// 静态块中的初始化</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/09/28/Hexo/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
