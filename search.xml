@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo安装运行</title>
-    <url>/rainbow-jie-blog/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/</url>
+    <url>/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/</url>
     <content><![CDATA[<h2 id="安装-Node-js-和-Git"><a href="#安装-Node-js-和-Git" class="headerlink" title="安装 Node.js 和 Git"></a><strong>安装 Node.js 和 Git</strong></h2><p>确保你的系统上已经安装了 Node.js 和 Git。你可以从它们的官方网站上下载并安装：</p>
 <ol>
 <li><a class="link"   href="https://nodejs.org/" >Node.js 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
@@ -32,7 +32,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/rainbow-jie-blog/2022/09/28/Hexo/hello-world/</url>
+    <url>/2022/09/28/Hexo/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
@@ -56,7 +56,7 @@
   </entry>
   <entry>
     <title>Java-注解（Annotation）</title>
-    <url>/rainbow-jie-blog/2023/11/07/Java/Advanced-Application/Java-%E6%B3%A8%E8%A7%A3Annotation/</url>
+    <url>/2023/11/07/Java/Advanced-Application/Java-%E6%B3%A8%E8%A7%A3Annotation/</url>
     <content><![CDATA[<h2 id="Override"><a href="#Override" class="headerlink" title="@Override"></a>@Override</h2><p>**<code>@Override</code>**它用于标记一个方法是要覆盖（重写）父类或接口中的方法。</p>
 <p>该注解只能用于方法</p>
 <p>Code：</p>
@@ -182,7 +182,7 @@
   </entry>
   <entry>
     <title>Java-什么是方法（Methods）？</title>
-    <url>/rainbow-jie-blog/2023/11/07/Java/Basic/Java-Methods/</url>
+    <url>/2023/11/07/Java/Basic/Java-Methods/</url>
     <content><![CDATA[<h2 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h2><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
 <ol>
 <li><p><strong>无参数无返回值方法</strong></p>
@@ -253,7 +253,7 @@
   </entry>
   <entry>
     <title>Java-什么是类（Class）？</title>
-    <url>/rainbow-jie-blog/2023/11/07/Java/Object-Oriented/Java-Class/</url>
+    <url>/2023/11/07/Java/Object-Oriented/Java-Class/</url>
     <content><![CDATA[<h2 id="快速理解"><a href="#快速理解" class="headerlink" title="快速理解"></a>快速理解</h2><p>对象表示具有<strong>状态</strong>和<strong>行为</strong>的实体，例如：一辆汽车是一个对象，汽车的颜色、价格。。</p>
 <p>更具体的就是</p>
 <ol>
@@ -307,7 +307,7 @@
   </entry>
   <entry>
     <title>Java-变量（Variable）</title>
-    <url>/rainbow-jie-blog/2023/11/07/Java/Basic/Java-Variable/</url>
+    <url>/2023/11/07/Java/Basic/Java-Variable/</url>
     <content><![CDATA[<h2 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h2><p>成员变量（Instance Variables）和局部变量（Local Variables）是在编程中两种不同的变量类型，它们在作用域、生命周期和用途上有很大的区别。</p>
 <ol>
 <li><strong>访问修饰符</strong><ol>
@@ -352,7 +352,7 @@
   </entry>
   <entry>
     <title>Java-常用类（Common Classes）</title>
-    <url>/rainbow-jie-blog/2023/11/07/Java/Advanced-Application/Java-%E5%B8%B8%E7%94%A8%E7%B1%BBCommon-Classes/</url>
+    <url>/2023/11/07/Java/Advanced-Application/Java-%E5%B8%B8%E7%94%A8%E7%B1%BBCommon-Classes/</url>
     <content><![CDATA[<h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><p>针对八种基本数据类型相应的引用类型</p>
 <p>Boolean、Character</p>
 <p><img  
@@ -598,7 +598,7 @@
   </entry>
   <entry>
     <title>Java-Object类</title>
-    <url>/rainbow-jie-blog/2023/11/07/Java/Object-Oriented/Java-Object/</url>
+    <url>/2023/11/07/Java/Object-Oriented/Java-Object/</url>
     <content><![CDATA[<h2 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h2><p>Object类是一个特殊的类，是所有类的父类。主要提供了一下几个方法</p>
 <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于返回当前运行时对象的 Class 对象，使用了 final 关键字修饰，故不允许子类重写。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> Class&lt;?&gt; getClass()</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于返回对象的哈希码，主要使用在哈希表中，比如 JDK 中的HashMap。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 用于比较 2 个对象的内存地址是否相等，String 类对该方法进行了重写以用于比较字符串的值是否相等。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">equals</span><span class="params">(Object obj)</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于创建并返回当前对象的一份拷贝。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">native</span> Object <span class="title function_">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 返回类的名字实例的哈希码的 16 进制的字符串。建议 Object 所有的子类都重写这个方法。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，并且不能重写。唤醒一个在此对象监视器上等待的线程(监视器相当于就是锁的概念)。如果有多个线程在等待只会任意唤醒一个。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notify</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，并且不能重写。跟 notify 一样，唯一的区别就是会唤醒在此对象监视器上等待的所有线程，而不是一个线程。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notifyAll</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native方法，并且不能重写。暂停线程的执行。注意：sleep 方法没有释放锁，而 wait 方法释放了锁 ，timeout 是等待时间。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout)</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 多了 nanos 参数，这个参数表示额外时间（以纳秒为单位，范围是 0-999999）。 所以超时的时间还需要加上 nanos 纳秒。。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout, <span class="type">int</span> nanos)</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 跟之前的2个wait方法一样，只不过该方法一直等待，没有超时时间这个概念</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 实例被垃圾回收器回收的时候触发的操作</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">finalize</span><span class="params">()</span> <span class="keyword">throws</span> Throwable &#123; &#125;</span><br></pre></td></tr></table></figure></div>
 
@@ -693,7 +693,7 @@
   </entry>
   <entry>
     <title>Java-面向对象核心思想（Object-Oriented）</title>
-    <url>/rainbow-jie-blog/2023/11/07/Java/Object-Oriented/Java-Object-Oriented/</url>
+    <url>/2023/11/07/Java/Object-Oriented/Java-Object-Oriented/</url>
     <content><![CDATA[<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写是指子类在继承父类的方法后，重新定义该方法以实现子类特定的行为。</p>
 <p>在方法重写中，子类使用与父类相同的方法名、返回类型和参数列表来覆盖（override）父类的方法。</p>
 <p>方法重写是实现<strong>运行时多态性（动态多态性）</strong>的一种方式。</p>
@@ -838,7 +838,7 @@
   </entry>
   <entry>
     <title>Java-Basical-knowledge</title>
-    <url>/rainbow-jie-blog/2023/11/07/Java/Basic/Java-Basical-knowledge/</url>
+    <url>/2023/11/07/Java/Basic/Java-Basical-knowledge/</url>
     <content><![CDATA[<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><table>
 <thead>
 <tr>
