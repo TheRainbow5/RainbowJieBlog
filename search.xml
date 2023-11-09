@@ -31,6 +31,529 @@
       </tags>
   </entry>
   <entry>
+    <title>Mysql-基础知识</title>
+    <url>/2023/11/09/Mysql/Mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>整数类型</td>
+<td></td>
+</tr>
+<tr>
+<td>TINYINT</td>
+<td>很小的整数值。有符号范围是 -128 到 127，无符号范围是 0 到 255。</td>
+</tr>
+<tr>
+<td>SMALLINT</td>
+<td>小整数值。有符号范围是 -32,768 到 32,767，无符号范围是 0 到 65,535。</td>
+</tr>
+<tr>
+<td>MEDIUMINT</td>
+<td>中等大小整数值。有符号范围是 -8,388,608 到 8,388,607，无符号范围是 0 到 16,777,215。</td>
+</tr>
+<tr>
+<td>INT&#x2F;INTEGER</td>
+<td>普通大小整数值。有符号范围是 -2,147,483,648 到 2,147,483,647，无符号范围是 0 到 4,294,967,295。</td>
+</tr>
+<tr>
+<td>BIGINT</td>
+<td>大整数值。有符号范围是 -9,223,372,036,854,775,808 到 9,223,372,036,854,775,807，无符号范围是 0 到 18,446,744,073,709,551,615。</td>
+</tr>
+<tr>
+<td>浮点类型</td>
+<td></td>
+</tr>
+<tr>
+<td>FLOAT</td>
+<td>单精度浮点数。范围约为 -3.4E+38 到 3.4E+38。</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>双精度浮点数。范围约为 -1.7E+308 到 1.7E+308。</td>
+</tr>
+<tr>
+<td>DECIMAL</td>
+<td>固定小数点数。允许小数点数值的存储。</td>
+</tr>
+<tr>
+<td>日期&#x2F;时间类型</td>
+<td></td>
+</tr>
+<tr>
+<td>DATE</td>
+<td>日期值。格式为 ‘YYYY-MM-DD’。</td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>时间值。格式为 ‘HH:MM:SS’。</td>
+</tr>
+<tr>
+<td>DATETIME</td>
+<td>混合日期和时间值。格式为 ‘YYYY-MM-DD HH:MM:SS’。</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>时间戳。使用 YYYYMMDDHHMMSS 格式（如 ‘20231106123000’）存储日期和时间。</td>
+</tr>
+<tr>
+<td>YEAR</td>
+<td>年份值。格式为 ‘YYYY’。</td>
+</tr>
+<tr>
+<td>字符串类型</td>
+<td></td>
+</tr>
+<tr>
+<td>CHAR</td>
+<td>固定长度字符串，最多 255 个字符。</td>
+</tr>
+<tr>
+<td>VARCHAR</td>
+<td>可变长度字符串，最多 65,535 字符。</td>
+</tr>
+<tr>
+<td>TINYTEXT</td>
+<td>极小文本字段，最多 255 字符。</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td>小型文本字段，最多 65,535 字符。</td>
+</tr>
+<tr>
+<td>MEDIUMTEXT</td>
+<td>中等大小文本字段，最多 16,777,215 字符。</td>
+</tr>
+<tr>
+<td>LONGTEXT</td>
+<td>长文本字段，最多 4,294,967,295 字符。</td>
+</tr>
+<tr>
+<td>二进制类型</td>
+<td></td>
+</tr>
+<tr>
+<td>BINARY</td>
+<td>固定长度二进制字符串。</td>
+</tr>
+<tr>
+<td>VARBINARY</td>
+<td>可变长度二进制字符串。</td>
+</tr>
+<tr>
+<td>TINYBLOB</td>
+<td>极小二进制对象，最多 255 字节。</td>
+</tr>
+<tr>
+<td>BLOB</td>
+<td>小型二进制对象，最多 65,535 字节。</td>
+</tr>
+<tr>
+<td>MEDIUMBLOB</td>
+<td>中等大小二进制对象，最多 16,777,215 字节。</td>
+</tr>
+<tr>
+<td>LONGBLOB</td>
+<td>长二进制对象，最多 4,294,967,295 字节。</td>
+</tr>
+</tbody></table>
+<h2 id="SQL语言的规则与规范"><a href="#SQL语言的规则与规范" class="headerlink" title="SQL语言的规则与规范"></a>SQL语言的规则与规范</h2><h3 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h3><ol>
+<li>SQL 可以写在一行或者多行。为了提高可读性，各子句分行写，必要时使用缩进</li>
+<li>关键字不能被缩写也不能分行</li>
+<li>关于标点符号<ol>
+<li>必须保证所有的()、单引号、双引号是成对结束的</li>
+<li>必须使用英文状态下的半角输入方式</li>
+<li>字符串型和日期时间类型的数据可以使用<strong>单引号</strong>表示</li>
+<li>列的别名，尽量使用<strong>双引号</strong>，而且不建议省略as</li>
+</ol>
+</li>
+</ol>
+<h3 id="SQL大小写规范-（建议遵守）"><a href="#SQL大小写规范-（建议遵守）" class="headerlink" title="SQL大小写规范 （建议遵守）"></a>SQL大小写规范 （建议遵守）</h3><ul>
+<li><strong>MySQL 在 Windows 环境下是大小写不敏感的</strong></li>
+<li><strong>MySQL 在 Linux 环境下是大小写敏感的</strong><ul>
+<li>数据库名、表名、表的别名、变量名是严格区分大小写的</li>
+<li>关键字、函数名、列名(或字段名)、列的别名(字段的别名) 是忽略大小写的。</li>
+</ul>
+</li>
+<li><strong>推荐采用统一的书写规范：</strong><ul>
+<li>数据库名、表名、表别名、字段名、字段别名等都小写</li>
+<li>SQL 关键字、函数名、绑定变量等都大写</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>MYSQL</category>
+      </categories>
+      <tags>
+        <tag>MYSQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/09/28/Hexo/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-注解（Annotation）</title>
+    <url>/2023/11/07/Java/Advanced-Application/Java-%E6%B3%A8%E8%A7%A3Annotation/</url>
+    <content><![CDATA[<h2 id="Override"><a href="#Override" class="headerlink" title="@Override"></a>@Override</h2><p>**<code>@Override</code>**它用于标记一个方法是要覆盖（重写）父类或接口中的方法。</p>
+<p>该注解只能用于方法</p>
+<p>Code：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Parent</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">printMessage</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello from Parent&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Child</span> <span class="keyword">extends</span> <span class="title class_">Parent</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">printMessage</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello from Child&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li>如果子类没有添加@Override注解，还是会重写父类的方法</li>
+<li>写了@Override注解，编译器会检查该防范是否真的重写了父类的方法，是则编译成功，反之报错。</li>
+</ol>
+<p>Source Code：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(ElementType.METHOD)</span>         </span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.SOURCE)</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Override &#123;  </span><br><span class="line">		</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li><p>**<code>@Target(ElementType.METHOD)</code>**：</p>
+<ol>
+<li>@Target 注解用于指定自定义注解可以应用的目标元素类型；修饰注解的注解（元注解）</li>
+<li>@Target(ElementType.METHOD) 表示这个自定义注解只能应用到方法（Method）上。</li>
+</ol>
+</li>
+<li><p>**<code>@Retention(RetentionPolicy.SOURCE)</code>**：</p>
+<ol>
+<li>@Retention 注解用于指定自定义注解的保留策略，即注解在何时可见。</li>
+<li>@Retention(RetentionPolicy.SOURCE) 表示这个注解只在源代码级别可见，编译后不会包含在编译后的 .class 文件中。</li>
+</ol>
+</li>
+<li><p>**<code>public @interface Override</code>**：</p>
+<ol>
+<li>public 表示这个自定义注解是公共的，可以在其他包中使用。</li>
+<li>@interface 关键字用于定义一个自定义注解。</li>
+<li>这个注解的名字是 Override，与Java语言中的 @Override 注解同名，但它们不同。</li>
+</ol>
+</li>
+</ol>
+<h2 id="Deprecated"><a href="#Deprecated" class="headerlink" title="@Deprecated"></a>@Deprecated</h2><p><strong><code>@Deprecated</code></strong> 注解是Java语言中的一个预定义注解（annotation），它用于标记一个类、方法、字段或其他元素已被废弃，不推荐继续使用。</p>
+<p><strong>Code</strong>：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeprecatedExample</span> &#123;</span><br><span class="line">    <span class="meta">@Deprecated</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">deprecatedMethod</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 一些过时的操作</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">newMethod</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 新的操作</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">DeprecatedExample</span> <span class="variable">example</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">DeprecatedExample</span>();</span><br><span class="line">        <span class="comment">// 调用过时的方法，会产生编译警告</span></span><br><span class="line">        example.deprecatedMethod();</span><br><span class="line">        <span class="comment">// 调用新的方法，没有问题</span></span><br><span class="line">        example.newMethod();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>Source Code</strong>：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> java.lang.annotation;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(value=&#123;CONSTRUCTOR, FIELD, LOCAL_VARIABLE, METHOD, PACKAGE, PARAMETER, TYPE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Deprecated &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li><strong><code>@Documented</code></strong> 注解表示该注解应该被包含在Java文档中。</li>
+<li><strong><code>@Retention(RetentionPolicy.RUNTIME)</code></strong> 注解表示这个注解在运行时可用。</li>
+<li><strong><code>@Target(value=&#123;CONSTRUCTOR, FIELD, LOCAL_VARIABLE, METHOD, PACKAGE, PARAMETER, TYPE&#125;)</code></strong> 注解：<ol>
+<li>这里指定了多种目标元素类型，包括构造方法（CONSTRUCTOR）、字段（FIELD）、局部变量（LOCAL_VARIABLE）、方法（METHOD）、包（PACKAGE）、参数（PARAMETER）和类型（TYPE）。</li>
+</ol>
+</li>
+</ol>
+<h2 id="SuppressWarning"><a href="#SuppressWarning" class="headerlink" title="@SuppressWarning"></a>@SuppressWarning</h2><p>当我们不希望看到相关警告，可以使用**<code>@SuppressWarning</code>**注解来一直警告信息</p>
+<p><strong>Code</strong>：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SuppressWarnings(&quot;unchecked&quot;)</span></span><br><span class="line"><span class="keyword">public</span> List&lt;String&gt; <span class="title function_">getList</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">List</span> <span class="variable">myList</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>(); <span class="comment">// 未经检查的转换警告</span></span><br><span class="line">    myList.add(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">    myList.add(<span class="string">&quot;World&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> myList;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SuppressWarnings(&quot;deprecation&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">useDeprecatedMethod</span><span class="params">()</span> &#123;</span><br><span class="line">    SomeDeprecatedClass.deprecatedMethod(); <span class="comment">// 废弃 API 使用警告</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">useRawType</span><span class="params">()</span> &#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;rawtypes&quot;)</span></span><br><span class="line">    <span class="type">List</span> <span class="variable">myList</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>(); <span class="comment">// 直接作用在变量上，原始类型警告</span></span><br><span class="line">    myList.add(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">    myList.add(<span class="string">&quot;World&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>常见的参数</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>all</td>
+<td>用于抑制所有类型的警告。这个参数应该慎用，因为它会抑制所有警告，包括潜在的问题。</td>
+</tr>
+<tr>
+<td>rawtypes</td>
+<td>用于抑制原始类型警告。原始类型警告通常在使用泛型时没有指定类型参数时出现。</td>
+</tr>
+<tr>
+<td>deprecation</td>
+<td>用于抑制废弃 API 使用警告。这种警告会在使用已被标记为废弃的方法或类时出现。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>Source Code</strong>：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE, ElementType.FIELD, ElementType.METHOD,</span></span><br><span class="line"><span class="meta">				 ElementType.PARAMETER, ElementType.CONSTRUCTOR, ElementType.LOCAL_VARIABLE&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.SOURCE)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> SuppressWarnings &#123;</span><br><span class="line">    String[] value();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>需要注意的是，使用 <strong><code>@SuppressWarnings</code></strong> 注解应该谨慎，并且应该仅在确定警告是安全的、没有更好的解决方案时使用。</p>
+<p>滥用这个注解可能会掩盖潜在的问题。</p>
+<h2 id="Annotation（元注解）"><a href="#Annotation（元注解）" class="headerlink" title="Annotation（元注解）"></a>Annotation（元注解）</h2><p>常见注解种类：</p>
+<ol>
+<li>@Retention：指定注解的作用范围（SOURCE、CLASS、RUNTIME）</li>
+<li>@Target：指定注解可以在哪些代码元素（方法、属性等）使用</li>
+<li>@Documented：指定该注解是否会在javadoc体现</li>
+<li>@Inherited：子类会继承父类注解</li>
+</ol>
+<h3 id="Retention"><a href="#Retention" class="headerlink" title="@Retention"></a>@Retention</h3><p>它用来指定注解的保留策略。在 Java 中，注解可以有三种保留策略，分别是：</p>
+<ol>
+<li>**<code>RetentionPolicy.SOURCE</code>**：这种保留策略表示注解仅在源代码级别存在，编译成字节码文件后就被丢弃，不会包含在编译后的类文件和运行时环境中。</li>
+<li>**<code>RetentionPolicy.CLASS</code>**：这种保留策略表示注解会被保留到编译后的类文件中，但在运行时不可访问。这是默认的保留策略。</li>
+<li><strong><code>RetentionPolicy.RUNTIME</code><strong>：这种保留策略表示注解会被保留到编译后的类文件中，并且可以在运行时通过</strong>反射机制</strong>访问。这允许在运行时动态处理注解信息。</li>
+</ol>
+<p><strong>Code</strong>：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    <span class="comment">// 注解的定义内容</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>上述代码采用了运行时保留策略，可以在运行时通过反射访问该注解的内容。</p>
+<h3 id="Target"><a href="#Target" class="headerlink" title="@Target"></a>@Target</h3><p>它用来指定自定义注解可以应用的目标元素，即注解可以放在哪些程序元素上</p>
+<ol>
+<li>**<code>ElementType.TYPE</code>**：可以用在类、接口、枚举类型上。</li>
+<li>**<code>ElementType.FIELD</code>**：可以用在字段（成员变量）上。</li>
+<li>**<code>ElementType.METHOD</code>**：可以用在方法上。</li>
+<li>**<code>ElementType.PARAMETER</code>**：可以用在方法的参数上。</li>
+<li>**<code>ElementType.CONSTRUCTOR</code>**：可以用在构造函数上。</li>
+<li>**<code>ElementType.LOCAL_VARIABLE</code>**：可以用在局部变量上。</li>
+<li>**<code>ElementType.ANNOTATION_TYPE</code>**：可以用在注解上。</li>
+<li>**<code>ElementType.PACKAGE</code>**：可以用在包上。</li>
+</ol>
+<p>Code：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE, ElementType.METHOD&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    <span class="comment">// 注解的定义内容</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="Documented"><a href="#Documented" class="headerlink" title="@Documented"></a>@Documented</h3><p>@Documented 注解表示该注解应该被包含在Java文档中。</p>
+<h3 id="Inherited"><a href="#Inherited" class="headerlink" title="@Inherited"></a>@Inherited</h3><p>如果某个类使用了被@Inherited修饰的Annotation，则其子类将自动具有该注解</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-Basical-knowledge</title>
+    <url>/2023/11/07/Java/Basic/Java-Basical-knowledge/</url>
+    <content><![CDATA[<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><table>
+<thead>
+<tr>
+<th>访问修饰符</th>
+<th>类内部</th>
+<th>同一包内</th>
+<th>子类</th>
+<th>其他包</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>private</td>
+<td>✔️</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>default</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>public</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+</tbody></table>
+<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>Java中有八大基本数据类型，它们可以分为两类：数值类型和字符类型。</p>
+<p><strong>数值类型：</strong></p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>大小</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte（字节）</td>
+<td>8位</td>
+<td>-128 ~ 127</td>
+</tr>
+<tr>
+<td>short（短整数）</td>
+<td>16位</td>
+<td>-32,768 ~ 32,767</td>
+</tr>
+<tr>
+<td>int（整数）</td>
+<td>32位</td>
+<td>2^31 ~ 2^31 - 1。</td>
+</tr>
+<tr>
+<td>long（长整数）</td>
+<td>64位</td>
+<td>2^63 ~ 2^63 - 1。</td>
+</tr>
+<tr>
+<td>float（单精度浮点数）</td>
+<td>32位</td>
+<td>浮点数类型（小数），如2.0f</td>
+</tr>
+<tr>
+<td>double（双精度整数）</td>
+<td>64位</td>
+<td>更高精度的浮点数类型，如2.0</td>
+</tr>
+</tbody></table>
+<p><strong>字符类型：</strong></p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>大小</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>char（字符）</td>
+<td>16位</td>
+<td>用于表示Unicode字符，1字符&#x3D;2个字节</td>
+</tr>
+</tbody></table>
+<p><strong>布尔类型：</strong></p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>大小</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>boolean（布尔）</td>
+<td>表示逻辑值</td>
+<td>true  &amp;  false</td>
+</tr>
+</tbody></table>
+<h2 id="为什么浮点运算的时候会有精度丢失的风险？"><a href="#为什么浮点运算的时候会有精度丢失的风险？" class="headerlink" title="为什么浮点运算的时候会有精度丢失的风险？"></a>为什么浮点运算的时候会有精度丢失的风险？</h2><p>浮点数运算精度丢失代码演示：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">float</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">2.0f</span> - <span class="number">1.9f</span>;</span><br><span class="line"><span class="type">float</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">1.8f</span> - <span class="number">1.7f</span>;</span><br><span class="line">System.out.println(a);       <span class="comment">// 0.100000024</span></span><br><span class="line">System.out.println(b);       <span class="comment">// 0.099999905</span></span><br><span class="line">System.out.println(a == b);  <span class="comment">// false</span></span><br></pre></td></tr></table></figure></div>
+
+<p>为什么会出现这个问题呢？</p>
+<p>这个和计算机保存浮点数的机制有很大关系。我们知道计算机是二进制的，而且计算机在表示一个数字时，宽度是有限的，无限循环的小数存储在计算机时，只能被截断，所以就会导致小数精度发生损失的情况。这也就是解释了为什么浮点数没有办法用二进制精确表示。</p>
+<p><strong>解决办法：</strong></p>
+<ol>
+<li><p><strong>BigDecimal</strong>：使用BigDecimal类来进行高精度的十进制数值运算，可以精确表示和计算小数，而不会出现读点书的精度问题。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.math.BigDecimal;</span><br><span class="line"></span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;2.0&quot;</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;1.1&quot;</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">result</span> <span class="operator">=</span> num1.subtract(num2);   <span class="comment">//减法</span></span><br><span class="line">System.out.println(result);                <span class="comment">//0.9</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>限制小数位数</strong>：如果你知道你的计算结果应该具有特定的小数位数，可以限制结果的小数位数，从而减少精度丢失。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">2.0</span> - <span class="number">1.1</span>; <span class="comment">// 限制小数位数</span></span><br><span class="line">System.out.printf(<span class="string">&quot;%.2f%n&quot;</span>, result);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>尽量避免浮点数比较</strong>：避免使用&#x3D;&#x3D;或!&#x3D;运算符来来比较两个浮点数，因为浮点数的精度问题可能导致不准确的结果。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">2.0</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">1.1</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">epsilon</span> <span class="operator">=</span> <span class="number">1e-10</span>; <span class="comment">// 定义一个足够小的误差范围</span></span><br><span class="line"><span class="keyword">if</span> (Math.abs(num1 - num2) &lt; epsilon) &#123;</span><br><span class="line">    <span class="comment">// 数值相等</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p> <code>1e-10</code> 表示科学计数法中的一个小数，具体为 0.0000000001。这是一个非常接近零的小数，通常用于表示非常小的数值或误差范围，以在浮点数比较中避免精度问题。</p>
+</li>
+</ol>
+<!-- More info: [Deployment](https://hexo.io/docs/one-command-deployment.html) -->]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-什么是方法（Methods）？</title>
+    <url>/2023/11/07/Java/Basic/Java-Methods/</url>
+    <content><![CDATA[<h2 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h2><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
+<ol>
+<li><p><strong>无参数无返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f1</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 下面这个方法也没有返回值，虽然用到了 return</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (...) &#123;</span><br><span class="line">        <span class="keyword">return</span>;  <span class="comment">// 表示结束方法的执行,下方的输出语句不会执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>有参数无返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f2</span><span class="params">(Parameter <span class="number">1</span>, ..., Parameter n)</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>无参数有返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f3</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>有返回值有参数方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f4</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h2 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h2><p>静态方法（Static Methods）是与类本身相关联的方法，而不是与类的实例（对象）相关联。它们属于类，而不是属于类的实例。</p>
+<p>以下是关于静态方法的一些重要特点：</p>
+<ol>
+<li><strong>定义静态方法：</strong> <ol>
+<li>静态方法的定义在方法签名中通常包括 <code>static</code> 关键字。</li>
+<li>它们可以访问类级别的成员变量和其他静态方法，<strong>但不能访问实例级别的成员变量或方法</strong>。</li>
+</ol>
+</li>
+<li><strong>无法访问实例变量：</strong><ol>
+<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。</li>
+<li>而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
+</ol>
+</li>
+</ol>
+<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写（Method Overriding）是面向对象编程中的一种重要概念，它允许子类在继承自父类的方法的基础上重新定义（覆盖）这些方法，以满足子类的特定需求。方法重写是多态性的一个重要示例，它允许在运行时动态地选择要执行的方法，具体的方法取决于对象的类型。</p>
+<p>以下是方法重写的一些关键规则和注意事项：</p>
+<ol>
+<li><strong>方法重写的规则：</strong><ol>
+<li><strong>方法的名称</strong>、<strong>参数列表</strong>和<strong>返回类型</strong>必须与父类中的被重写方法相同。</li>
+<li>访问修饰符可以相同或更宽松，但不能更严格（例如，父类的方法是 <code>public</code>，子类的可以是 <code>public</code> 或 <code>protected</code>，但不能是 <code>private</code>）。</li>
+<li>子类方法不能抛出比父类方法更多的已检查异常。</li>
+<li>子类方法不能缩小父类方法的访问权限。</li>
+</ol>
+</li>
+<li><strong>@Override 注解</strong>：为了明确标识方法是重写的，可以使用 <code>@Override</code> 注解来标记子类中的重写方法。这是可选的，但推荐使用。</li>
+</ol>
+<p><strong>Code：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">animal</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        animal.makeSound(); <span class="comment">// 输出：&quot;Dog barks&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>在上述示例中，<code>Dog</code> 类重写了 <code>Animal</code> 类中的 <code>makeSound</code> 方法。即使通过 <code>Animal</code> 类的引用创建了一个 <code>Dog</code> 对象，但在运行时会选择执行 <code>Dog</code> 类中的重写方法，因为它是对象的实际类型。这是方法重写的一个典型示例。</p>
+<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><p>方法重载是指在同一个类中定义多个相同方法名，但是参数列表不同的方法。</p>
+<p><strong>方法名相同</strong></p>
+<ol>
+<li><strong>参数个数</strong>可以不同</li>
+<li><strong>参数类型</strong>可以不同</li>
+<li><strong>方法修饰符</strong>可以不同，但是不作为重载的参考。</li>
+</ol>
+<p>方法重载是实现<strong>编译时多态性</strong>的一种方法。</p>
+<p><strong>特点</strong>:</p>
+<ol>
+<li>方法重载要求方法名相同但参数列表不同。</li>
+<li>返回类型可以相同也可以不同，但方法重载不能仅根据返回类型来区分，否则JVM无法确定调用哪个方法。</li>
+<li>方法重载可以在同一个类中进行，也可以在父类和子类之间进行。</li>
+<li>方法重载与方法的返回值无关，<strong>仅与参数相关</strong>。</li>
+</ol>
+<p><strong>Code：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathOperations</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java-常用类（Common Classes）</title>
     <url>/2023/11/07/Java/Advanced-Application/Java-%E5%B8%B8%E7%94%A8%E7%B1%BBCommon-Classes/</url>
     <content><![CDATA[<h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><p>针对八种基本数据类型相应的引用类型</p>
@@ -277,420 +800,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-Basical-knowledge</title>
-    <url>/2023/11/07/Java/Basic/Java-Basical-knowledge/</url>
-    <content><![CDATA[<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><table>
-<thead>
-<tr>
-<th>访问修饰符</th>
-<th>类内部</th>
-<th>同一包内</th>
-<th>子类</th>
-<th>其他包</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>private</td>
-<td>✔️</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>default</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>❌</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>protected</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>public</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-</tbody></table>
-<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>Java中有八大基本数据类型，它们可以分为两类：数值类型和字符类型。</p>
-<p><strong>数值类型：</strong></p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>大小</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>byte（字节）</td>
-<td>8位</td>
-<td>-128 ~ 127</td>
-</tr>
-<tr>
-<td>short（短整数）</td>
-<td>16位</td>
-<td>-32,768 ~ 32,767</td>
-</tr>
-<tr>
-<td>int（整数）</td>
-<td>32位</td>
-<td>2^31 ~ 2^31 - 1。</td>
-</tr>
-<tr>
-<td>long（长整数）</td>
-<td>64位</td>
-<td>2^63 ~ 2^63 - 1。</td>
-</tr>
-<tr>
-<td>float（单精度浮点数）</td>
-<td>32位</td>
-<td>浮点数类型（小数），如2.0f</td>
-</tr>
-<tr>
-<td>double（双精度整数）</td>
-<td>64位</td>
-<td>更高精度的浮点数类型，如2.0</td>
-</tr>
-</tbody></table>
-<p><strong>字符类型：</strong></p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>大小</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>char（字符）</td>
-<td>16位</td>
-<td>用于表示Unicode字符，1字符&#x3D;2个字节</td>
-</tr>
-</tbody></table>
-<p><strong>布尔类型：</strong></p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>大小</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>boolean（布尔）</td>
-<td>表示逻辑值</td>
-<td>true  &amp;  false</td>
-</tr>
-</tbody></table>
-<h2 id="为什么浮点运算的时候会有精度丢失的风险？"><a href="#为什么浮点运算的时候会有精度丢失的风险？" class="headerlink" title="为什么浮点运算的时候会有精度丢失的风险？"></a>为什么浮点运算的时候会有精度丢失的风险？</h2><p>浮点数运算精度丢失代码演示：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">float</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">2.0f</span> - <span class="number">1.9f</span>;</span><br><span class="line"><span class="type">float</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">1.8f</span> - <span class="number">1.7f</span>;</span><br><span class="line">System.out.println(a);       <span class="comment">// 0.100000024</span></span><br><span class="line">System.out.println(b);       <span class="comment">// 0.099999905</span></span><br><span class="line">System.out.println(a == b);  <span class="comment">// false</span></span><br></pre></td></tr></table></figure></div>
-
-<p>为什么会出现这个问题呢？</p>
-<p>这个和计算机保存浮点数的机制有很大关系。我们知道计算机是二进制的，而且计算机在表示一个数字时，宽度是有限的，无限循环的小数存储在计算机时，只能被截断，所以就会导致小数精度发生损失的情况。这也就是解释了为什么浮点数没有办法用二进制精确表示。</p>
-<p><strong>解决办法：</strong></p>
-<ol>
-<li><p><strong>BigDecimal</strong>：使用BigDecimal类来进行高精度的十进制数值运算，可以精确表示和计算小数，而不会出现读点书的精度问题。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.math.BigDecimal;</span><br><span class="line"></span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;2.0&quot;</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;1.1&quot;</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">result</span> <span class="operator">=</span> num1.subtract(num2);   <span class="comment">//减法</span></span><br><span class="line">System.out.println(result);                <span class="comment">//0.9</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>限制小数位数</strong>：如果你知道你的计算结果应该具有特定的小数位数，可以限制结果的小数位数，从而减少精度丢失。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">2.0</span> - <span class="number">1.1</span>; <span class="comment">// 限制小数位数</span></span><br><span class="line">System.out.printf(<span class="string">&quot;%.2f%n&quot;</span>, result);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>尽量避免浮点数比较</strong>：避免使用&#x3D;&#x3D;或!&#x3D;运算符来来比较两个浮点数，因为浮点数的精度问题可能导致不准确的结果。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">2.0</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">1.1</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">epsilon</span> <span class="operator">=</span> <span class="number">1e-10</span>; <span class="comment">// 定义一个足够小的误差范围</span></span><br><span class="line"><span class="keyword">if</span> (Math.abs(num1 - num2) &lt; epsilon) &#123;</span><br><span class="line">    <span class="comment">// 数值相等</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p> <code>1e-10</code> 表示科学计数法中的一个小数，具体为 0.0000000001。这是一个非常接近零的小数，通常用于表示非常小的数值或误差范围，以在浮点数比较中避免精度问题。</p>
-</li>
-</ol>
-<!-- More info: [Deployment](https://hexo.io/docs/one-command-deployment.html) -->]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/09/28/Hexo/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-什么是方法（Methods）？</title>
-    <url>/2023/11/07/Java/Basic/Java-Methods/</url>
-    <content><![CDATA[<h2 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h2><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
-<ol>
-<li><p><strong>无参数无返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f1</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 下面这个方法也没有返回值，虽然用到了 return</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (...) &#123;</span><br><span class="line">        <span class="keyword">return</span>;  <span class="comment">// 表示结束方法的执行,下方的输出语句不会执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>有参数无返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f2</span><span class="params">(Parameter <span class="number">1</span>, ..., Parameter n)</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>无参数有返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f3</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>有返回值有参数方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f4</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h2 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h2><p>静态方法（Static Methods）是与类本身相关联的方法，而不是与类的实例（对象）相关联。它们属于类，而不是属于类的实例。</p>
-<p>以下是关于静态方法的一些重要特点：</p>
-<ol>
-<li><strong>定义静态方法：</strong> <ol>
-<li>静态方法的定义在方法签名中通常包括 <code>static</code> 关键字。</li>
-<li>它们可以访问类级别的成员变量和其他静态方法，<strong>但不能访问实例级别的成员变量或方法</strong>。</li>
-</ol>
-</li>
-<li><strong>无法访问实例变量：</strong><ol>
-<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。</li>
-<li>而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
-</ol>
-</li>
-</ol>
-<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写（Method Overriding）是面向对象编程中的一种重要概念，它允许子类在继承自父类的方法的基础上重新定义（覆盖）这些方法，以满足子类的特定需求。方法重写是多态性的一个重要示例，它允许在运行时动态地选择要执行的方法，具体的方法取决于对象的类型。</p>
-<p>以下是方法重写的一些关键规则和注意事项：</p>
-<ol>
-<li><strong>方法重写的规则：</strong><ol>
-<li><strong>方法的名称</strong>、<strong>参数列表</strong>和<strong>返回类型</strong>必须与父类中的被重写方法相同。</li>
-<li>访问修饰符可以相同或更宽松，但不能更严格（例如，父类的方法是 <code>public</code>，子类的可以是 <code>public</code> 或 <code>protected</code>，但不能是 <code>private</code>）。</li>
-<li>子类方法不能抛出比父类方法更多的已检查异常。</li>
-<li>子类方法不能缩小父类方法的访问权限。</li>
-</ol>
-</li>
-<li><strong>@Override 注解</strong>：为了明确标识方法是重写的，可以使用 <code>@Override</code> 注解来标记子类中的重写方法。这是可选的，但推荐使用。</li>
-</ol>
-<p><strong>Code：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">animal</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        animal.makeSound(); <span class="comment">// 输出：&quot;Dog barks&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>在上述示例中，<code>Dog</code> 类重写了 <code>Animal</code> 类中的 <code>makeSound</code> 方法。即使通过 <code>Animal</code> 类的引用创建了一个 <code>Dog</code> 对象，但在运行时会选择执行 <code>Dog</code> 类中的重写方法，因为它是对象的实际类型。这是方法重写的一个典型示例。</p>
-<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><p>方法重载是指在同一个类中定义多个相同方法名，但是参数列表不同的方法。</p>
-<p><strong>方法名相同</strong></p>
-<ol>
-<li><strong>参数个数</strong>可以不同</li>
-<li><strong>参数类型</strong>可以不同</li>
-<li><strong>方法修饰符</strong>可以不同，但是不作为重载的参考。</li>
-</ol>
-<p>方法重载是实现<strong>编译时多态性</strong>的一种方法。</p>
-<p><strong>特点</strong>:</p>
-<ol>
-<li>方法重载要求方法名相同但参数列表不同。</li>
-<li>返回类型可以相同也可以不同，但方法重载不能仅根据返回类型来区分，否则JVM无法确定调用哪个方法。</li>
-<li>方法重载可以在同一个类中进行，也可以在父类和子类之间进行。</li>
-<li>方法重载与方法的返回值无关，<strong>仅与参数相关</strong>。</li>
-</ol>
-<p><strong>Code：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathOperations</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-注解（Annotation）</title>
-    <url>/2023/11/07/Java/Advanced-Application/Java-%E6%B3%A8%E8%A7%A3Annotation/</url>
-    <content><![CDATA[<h2 id="Override"><a href="#Override" class="headerlink" title="@Override"></a>@Override</h2><p>**<code>@Override</code>**它用于标记一个方法是要覆盖（重写）父类或接口中的方法。</p>
-<p>该注解只能用于方法</p>
-<p>Code：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Parent</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">printMessage</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello from Parent&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Child</span> <span class="keyword">extends</span> <span class="title class_">Parent</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">printMessage</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello from Child&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li>如果子类没有添加@Override注解，还是会重写父类的方法</li>
-<li>写了@Override注解，编译器会检查该防范是否真的重写了父类的方法，是则编译成功，反之报错。</li>
-</ol>
-<p>Source Code：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(ElementType.METHOD)</span>         </span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.SOURCE)</span>  </span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Override &#123;  </span><br><span class="line">		</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li><p>**<code>@Target(ElementType.METHOD)</code>**：</p>
-<ol>
-<li>@Target 注解用于指定自定义注解可以应用的目标元素类型；修饰注解的注解（元注解）</li>
-<li>@Target(ElementType.METHOD) 表示这个自定义注解只能应用到方法（Method）上。</li>
-</ol>
-</li>
-<li><p>**<code>@Retention(RetentionPolicy.SOURCE)</code>**：</p>
-<ol>
-<li>@Retention 注解用于指定自定义注解的保留策略，即注解在何时可见。</li>
-<li>@Retention(RetentionPolicy.SOURCE) 表示这个注解只在源代码级别可见，编译后不会包含在编译后的 .class 文件中。</li>
-</ol>
-</li>
-<li><p>**<code>public @interface Override</code>**：</p>
-<ol>
-<li>public 表示这个自定义注解是公共的，可以在其他包中使用。</li>
-<li>@interface 关键字用于定义一个自定义注解。</li>
-<li>这个注解的名字是 Override，与Java语言中的 @Override 注解同名，但它们不同。</li>
-</ol>
-</li>
-</ol>
-<h2 id="Deprecated"><a href="#Deprecated" class="headerlink" title="@Deprecated"></a>@Deprecated</h2><p><strong><code>@Deprecated</code></strong> 注解是Java语言中的一个预定义注解（annotation），它用于标记一个类、方法、字段或其他元素已被废弃，不推荐继续使用。</p>
-<p><strong>Code</strong>：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeprecatedExample</span> &#123;</span><br><span class="line">    <span class="meta">@Deprecated</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">deprecatedMethod</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 一些过时的操作</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">newMethod</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 新的操作</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">DeprecatedExample</span> <span class="variable">example</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">DeprecatedExample</span>();</span><br><span class="line">        <span class="comment">// 调用过时的方法，会产生编译警告</span></span><br><span class="line">        example.deprecatedMethod();</span><br><span class="line">        <span class="comment">// 调用新的方法，没有问题</span></span><br><span class="line">        example.newMethod();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>Source Code</strong>：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> java.lang.annotation;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(value=&#123;CONSTRUCTOR, FIELD, LOCAL_VARIABLE, METHOD, PACKAGE, PARAMETER, TYPE&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Deprecated &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li><strong><code>@Documented</code></strong> 注解表示该注解应该被包含在Java文档中。</li>
-<li><strong><code>@Retention(RetentionPolicy.RUNTIME)</code></strong> 注解表示这个注解在运行时可用。</li>
-<li><strong><code>@Target(value=&#123;CONSTRUCTOR, FIELD, LOCAL_VARIABLE, METHOD, PACKAGE, PARAMETER, TYPE&#125;)</code></strong> 注解：<ol>
-<li>这里指定了多种目标元素类型，包括构造方法（CONSTRUCTOR）、字段（FIELD）、局部变量（LOCAL_VARIABLE）、方法（METHOD）、包（PACKAGE）、参数（PARAMETER）和类型（TYPE）。</li>
-</ol>
-</li>
-</ol>
-<h2 id="SuppressWarning"><a href="#SuppressWarning" class="headerlink" title="@SuppressWarning"></a>@SuppressWarning</h2><p>当我们不希望看到相关警告，可以使用**<code>@SuppressWarning</code>**注解来一直警告信息</p>
-<p><strong>Code</strong>：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@SuppressWarnings(&quot;unchecked&quot;)</span></span><br><span class="line"><span class="keyword">public</span> List&lt;String&gt; <span class="title function_">getList</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">List</span> <span class="variable">myList</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>(); <span class="comment">// 未经检查的转换警告</span></span><br><span class="line">    myList.add(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">    myList.add(<span class="string">&quot;World&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> myList;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SuppressWarnings(&quot;deprecation&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">useDeprecatedMethod</span><span class="params">()</span> &#123;</span><br><span class="line">    SomeDeprecatedClass.deprecatedMethod(); <span class="comment">// 废弃 API 使用警告</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">useRawType</span><span class="params">()</span> &#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;rawtypes&quot;)</span></span><br><span class="line">    <span class="type">List</span> <span class="variable">myList</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ArrayList</span>(); <span class="comment">// 直接作用在变量上，原始类型警告</span></span><br><span class="line">    myList.add(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line">    myList.add(<span class="string">&quot;World&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>常见的参数</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>all</td>
-<td>用于抑制所有类型的警告。这个参数应该慎用，因为它会抑制所有警告，包括潜在的问题。</td>
-</tr>
-<tr>
-<td>rawtypes</td>
-<td>用于抑制原始类型警告。原始类型警告通常在使用泛型时没有指定类型参数时出现。</td>
-</tr>
-<tr>
-<td>deprecation</td>
-<td>用于抑制废弃 API 使用警告。这种警告会在使用已被标记为废弃的方法或类时出现。</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<p><strong>Source Code</strong>：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE, ElementType.FIELD, ElementType.METHOD,</span></span><br><span class="line"><span class="meta">				 ElementType.PARAMETER, ElementType.CONSTRUCTOR, ElementType.LOCAL_VARIABLE&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.SOURCE)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> SuppressWarnings &#123;</span><br><span class="line">    String[] value();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>需要注意的是，使用 <strong><code>@SuppressWarnings</code></strong> 注解应该谨慎，并且应该仅在确定警告是安全的、没有更好的解决方案时使用。</p>
-<p>滥用这个注解可能会掩盖潜在的问题。</p>
-<h2 id="Annotation（元注解）"><a href="#Annotation（元注解）" class="headerlink" title="Annotation（元注解）"></a>Annotation（元注解）</h2><p>常见注解种类：</p>
-<ol>
-<li>@Retention：指定注解的作用范围（SOURCE、CLASS、RUNTIME）</li>
-<li>@Target：指定注解可以在哪些代码元素（方法、属性等）使用</li>
-<li>@Documented：指定该注解是否会在javadoc体现</li>
-<li>@Inherited：子类会继承父类注解</li>
-</ol>
-<h3 id="Retention"><a href="#Retention" class="headerlink" title="@Retention"></a>@Retention</h3><p>它用来指定注解的保留策略。在 Java 中，注解可以有三种保留策略，分别是：</p>
-<ol>
-<li>**<code>RetentionPolicy.SOURCE</code>**：这种保留策略表示注解仅在源代码级别存在，编译成字节码文件后就被丢弃，不会包含在编译后的类文件和运行时环境中。</li>
-<li>**<code>RetentionPolicy.CLASS</code>**：这种保留策略表示注解会被保留到编译后的类文件中，但在运行时不可访问。这是默认的保留策略。</li>
-<li><strong><code>RetentionPolicy.RUNTIME</code><strong>：这种保留策略表示注解会被保留到编译后的类文件中，并且可以在运行时通过</strong>反射机制</strong>访问。这允许在运行时动态处理注解信息。</li>
-</ol>
-<p><strong>Code</strong>：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    <span class="comment">// 注解的定义内容</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>上述代码采用了运行时保留策略，可以在运行时通过反射访问该注解的内容。</p>
-<h3 id="Target"><a href="#Target" class="headerlink" title="@Target"></a>@Target</h3><p>它用来指定自定义注解可以应用的目标元素，即注解可以放在哪些程序元素上</p>
-<ol>
-<li>**<code>ElementType.TYPE</code>**：可以用在类、接口、枚举类型上。</li>
-<li>**<code>ElementType.FIELD</code>**：可以用在字段（成员变量）上。</li>
-<li>**<code>ElementType.METHOD</code>**：可以用在方法上。</li>
-<li>**<code>ElementType.PARAMETER</code>**：可以用在方法的参数上。</li>
-<li>**<code>ElementType.CONSTRUCTOR</code>**：可以用在构造函数上。</li>
-<li>**<code>ElementType.LOCAL_VARIABLE</code>**：可以用在局部变量上。</li>
-<li>**<code>ElementType.ANNOTATION_TYPE</code>**：可以用在注解上。</li>
-<li>**<code>ElementType.PACKAGE</code>**：可以用在包上。</li>
-</ol>
-<p>Code：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE, ElementType.METHOD&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    <span class="comment">// 注解的定义内容</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="Documented"><a href="#Documented" class="headerlink" title="@Documented"></a>@Documented</h3><p>@Documented 注解表示该注解应该被包含在Java文档中。</p>
-<h3 id="Inherited"><a href="#Inherited" class="headerlink" title="@Inherited"></a>@Inherited</h3><p>如果某个类使用了被@Inherited修饰的Annotation，则其子类将自动具有该注解</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-什么是类（Class）？</title>
-    <url>/2023/11/07/Java/Object-Oriented/Java-Class/</url>
-    <content><![CDATA[<h2 id="快速理解"><a href="#快速理解" class="headerlink" title="快速理解"></a>快速理解</h2><p>对象表示具有<strong>状态</strong>和<strong>行为</strong>的实体，例如：一辆汽车是一个对象，汽车的颜色、价格。。</p>
-<p>更具体的就是</p>
-<ol>
-<li><strong>状态（类的属性）</strong>：车的颜色、价格。。</li>
-<li><strong>行为（类的方法）</strong>：车可以前进、倒车、加速等行为；</li>
-</ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">hosue</span>&#123;</span><br><span class="line">	<span class="comment">//状态</span></span><br><span class="line">    String address;     <span class="comment">//</span></span><br><span class="line">   	String color;</span><br><span class="line">   	<span class="type">double</span> area;</span><br><span class="line">    <span class="comment">//行为</span></span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">openDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">closeDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line"> ...</span><br><span class="line"> ... </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>细节说明：</strong></p>
-<ol>
-<li>类名必须和文件名相同。</li>
-</ol>
-<h2 id="构造方法的特点"><a href="#构造方法的特点" class="headerlink" title="构造方法的特点"></a>构造方法的特点</h2><ol>
-<li>名字和类名相同</li>
-<li>不能被void修饰</li>
-<li>可以进行重载，这就是为什么有无参构造和有参构造</li>
-</ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">		String name;</span><br><span class="line">    Animal()&#123;&#125;   <span class="comment">//无参构造</span></span><br><span class="line">		Animal(String name)&#123;  <span class="comment">//有参构造</span></span><br><span class="line">			。。。	</span><br><span class="line">	&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="类相关操作"><a href="#类相关操作" class="headerlink" title="类相关操作"></a>类相关操作</h2><h3 id="初始化类变量有哪些方式？"><a href="#初始化类变量有哪些方式？" class="headerlink" title="初始化类变量有哪些方式？"></a>初始化类变量有哪些方式？</h3><ol>
-<li><p><strong>初始化自定义变量</strong></p>
-<p> 在变量定义时直接对变量进行赋值初始化。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">10</span>; <span class="comment">// 在定义时直接初始化变量 x 为 10</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>构造器初始化变量</strong></p>
-<p> 在类的构造函数（构造器）中对成员变量进行初始化。构造函数是在创建对象时调用的特殊方法。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> y;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyClass</span><span class="params">()</span> &#123;</span><br><span class="line">        y = <span class="number">20</span>; <span class="comment">// 在构造器中初始化变量 y 为 20</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>代码块中初始化</strong></p>
-<p> 使用初始化块（包括静态初始化块和非静态初始化块）来对成员变量进行初始化。静态初始化块用于静态变量的初始化，非静态初始化块用于实例变量的初始化。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">AnotherClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> z;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 非静态初始化块</span></span><br><span class="line">    &#123;</span><br><span class="line">        z = <span class="number">30</span>; <span class="comment">// 在初始化块中初始化变量 z 为 30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h3 id="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"><a href="#获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。" class="headerlink" title="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"></a><strong>获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。</strong></h3><ol>
-<li><p><strong>通过类的 <code>.class</code> 属性获取：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = MyClass.class; <span class="comment">// MyClass 是你要获取 Class 对象的类名</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>使用 <code>getClass()</code> 方法获取对象的 Class 对象：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">MyClass</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">Class&lt;?&gt; classObj = obj.getClass();</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>使用 <code>Class.forName()</code> 方法根据类名获取：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = Class.forName(<span class="string">&quot;com.example.MyClass&quot;</span>); <span class="comment">// 根据类的全限定名获取 Class 对象</span></span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<p>这种方法都可以用来获取特定类的 <code>Class</code> 对象，但它们的应用场景有所不同。<code>.class</code> 属性和 <code>Class.forName()</code> 用于编译时或者运行时动态地获取类的 <code>Class</code> 对象，而 <code>getClass()</code> 方法通常用于已经存在对象的情况下获取其 <code>Class</code> 对象。</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java-变量（Variable）</title>
     <url>/2023/11/07/Java/Basic/Java-Variable/</url>
     <content><![CDATA[<h2 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h2><p>成员变量（Instance Variables）和局部变量（Local Variables）是在编程中两种不同的变量类型，它们在作用域、生命周期和用途上有很大的区别。</p>
@@ -881,6 +990,60 @@
       </tags>
   </entry>
   <entry>
+    <title>Java-什么是类（Class）？</title>
+    <url>/2023/11/07/Java/Object-Oriented/Java-Class/</url>
+    <content><![CDATA[<h2 id="快速理解"><a href="#快速理解" class="headerlink" title="快速理解"></a>快速理解</h2><p>对象表示具有<strong>状态</strong>和<strong>行为</strong>的实体，例如：一辆汽车是一个对象，汽车的颜色、价格。。</p>
+<p>更具体的就是</p>
+<ol>
+<li><strong>状态（类的属性）</strong>：车的颜色、价格。。</li>
+<li><strong>行为（类的方法）</strong>：车可以前进、倒车、加速等行为；</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">hosue</span>&#123;</span><br><span class="line">	<span class="comment">//状态</span></span><br><span class="line">    String address;     <span class="comment">//</span></span><br><span class="line">   	String color;</span><br><span class="line">   	<span class="type">double</span> area;</span><br><span class="line">    <span class="comment">//行为</span></span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">openDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">closeDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line"> ...</span><br><span class="line"> ... </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>细节说明：</strong></p>
+<ol>
+<li>类名必须和文件名相同。</li>
+</ol>
+<h2 id="构造方法的特点"><a href="#构造方法的特点" class="headerlink" title="构造方法的特点"></a>构造方法的特点</h2><ol>
+<li>名字和类名相同</li>
+<li>不能被void修饰</li>
+<li>可以进行重载，这就是为什么有无参构造和有参构造</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">		String name;</span><br><span class="line">    Animal()&#123;&#125;   <span class="comment">//无参构造</span></span><br><span class="line">		Animal(String name)&#123;  <span class="comment">//有参构造</span></span><br><span class="line">			。。。	</span><br><span class="line">	&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="类相关操作"><a href="#类相关操作" class="headerlink" title="类相关操作"></a>类相关操作</h2><h3 id="初始化类变量有哪些方式？"><a href="#初始化类变量有哪些方式？" class="headerlink" title="初始化类变量有哪些方式？"></a>初始化类变量有哪些方式？</h3><ol>
+<li><p><strong>初始化自定义变量</strong></p>
+<p> 在变量定义时直接对变量进行赋值初始化。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">10</span>; <span class="comment">// 在定义时直接初始化变量 x 为 10</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>构造器初始化变量</strong></p>
+<p> 在类的构造函数（构造器）中对成员变量进行初始化。构造函数是在创建对象时调用的特殊方法。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> y;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyClass</span><span class="params">()</span> &#123;</span><br><span class="line">        y = <span class="number">20</span>; <span class="comment">// 在构造器中初始化变量 y 为 20</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>代码块中初始化</strong></p>
+<p> 使用初始化块（包括静态初始化块和非静态初始化块）来对成员变量进行初始化。静态初始化块用于静态变量的初始化，非静态初始化块用于实例变量的初始化。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">AnotherClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> z;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 非静态初始化块</span></span><br><span class="line">    &#123;</span><br><span class="line">        z = <span class="number">30</span>; <span class="comment">// 在初始化块中初始化变量 z 为 30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"><a href="#获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。" class="headerlink" title="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"></a><strong>获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。</strong></h3><ol>
+<li><p><strong>通过类的 <code>.class</code> 属性获取：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = MyClass.class; <span class="comment">// MyClass 是你要获取 Class 对象的类名</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>使用 <code>getClass()</code> 方法获取对象的 Class 对象：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">MyClass</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">Class&lt;?&gt; classObj = obj.getClass();</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>使用 <code>Class.forName()</code> 方法根据类名获取：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = Class.forName(<span class="string">&quot;com.example.MyClass&quot;</span>); <span class="comment">// 根据类的全限定名获取 Class 对象</span></span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<p>这种方法都可以用来获取特定类的 <code>Class</code> 对象，但它们的应用场景有所不同。<code>.class</code> 属性和 <code>Class.forName()</code> 用于编译时或者运行时动态地获取类的 <code>Class</code> 对象，而 <code>getClass()</code> 方法通常用于已经存在对象的情况下获取其 <code>Class</code> 对象。</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java-Object类</title>
     <url>/2023/11/07/Java/Object-Oriented/Java-Object/</url>
     <content><![CDATA[<h2 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h2><p>Object类是一个特殊的类，是所有类的父类。主要提供了一下几个方法</p>
@@ -973,169 +1136,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mysql-基础知识</title>
-    <url>/2023/11/09/Mysql/Mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>整数类型</td>
-<td></td>
-</tr>
-<tr>
-<td>TINYINT</td>
-<td>很小的整数值。有符号范围是 -128 到 127，无符号范围是 0 到 255。</td>
-</tr>
-<tr>
-<td>SMALLINT</td>
-<td>小整数值。有符号范围是 -32,768 到 32,767，无符号范围是 0 到 65,535。</td>
-</tr>
-<tr>
-<td>MEDIUMINT</td>
-<td>中等大小整数值。有符号范围是 -8,388,608 到 8,388,607，无符号范围是 0 到 16,777,215。</td>
-</tr>
-<tr>
-<td>INT&#x2F;INTEGER</td>
-<td>普通大小整数值。有符号范围是 -2,147,483,648 到 2,147,483,647，无符号范围是 0 到 4,294,967,295。</td>
-</tr>
-<tr>
-<td>BIGINT</td>
-<td>大整数值。有符号范围是 -9,223,372,036,854,775,808 到 9,223,372,036,854,775,807，无符号范围是 0 到 18,446,744,073,709,551,615。</td>
-</tr>
-<tr>
-<td>浮点类型</td>
-<td></td>
-</tr>
-<tr>
-<td>FLOAT</td>
-<td>单精度浮点数。范围约为 -3.4E+38 到 3.4E+38。</td>
-</tr>
-<tr>
-<td>DOUBLE</td>
-<td>双精度浮点数。范围约为 -1.7E+308 到 1.7E+308。</td>
-</tr>
-<tr>
-<td>DECIMAL</td>
-<td>固定小数点数。允许小数点数值的存储。</td>
-</tr>
-<tr>
-<td>日期&#x2F;时间类型</td>
-<td></td>
-</tr>
-<tr>
-<td>DATE</td>
-<td>日期值。格式为 ‘YYYY-MM-DD’。</td>
-</tr>
-<tr>
-<td>TIME</td>
-<td>时间值。格式为 ‘HH:MM:SS’。</td>
-</tr>
-<tr>
-<td>DATETIME</td>
-<td>混合日期和时间值。格式为 ‘YYYY-MM-DD HH:MM:SS’。</td>
-</tr>
-<tr>
-<td>TIMESTAMP</td>
-<td>时间戳。使用 YYYYMMDDHHMMSS 格式（如 ‘20231106123000’）存储日期和时间。</td>
-</tr>
-<tr>
-<td>YEAR</td>
-<td>年份值。格式为 ‘YYYY’。</td>
-</tr>
-<tr>
-<td>字符串类型</td>
-<td></td>
-</tr>
-<tr>
-<td>CHAR</td>
-<td>固定长度字符串，最多 255 个字符。</td>
-</tr>
-<tr>
-<td>VARCHAR</td>
-<td>可变长度字符串，最多 65,535 字符。</td>
-</tr>
-<tr>
-<td>TINYTEXT</td>
-<td>极小文本字段，最多 255 字符。</td>
-</tr>
-<tr>
-<td>TEXT</td>
-<td>小型文本字段，最多 65,535 字符。</td>
-</tr>
-<tr>
-<td>MEDIUMTEXT</td>
-<td>中等大小文本字段，最多 16,777,215 字符。</td>
-</tr>
-<tr>
-<td>LONGTEXT</td>
-<td>长文本字段，最多 4,294,967,295 字符。</td>
-</tr>
-<tr>
-<td>二进制类型</td>
-<td></td>
-</tr>
-<tr>
-<td>BINARY</td>
-<td>固定长度二进制字符串。</td>
-</tr>
-<tr>
-<td>VARBINARY</td>
-<td>可变长度二进制字符串。</td>
-</tr>
-<tr>
-<td>TINYBLOB</td>
-<td>极小二进制对象，最多 255 字节。</td>
-</tr>
-<tr>
-<td>BLOB</td>
-<td>小型二进制对象，最多 65,535 字节。</td>
-</tr>
-<tr>
-<td>MEDIUMBLOB</td>
-<td>中等大小二进制对象，最多 16,777,215 字节。</td>
-</tr>
-<tr>
-<td>LONGBLOB</td>
-<td>长二进制对象，最多 4,294,967,295 字节。</td>
-</tr>
-</tbody></table>
-<h2 id="SQL语言的规则与规范"><a href="#SQL语言的规则与规范" class="headerlink" title="SQL语言的规则与规范"></a>SQL语言的规则与规范</h2><h3 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h3><ol>
-<li>SQL 可以写在一行或者多行。为了提高可读性，各子句分行写，必要时使用缩进</li>
-<li>关键字不能被缩写也不能分行</li>
-<li>关于标点符号<ol>
-<li>必须保证所有的()、单引号、双引号是成对结束的</li>
-<li>必须使用英文状态下的半角输入方式</li>
-<li>字符串型和日期时间类型的数据可以使用<strong>单引号</strong>表示</li>
-<li>列的别名，尽量使用<strong>双引号</strong>，而且不建议省略as</li>
-</ol>
-</li>
-</ol>
-<h3 id="SQL大小写规范-（建议遵守）"><a href="#SQL大小写规范-（建议遵守）" class="headerlink" title="SQL大小写规范 （建议遵守）"></a>SQL大小写规范 （建议遵守）</h3><ul>
-<li><strong>MySQL 在 Windows 环境下是大小写不敏感的</strong></li>
-<li><strong>MySQL 在 Linux 环境下是大小写敏感的</strong><ul>
-<li>数据库名、表名、表的别名、变量名是严格区分大小写的</li>
-<li>关键字、函数名、列名(或字段名)、列的别名(字段的别名) 是忽略大小写的。</li>
-</ul>
-</li>
-<li><strong>推荐采用统一的书写规范：</strong><ul>
-<li>数据库名、表名、表别名、字段名、字段别名等都小写</li>
-<li>SQL 关键字、函数名、绑定变量等都大写</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>MYSQL</category>
-      </categories>
-      <tags>
-        <tag>MYSQL</tag>
       </tags>
   </entry>
 </search>
