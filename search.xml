@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo安装运行</title>
-    <url>/lqj3021809270/rainbow-jie-blog.git/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/</url>
+    <url>/rainbow-jie-blog/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/</url>
     <content><![CDATA[<h2 id="安装-Node-js-和-Git"><a href="#安装-Node-js-和-Git" class="headerlink" title="安装 Node.js 和 Git"></a><strong>安装 Node.js 和 Git</strong></h2><p>确保你的系统上已经安装了 Node.js 和 Git。你可以从它们的官方网站上下载并安装：</p>
 <ol>
 <li><a class="link"   href="https://nodejs.org/" >Node.js 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
@@ -32,7 +32,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/lqj3021809270/rainbow-jie-blog.git/2022/09/28/Hexo/hello-world/</url>
+    <url>/rainbow-jie-blog/2022/09/28/Hexo/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
@@ -55,308 +55,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-常用类（Common Classes）</title>
-    <url>/lqj3021809270/rainbow-jie-blog.git/2023/11/07/Java/Advanced-Application/Java-%E5%B8%B8%E7%94%A8%E7%B1%BBCommon-Classes/</url>
-    <content><![CDATA[<h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><p>针对八种基本数据类型相应的引用类型</p>
-<p>Boolean、Character</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/21.png"
-                      alt="Alt text"
-                ></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/22.png"
-                      alt="Alt text"
-                ></p>
-<h3 id="包装类和基本数据的转换"><a href="#包装类和基本数据的转换" class="headerlink" title="包装类和基本数据的转换"></a>包装类和基本数据的转换</h3><ol>
-<li><p><strong>装箱（Boxing）</strong></p>
-<p> 装箱是将基本数据类型转为对应的包装类对象的过程，可以直接通过赋值或者方法调用</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">primitiveInt</span> <span class="operator">=</span> <span class="number">42</span>;</span><br><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> primitiveInt; <span class="comment">// 自动装箱  底层使用的是Integer.valueOf(primitiveInt)</span></span><br><span class="line"></span><br><span class="line">或者显示装箱</span><br><span class="line"><span class="type">int</span> <span class="variable">primitiveInt</span> <span class="operator">=</span> <span class="number">42</span>;</span><br><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> Integer.valueOf(primitiveInt); <span class="comment">// 手动装箱</span></span><br><span class="line"></span><br><span class="line">字符串转为包装类</span><br><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot;123&quot;</span>;</span><br><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> Integer.valueOf(str);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>拆箱（Unboxing）</strong></p>
-<p> 拆箱是将包装类对象转为基本数据类型的过程，它可以直接通过赋值或者方法调用完成</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> <span class="number">42</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">primitiveInt</span> <span class="operator">=</span> wrapperInt; <span class="comment">// 自动拆箱</span></span><br><span class="line"></span><br><span class="line">或者显示的拆箱</span><br><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> <span class="number">42</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">primitiveInt</span> <span class="operator">=</span> wrapperInt.intValue(); <span class="comment">// 手动拆箱</span></span><br><span class="line"></span><br><span class="line">包装类转为字符串</span><br><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> <span class="number">123</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> wrapperInt.toString();</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<p><strong>Integer.valueOf（int）</strong>底层源码</p>
-<p>Integer.valueOf(int) 方法是用于将一个 int 值转换为对应的 Integer 对象的静态方法。</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> Integer <span class="title function_">valueOf</span><span class="params">(<span class="type">int</span> i)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (i &gt;= IntegerCache.low &amp;&amp; i &lt;= IntegerCache.high)</span><br><span class="line">        <span class="keyword">return</span> IntegerCache.cache[i + (-IntegerCache.low)];</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Integer</span>(i);   <span class="comment">//超过范围后，才会重新new一个对象</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li>首先检查给定的数字是否在$[-128，127]$范围之内；</li>
-<li>如果在这个范围之内，就会从缓存中获取Integer对象，而不是创建一个对象，这样可以减少对象的创建和内存消耗；</li>
-<li>如果不在这个范围之内，就会创建一个新的Integer对象。</li>
-</ol>
-<p>例如：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Integer</span> <span class="variable">num1</span> <span class="operator">=</span> Integer.valueOf(<span class="number">1</span>); </span><br><span class="line"><span class="type">Integer</span> <span class="variable">num2</span> <span class="operator">=</span> Integer.valueOf(<span class="number">1</span>); </span><br><span class="line">System.out.println(num1==num2);    <span class="comment">//true，都指向同一个对象</span></span><br><span class="line"></span><br><span class="line"><span class="type">Integer</span> <span class="variable">num1</span> <span class="operator">=</span> Integer.valueOf(<span class="number">128</span>); </span><br><span class="line"><span class="type">Integer</span> <span class="variable">num2</span> <span class="operator">=</span> Integer.valueOf(<span class="number">128</span>); </span><br><span class="line">System.out.println(num1==num2);    <span class="comment">//false，由于超过除了缓存范围，创建一个新Integer对象</span></span><br></pre></td></tr></table></figure></div>
-
-<h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><p>String对象是用于保存字符串，也就是字符序列；</p>
-<p>字符串常量对象使用双引号括起来的字符序列，例如：“你好”、“12.97”；</p>
-<p>字符串的字符使用Unicode字符编码，<strong>一个字符占两个字节</strong>。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/23.png"
-                      alt="Alt text"
-                ></p>
-<p>Serializable：子类可以实现串行化，可以在网络传输；</p>
-<p>Comparable：子类可以比较；</p>
-<p><strong>常见的构造器</strong>：</p>
-<ol>
-<li>String (String)：直接通过字符串创建</li>
-<li>String (char[])：使用字符数组创建字符串</li>
-<li>String (char[], int, int)：使用字符数组的一部分来创建一个字符串对象。第二个参数是起始索引，第三个参数是子数组的长度。</li>
-<li>String (byte[])：接受一个字节数组来创建一个字符串对象</li>
-<li>String (byte[], int ,int)：使用字节数组的一部分来创建一个字符串对象。第二个参数是起始索引，第三个参数是子数组的长度。</li>
-</ol>
-<p><strong>特性</strong>：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">String str1=<span class="string">&quot;hello&quot;</span>;   <span class="comment">//对象存放在常量池中</span></span><br><span class="line">String str2=<span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;hello&quot;</span>)  <span class="comment">//对象存放在堆中</span></span><br></pre></td></tr></table></figure></div>
-
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/24.png"
-                      alt="Alt text"
-                ></p>
-<ol>
-<li>String是$final$修饰的类，无法被其他类继承；</li>
-<li>字符串是不可变的，一个字符串对象一旦被分配，其内容就无法修改</li>
-</ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">String s1=<span class="string">&quot;hello&quot;</span></span><br><span class="line">s1=<span class="string">&quot;hahah&quot;</span></span><br><span class="line">在方法区的常量池中，实际上创建了两个对象：hello、hahah</span><br></pre></td></tr></table></figure></div>
-
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">String a=<span class="string">&quot;hello&quot;</span>+<span class="string">&quot;world&quot;</span>;  实际上只创建了一个对象：helloworld</span><br></pre></td></tr></table></figure></div>
-
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">String str1=<span class="string">&quot;hello&quot;</span>;</span><br><span class="line">String str2=<span class="string">&quot;world&quot;</span>;</span><br><span class="line">String str4=str1+str2;</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li>当执行<code>String str4 = str1 + str2</code>，Java编译器会使用<code>StringBuilder</code>类来处理字符串的拼接。</li>
-<li>StringBuilder s&#x3D;new StringBuilder()对象，str1、str2的内容会复制到StringBuilder的缓存区中；</li>
-<li>sb.append(str1)、sb.append(str2)；</li>
-<li>String str4&#x3D;sb.toString()；底层实际上是在<strong>堆</strong>中创建了一个对象；</li>
-</ol>
-<p>最后在常量池中创建了两个对象：hello、world，在堆中创建了一个对象：helloworld。</p>
-<h2 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h2><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/25.png"
-                      alt="Alt text"
-                ></p>
-<ol>
-<li><p>StringBuffer的直接父类是AbstractStringBuilder；</p>
-</li>
-<li><p>实现了Serializable接口，对象可以串行化；</p>
-</li>
-<li><p>在父类中，AbstractStringBuilder有属性<code>char[] value</code>，用于存储字符，不是final修饰；<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/26.png"
-                      alt="Alt text"
-                ></p>
-</li>
-<li><p>StringBuffer是一个$final$类，无法被继承<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/27.png"
-                      alt="Alt text"
-                ></p>
-</li>
-</ol>
-<p><strong>StringBuffer VS String</strong></p>
-<ol>
-<li>String保存的字符串常量，每次更新String类就是更改地址，效率低。</li>
-<li>StringBuffer保存的是字符串变量存放在char[]数组，内容可以更改，不用每次更新地址（创建新对象），效率高。</li>
-</ol>
-<p><strong>常见构造器</strong>：</p>
-<ol>
-<li><code>new StringBuffer()</code>：无参数构造方法，创建一个空的 StringBuffer 对象，初始容量为 16 个字符。</li>
-<li><code>new StringBuffer(int capacity)</code>：带有容量参数的构造方法，创建一个具有指定容量的 StringBuffer 对象。如果预计字符串将比较长，可以指定一个较大的容量以避免频繁的扩容操作。</li>
-<li><code>new StringBuffer(String str)</code>：创建一个包含指定字符串内容的 StringBuffer 对象，初始容量为 <code>str.length() + 16</code>。</li>
-</ol>
-<p><strong>源码分析</strong>：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>(<span class="string">&quot;hello&quot;</span>);</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li><p>初始化char[]数组的容量为**<code>str.length() + 16</code>**<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/28.png"
-                      alt="Alt text"
-                ></p>
-<p> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/29.png"
-                      alt="Alt text"
-                ></p>
-</li>
-<li><p>执行append方法，将字符串添加到char[]数组，可以看到<code>append(String str)</code>方法被$synchronized$修饰，所以StringBuffer是<strong>线程安全</strong>的。<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/30.png"
-                      alt="Alt text"
-                ></p>
-<p> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/31.png"
-                      alt="Alt text"
-                ></p>
-</li>
-<li><p>最后完成数据存储<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/32.png"
-                      alt="Alt text"
-                ></p>
-</li>
-</ol>
-<p><strong>常见方法</strong>：</p>
-<ol>
-<li>**append(String str)**：将指定的字符串附加到当前字符串的末尾。</li>
-<li>**insert(int offset, String str)**：在指定的偏移量位置插入指定的字符串。</li>
-<li>**delete(int start, int end)**：删除从指定开始位置到结束位置之间的字符。</li>
-<li>**deleteCharAt(int index)**：删除指定索引位置的字符。</li>
-<li>**replace(int start, int end, String str)**：用指定的字符串替换从开始位置到结束位置之间的字符。</li>
-<li>**substring(int start)**：返回从指定位置开始到字符串末尾的子字符串。。</li>
-<li>**length()**：返回字符串的长度（字符数）。</li>
-<li>**charAt(int index)**：返回指定索引位置的字符。</li>
-</ol>
-<h2 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a>StringBuilder</h2><p>一个可变的字符序列。</p>
-<p>StringBuilder是线程不安全的，用在字符串缓冲区被<strong>单个线程</strong>使用的时候。</p>
-<p><strong>父类关系图</strong>：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/33.png"
-                      alt="Alt text"
-                ></p>
-<ol>
-<li>StringBuilder的直接父类是AbstractStringBuilder；</li>
-<li>实现了Serializable接口，对象可以串行化（对象可以网络传输&#x2F;保存到文件）；</li>
-</ol>
-<p><strong>源码分析</strong>：</p>
-<ol>
-<li><p>StringBuilder是final类，无法被继承；<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/34.png"
-                      alt="Alt text"
-                ></p>
-</li>
-<li><p>字符序列存放AbstractStringBuilder的char[] value数组，因此存放在堆中。<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/35.png"
-                      alt="Alt text"
-                ></p>
-</li>
-<li><p>StringBuilder所有的方法没有互斥处理（synchronized），因此推荐在单线程的情况下使用；<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/36.png"
-                      alt="Alt text"
-                ></p>
-</li>
-</ol>
-<h2 id="String-VS-StringBuffer-VS-StringBuilder"><a href="#String-VS-StringBuffer-VS-StringBuilder" class="headerlink" title="String VS StringBuffer VS StringBuilder"></a>String VS StringBuffer VS StringBuilder</h2><table>
-<thead>
-<tr>
-<th>类型</th>
-<th>说明</th>
-<th>效率</th>
-<th>优点</th>
-<th>使用场景</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>String</td>
-<td>不可变的字符序列</td>
-<td>低</td>
-<td>复用率高</td>
-<td>字符串很少修改</td>
-</tr>
-<tr>
-<td>StringBuffer</td>
-<td>可变的字符序列</td>
-<td>较高</td>
-<td>线程安全</td>
-<td>字符串存在大量修改，并在多线程</td>
-</tr>
-<tr>
-<td>StringBuilder</td>
-<td>可变的字符序列</td>
-<td>最高（单线程）</td>
-<td>线程不安全</td>
-<td>字符串存在大量修改，并在单线程</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-什么是类（Class）？</title>
-    <url>/lqj3021809270/rainbow-jie-blog.git/2023/11/07/Java/Object-Oriented/Java-Class/</url>
-    <content><![CDATA[<h2 id="快速理解"><a href="#快速理解" class="headerlink" title="快速理解"></a>快速理解</h2><p>对象表示具有<strong>状态</strong>和<strong>行为</strong>的实体，例如：一辆汽车是一个对象，汽车的颜色、价格。。</p>
-<p>更具体的就是</p>
-<ol>
-<li><strong>状态（类的属性）</strong>：车的颜色、价格。。</li>
-<li><strong>行为（类的方法）</strong>：车可以前进、倒车、加速等行为；</li>
-</ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">hosue</span>&#123;</span><br><span class="line">	<span class="comment">//状态</span></span><br><span class="line">    String address;     <span class="comment">//</span></span><br><span class="line">   	String color;</span><br><span class="line">   	<span class="type">double</span> area;</span><br><span class="line">    <span class="comment">//行为</span></span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">openDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">closeDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line"> ...</span><br><span class="line"> ... </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>细节说明：</strong></p>
-<ol>
-<li>类名必须和文件名相同。</li>
-</ol>
-<h2 id="构造方法的特点"><a href="#构造方法的特点" class="headerlink" title="构造方法的特点"></a>构造方法的特点</h2><ol>
-<li>名字和类名相同</li>
-<li>不能被void修饰</li>
-<li>可以进行重载，这就是为什么有无参构造和有参构造</li>
-</ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">		String name;</span><br><span class="line">    Animal()&#123;&#125;   <span class="comment">//无参构造</span></span><br><span class="line">		Animal(String name)&#123;  <span class="comment">//有参构造</span></span><br><span class="line">			。。。	</span><br><span class="line">	&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="类相关操作"><a href="#类相关操作" class="headerlink" title="类相关操作"></a>类相关操作</h2><h3 id="初始化类变量有哪些方式？"><a href="#初始化类变量有哪些方式？" class="headerlink" title="初始化类变量有哪些方式？"></a>初始化类变量有哪些方式？</h3><ol>
-<li><p><strong>初始化自定义变量</strong></p>
-<p> 在变量定义时直接对变量进行赋值初始化。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">10</span>; <span class="comment">// 在定义时直接初始化变量 x 为 10</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>构造器初始化变量</strong></p>
-<p> 在类的构造函数（构造器）中对成员变量进行初始化。构造函数是在创建对象时调用的特殊方法。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> y;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyClass</span><span class="params">()</span> &#123;</span><br><span class="line">        y = <span class="number">20</span>; <span class="comment">// 在构造器中初始化变量 y 为 20</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>代码块中初始化</strong></p>
-<p> 使用初始化块（包括静态初始化块和非静态初始化块）来对成员变量进行初始化。静态初始化块用于静态变量的初始化，非静态初始化块用于实例变量的初始化。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">AnotherClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> z;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 非静态初始化块</span></span><br><span class="line">    &#123;</span><br><span class="line">        z = <span class="number">30</span>; <span class="comment">// 在初始化块中初始化变量 z 为 30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h3 id="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"><a href="#获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。" class="headerlink" title="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"></a><strong>获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。</strong></h3><ol>
-<li><p><strong>通过类的 <code>.class</code> 属性获取：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = MyClass.class; <span class="comment">// MyClass 是你要获取 Class 对象的类名</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>使用 <code>getClass()</code> 方法获取对象的 Class 对象：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">MyClass</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">Class&lt;?&gt; classObj = obj.getClass();</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>使用 <code>Class.forName()</code> 方法根据类名获取：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = Class.forName(<span class="string">&quot;com.example.MyClass&quot;</span>); <span class="comment">// 根据类的全限定名获取 Class 对象</span></span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<p>这种方法都可以用来获取特定类的 <code>Class</code> 对象，但它们的应用场景有所不同。<code>.class</code> 属性和 <code>Class.forName()</code> 用于编译时或者运行时动态地获取类的 <code>Class</code> 对象，而 <code>getClass()</code> 方法通常用于已经存在对象的情况下获取其 <code>Class</code> 对象。</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java-注解（Annotation）</title>
-    <url>/lqj3021809270/rainbow-jie-blog.git/2023/11/07/Java/Advanced-Application/Java-%E6%B3%A8%E8%A7%A3Annotation/</url>
+    <url>/rainbow-jie-blog/2023/11/07/Java/Advanced-Application/Java-%E6%B3%A8%E8%A7%A3Annotation/</url>
     <content><![CDATA[<h2 id="Override"><a href="#Override" class="headerlink" title="@Override"></a>@Override</h2><p>**<code>@Override</code>**它用于标记一个方法是要覆盖（重写）父类或接口中的方法。</p>
 <p>该注解只能用于方法</p>
 <p>Code：</p>
@@ -481,8 +181,519 @@
       </tags>
   </entry>
   <entry>
+    <title>Java-什么是方法（Methods）？</title>
+    <url>/rainbow-jie-blog/2023/11/07/Java/Basic/Java-Methods/</url>
+    <content><![CDATA[<h2 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h2><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
+<ol>
+<li><p><strong>无参数无返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f1</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 下面这个方法也没有返回值，虽然用到了 return</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (...) &#123;</span><br><span class="line">        <span class="keyword">return</span>;  <span class="comment">// 表示结束方法的执行,下方的输出语句不会执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>有参数无返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f2</span><span class="params">(Parameter <span class="number">1</span>, ..., Parameter n)</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>无参数有返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f3</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>有返回值有参数方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f4</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h2 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h2><p>静态方法（Static Methods）是与类本身相关联的方法，而不是与类的实例（对象）相关联。它们属于类，而不是属于类的实例。</p>
+<p>以下是关于静态方法的一些重要特点：</p>
+<ol>
+<li><strong>定义静态方法：</strong> <ol>
+<li>静态方法的定义在方法签名中通常包括 <code>static</code> 关键字。</li>
+<li>它们可以访问类级别的成员变量和其他静态方法，<strong>但不能访问实例级别的成员变量或方法</strong>。</li>
+</ol>
+</li>
+<li><strong>无法访问实例变量：</strong><ol>
+<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。</li>
+<li>而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
+</ol>
+</li>
+</ol>
+<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写（Method Overriding）是面向对象编程中的一种重要概念，它允许子类在继承自父类的方法的基础上重新定义（覆盖）这些方法，以满足子类的特定需求。方法重写是多态性的一个重要示例，它允许在运行时动态地选择要执行的方法，具体的方法取决于对象的类型。</p>
+<p>以下是方法重写的一些关键规则和注意事项：</p>
+<ol>
+<li><strong>方法重写的规则：</strong><ol>
+<li><strong>方法的名称</strong>、<strong>参数列表</strong>和<strong>返回类型</strong>必须与父类中的被重写方法相同。</li>
+<li>访问修饰符可以相同或更宽松，但不能更严格（例如，父类的方法是 <code>public</code>，子类的可以是 <code>public</code> 或 <code>protected</code>，但不能是 <code>private</code>）。</li>
+<li>子类方法不能抛出比父类方法更多的已检查异常。</li>
+<li>子类方法不能缩小父类方法的访问权限。</li>
+</ol>
+</li>
+<li><strong>@Override 注解</strong>：为了明确标识方法是重写的，可以使用 <code>@Override</code> 注解来标记子类中的重写方法。这是可选的，但推荐使用。</li>
+</ol>
+<p><strong>Code：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">animal</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        animal.makeSound(); <span class="comment">// 输出：&quot;Dog barks&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>在上述示例中，<code>Dog</code> 类重写了 <code>Animal</code> 类中的 <code>makeSound</code> 方法。即使通过 <code>Animal</code> 类的引用创建了一个 <code>Dog</code> 对象，但在运行时会选择执行 <code>Dog</code> 类中的重写方法，因为它是对象的实际类型。这是方法重写的一个典型示例。</p>
+<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><p>方法重载是指在同一个类中定义多个相同方法名，但是参数列表不同的方法。</p>
+<p><strong>方法名相同</strong></p>
+<ol>
+<li><strong>参数个数</strong>可以不同</li>
+<li><strong>参数类型</strong>可以不同</li>
+<li><strong>方法修饰符</strong>可以不同，但是不作为重载的参考。</li>
+</ol>
+<p>方法重载是实现<strong>编译时多态性</strong>的一种方法。</p>
+<p><strong>特点</strong>:</p>
+<ol>
+<li>方法重载要求方法名相同但参数列表不同。</li>
+<li>返回类型可以相同也可以不同，但方法重载不能仅根据返回类型来区分，否则JVM无法确定调用哪个方法。</li>
+<li>方法重载可以在同一个类中进行，也可以在父类和子类之间进行。</li>
+<li>方法重载与方法的返回值无关，<strong>仅与参数相关</strong>。</li>
+</ol>
+<p><strong>Code：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathOperations</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-什么是类（Class）？</title>
+    <url>/rainbow-jie-blog/2023/11/07/Java/Object-Oriented/Java-Class/</url>
+    <content><![CDATA[<h2 id="快速理解"><a href="#快速理解" class="headerlink" title="快速理解"></a>快速理解</h2><p>对象表示具有<strong>状态</strong>和<strong>行为</strong>的实体，例如：一辆汽车是一个对象，汽车的颜色、价格。。</p>
+<p>更具体的就是</p>
+<ol>
+<li><strong>状态（类的属性）</strong>：车的颜色、价格。。</li>
+<li><strong>行为（类的方法）</strong>：车可以前进、倒车、加速等行为；</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">hosue</span>&#123;</span><br><span class="line">	<span class="comment">//状态</span></span><br><span class="line">    String address;     <span class="comment">//</span></span><br><span class="line">   	String color;</span><br><span class="line">   	<span class="type">double</span> area;</span><br><span class="line">    <span class="comment">//行为</span></span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">openDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">closeDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line"> ...</span><br><span class="line"> ... </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>细节说明：</strong></p>
+<ol>
+<li>类名必须和文件名相同。</li>
+</ol>
+<h2 id="构造方法的特点"><a href="#构造方法的特点" class="headerlink" title="构造方法的特点"></a>构造方法的特点</h2><ol>
+<li>名字和类名相同</li>
+<li>不能被void修饰</li>
+<li>可以进行重载，这就是为什么有无参构造和有参构造</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">		String name;</span><br><span class="line">    Animal()&#123;&#125;   <span class="comment">//无参构造</span></span><br><span class="line">		Animal(String name)&#123;  <span class="comment">//有参构造</span></span><br><span class="line">			。。。	</span><br><span class="line">	&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="类相关操作"><a href="#类相关操作" class="headerlink" title="类相关操作"></a>类相关操作</h2><h3 id="初始化类变量有哪些方式？"><a href="#初始化类变量有哪些方式？" class="headerlink" title="初始化类变量有哪些方式？"></a>初始化类变量有哪些方式？</h3><ol>
+<li><p><strong>初始化自定义变量</strong></p>
+<p> 在变量定义时直接对变量进行赋值初始化。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">10</span>; <span class="comment">// 在定义时直接初始化变量 x 为 10</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>构造器初始化变量</strong></p>
+<p> 在类的构造函数（构造器）中对成员变量进行初始化。构造函数是在创建对象时调用的特殊方法。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> y;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyClass</span><span class="params">()</span> &#123;</span><br><span class="line">        y = <span class="number">20</span>; <span class="comment">// 在构造器中初始化变量 y 为 20</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>代码块中初始化</strong></p>
+<p> 使用初始化块（包括静态初始化块和非静态初始化块）来对成员变量进行初始化。静态初始化块用于静态变量的初始化，非静态初始化块用于实例变量的初始化。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">AnotherClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> z;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 非静态初始化块</span></span><br><span class="line">    &#123;</span><br><span class="line">        z = <span class="number">30</span>; <span class="comment">// 在初始化块中初始化变量 z 为 30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"><a href="#获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。" class="headerlink" title="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"></a><strong>获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。</strong></h3><ol>
+<li><p><strong>通过类的 <code>.class</code> 属性获取：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = MyClass.class; <span class="comment">// MyClass 是你要获取 Class 对象的类名</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>使用 <code>getClass()</code> 方法获取对象的 Class 对象：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">MyClass</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">Class&lt;?&gt; classObj = obj.getClass();</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>使用 <code>Class.forName()</code> 方法根据类名获取：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = Class.forName(<span class="string">&quot;com.example.MyClass&quot;</span>); <span class="comment">// 根据类的全限定名获取 Class 对象</span></span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<p>这种方法都可以用来获取特定类的 <code>Class</code> 对象，但它们的应用场景有所不同。<code>.class</code> 属性和 <code>Class.forName()</code> 用于编译时或者运行时动态地获取类的 <code>Class</code> 对象，而 <code>getClass()</code> 方法通常用于已经存在对象的情况下获取其 <code>Class</code> 对象。</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-变量（Variable）</title>
+    <url>/rainbow-jie-blog/2023/11/07/Java/Basic/Java-Variable/</url>
+    <content><![CDATA[<h2 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h2><p>成员变量（Instance Variables）和局部变量（Local Variables）是在编程中两种不同的变量类型，它们在作用域、生命周期和用途上有很大的区别。</p>
+<ol>
+<li><strong>访问修饰符</strong><ol>
+<li>成员变量：可以被（public、private、protected、default）修饰</li>
+<li>局部变量：只能在定义的范围内访问，没有访问修饰符</li>
+</ol>
+</li>
+<li><strong>存储方式</strong><ol>
+<li>成员变量：如果是static修饰属于类信息，则存储在方法区，反之，是属于实例，存储在堆中。</li>
+<li>局部变量：存储在虚拟栈。</li>
+</ol>
+</li>
+<li><strong>生命周期</strong><ol>
+<li>成员变量：是对象的一部分，随着对象的创建而存在。</li>
+<li>局部变量：随着方法的调用而存在，随着方法的调用结束而消亡。</li>
+</ol>
+</li>
+<li><strong>初始化</strong><ol>
+<li>成员变量：成员变量可以有默认初始值，如果没有显式初始化，它们将具有默认值（如0、false或null，具体取决于数据类型）。</li>
+<li>局部变量：局部变量必须显式初始化，否则编译器将报错。它们不具有默认初始值。</li>
+</ol>
+</li>
+</ol>
+<p><strong>成员变量与局部变量代码示例：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">VariableExample</span> &#123;</span><br><span class="line">    <span class="comment">// 成员变量</span></span><br><span class="line">    <span class="keyword">private</span> String name;     <span class="comment">//存储在堆</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> id;       <span class="comment">//存储在方法区</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 方法中的局部变量</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">method</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">10</span>;                <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot;Hello, world!&quot;</span>; <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        System.out.println(num1);</span><br><span class="line">        System.out.println(str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="静态变量"><a href="#静态变量" class="headerlink" title="静态变量"></a>静态变量</h2><p>静态变量也就是被<code>static</code>关键字修饰的变量。它可以被类的所有实例共享，无论一个类创建了多少个对象，它们都共享同一份静态变量。</p>
+<p>也就是说，静态变量只会被分配一次内存，即使创建多个对象，这样可以节省内存。</p>
+<p>以下是关于静态变量的一些重要特点：</p>
+<ol>
+<li><strong>访问方式</strong>：静态变量可以通过类名来访问，而不需要创建类的实例。例如，<code>ClassName.staticVariable</code>。</li>
+<li>静态变量会被 <code>final</code> 关键字修饰成为常量。</li>
+<li><strong>静态代码块：</strong>也属于静态变量的一部分，程序运行过程中只会被分配一次内存，只执行一次。</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">staticVariable</span> <span class="operator">=</span> <span class="number">42</span>; <span class="comment">// 静态变量的声明和初始化</span></span><br><span class="line">    </span><br><span class="line">		<span class="comment">//静态代码块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        staticVariable = <span class="number">100</span>;   <span class="comment">// 静态块中的初始化</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-常用类（Common Classes）</title>
+    <url>/rainbow-jie-blog/2023/11/07/Java/Advanced-Application/Java-%E5%B8%B8%E7%94%A8%E7%B1%BBCommon-Classes/</url>
+    <content><![CDATA[<h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><p>针对八种基本数据类型相应的引用类型</p>
+<p>Boolean、Character</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/21.png"
+                      alt="Alt text"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/22.png"
+                      alt="Alt text"
+                ></p>
+<h3 id="包装类和基本数据的转换"><a href="#包装类和基本数据的转换" class="headerlink" title="包装类和基本数据的转换"></a>包装类和基本数据的转换</h3><ol>
+<li><p><strong>装箱（Boxing）</strong></p>
+<p> 装箱是将基本数据类型转为对应的包装类对象的过程，可以直接通过赋值或者方法调用</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">primitiveInt</span> <span class="operator">=</span> <span class="number">42</span>;</span><br><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> primitiveInt; <span class="comment">// 自动装箱  底层使用的是Integer.valueOf(primitiveInt)</span></span><br><span class="line"></span><br><span class="line">或者显示装箱</span><br><span class="line"><span class="type">int</span> <span class="variable">primitiveInt</span> <span class="operator">=</span> <span class="number">42</span>;</span><br><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> Integer.valueOf(primitiveInt); <span class="comment">// 手动装箱</span></span><br><span class="line"></span><br><span class="line">字符串转为包装类</span><br><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot;123&quot;</span>;</span><br><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> Integer.valueOf(str);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>拆箱（Unboxing）</strong></p>
+<p> 拆箱是将包装类对象转为基本数据类型的过程，它可以直接通过赋值或者方法调用完成</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> <span class="number">42</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">primitiveInt</span> <span class="operator">=</span> wrapperInt; <span class="comment">// 自动拆箱</span></span><br><span class="line"></span><br><span class="line">或者显示的拆箱</span><br><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> <span class="number">42</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">primitiveInt</span> <span class="operator">=</span> wrapperInt.intValue(); <span class="comment">// 手动拆箱</span></span><br><span class="line"></span><br><span class="line">包装类转为字符串</span><br><span class="line"><span class="type">Integer</span> <span class="variable">wrapperInt</span> <span class="operator">=</span> <span class="number">123</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> wrapperInt.toString();</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<p><strong>Integer.valueOf（int）</strong>底层源码</p>
+<p>Integer.valueOf(int) 方法是用于将一个 int 值转换为对应的 Integer 对象的静态方法。</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> Integer <span class="title function_">valueOf</span><span class="params">(<span class="type">int</span> i)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (i &gt;= IntegerCache.low &amp;&amp; i &lt;= IntegerCache.high)</span><br><span class="line">        <span class="keyword">return</span> IntegerCache.cache[i + (-IntegerCache.low)];</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Integer</span>(i);   <span class="comment">//超过范围后，才会重新new一个对象</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li>首先检查给定的数字是否在$[-128，127]$范围之内；</li>
+<li>如果在这个范围之内，就会从缓存中获取Integer对象，而不是创建一个对象，这样可以减少对象的创建和内存消耗；</li>
+<li>如果不在这个范围之内，就会创建一个新的Integer对象。</li>
+</ol>
+<p>例如：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Integer</span> <span class="variable">num1</span> <span class="operator">=</span> Integer.valueOf(<span class="number">1</span>); </span><br><span class="line"><span class="type">Integer</span> <span class="variable">num2</span> <span class="operator">=</span> Integer.valueOf(<span class="number">1</span>); </span><br><span class="line">System.out.println(num1==num2);    <span class="comment">//true，都指向同一个对象</span></span><br><span class="line"></span><br><span class="line"><span class="type">Integer</span> <span class="variable">num1</span> <span class="operator">=</span> Integer.valueOf(<span class="number">128</span>); </span><br><span class="line"><span class="type">Integer</span> <span class="variable">num2</span> <span class="operator">=</span> Integer.valueOf(<span class="number">128</span>); </span><br><span class="line">System.out.println(num1==num2);    <span class="comment">//false，由于超过除了缓存范围，创建一个新Integer对象</span></span><br></pre></td></tr></table></figure></div>
+
+<h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><p>String对象是用于保存字符串，也就是字符序列；</p>
+<p>字符串常量对象使用双引号括起来的字符序列，例如：“你好”、“12.97”；</p>
+<p>字符串的字符使用Unicode字符编码，<strong>一个字符占两个字节</strong>。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/23.png"
+                      alt="Alt text"
+                ></p>
+<p>Serializable：子类可以实现串行化，可以在网络传输；</p>
+<p>Comparable：子类可以比较；</p>
+<p><strong>常见的构造器</strong>：</p>
+<ol>
+<li>String (String)：直接通过字符串创建</li>
+<li>String (char[])：使用字符数组创建字符串</li>
+<li>String (char[], int, int)：使用字符数组的一部分来创建一个字符串对象。第二个参数是起始索引，第三个参数是子数组的长度。</li>
+<li>String (byte[])：接受一个字节数组来创建一个字符串对象</li>
+<li>String (byte[], int ,int)：使用字节数组的一部分来创建一个字符串对象。第二个参数是起始索引，第三个参数是子数组的长度。</li>
+</ol>
+<p><strong>特性</strong>：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">String str1=<span class="string">&quot;hello&quot;</span>;   <span class="comment">//对象存放在常量池中</span></span><br><span class="line">String str2=<span class="keyword">new</span> <span class="title class_">String</span>(<span class="string">&quot;hello&quot;</span>)  <span class="comment">//对象存放在堆中</span></span><br></pre></td></tr></table></figure></div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/24.png"
+                      alt="Alt text"
+                ></p>
+<ol>
+<li>String是$final$修饰的类，无法被其他类继承；</li>
+<li>字符串是不可变的，一个字符串对象一旦被分配，其内容就无法修改</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">String s1=<span class="string">&quot;hello&quot;</span></span><br><span class="line">s1=<span class="string">&quot;hahah&quot;</span></span><br><span class="line">在方法区的常量池中，实际上创建了两个对象：hello、hahah</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">String a=<span class="string">&quot;hello&quot;</span>+<span class="string">&quot;world&quot;</span>;  实际上只创建了一个对象：helloworld</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">String str1=<span class="string">&quot;hello&quot;</span>;</span><br><span class="line">String str2=<span class="string">&quot;world&quot;</span>;</span><br><span class="line">String str4=str1+str2;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li>当执行<code>String str4 = str1 + str2</code>，Java编译器会使用<code>StringBuilder</code>类来处理字符串的拼接。</li>
+<li>StringBuilder s&#x3D;new StringBuilder()对象，str1、str2的内容会复制到StringBuilder的缓存区中；</li>
+<li>sb.append(str1)、sb.append(str2)；</li>
+<li>String str4&#x3D;sb.toString()；底层实际上是在<strong>堆</strong>中创建了一个对象；</li>
+</ol>
+<p>最后在常量池中创建了两个对象：hello、world，在堆中创建了一个对象：helloworld。</p>
+<h2 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h2><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/25.png"
+                      alt="Alt text"
+                ></p>
+<ol>
+<li><p>StringBuffer的直接父类是AbstractStringBuilder；</p>
+</li>
+<li><p>实现了Serializable接口，对象可以串行化；</p>
+</li>
+<li><p>在父类中，AbstractStringBuilder有属性<code>char[] value</code>，用于存储字符，不是final修饰；<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/26.png"
+                      alt="Alt text"
+                ></p>
+</li>
+<li><p>StringBuffer是一个$final$类，无法被继承<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/27.png"
+                      alt="Alt text"
+                ></p>
+</li>
+</ol>
+<p><strong>StringBuffer VS String</strong></p>
+<ol>
+<li>String保存的字符串常量，每次更新String类就是更改地址，效率低。</li>
+<li>StringBuffer保存的是字符串变量存放在char[]数组，内容可以更改，不用每次更新地址（创建新对象），效率高。</li>
+</ol>
+<p><strong>常见构造器</strong>：</p>
+<ol>
+<li><code>new StringBuffer()</code>：无参数构造方法，创建一个空的 StringBuffer 对象，初始容量为 16 个字符。</li>
+<li><code>new StringBuffer(int capacity)</code>：带有容量参数的构造方法，创建一个具有指定容量的 StringBuffer 对象。如果预计字符串将比较长，可以指定一个较大的容量以避免频繁的扩容操作。</li>
+<li><code>new StringBuffer(String str)</code>：创建一个包含指定字符串内容的 StringBuffer 对象，初始容量为 <code>str.length() + 16</code>。</li>
+</ol>
+<p><strong>源码分析</strong>：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">StringBuffer</span> <span class="variable">sb</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuffer</span>(<span class="string">&quot;hello&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li><p>初始化char[]数组的容量为**<code>str.length() + 16</code>**<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/28.png"
+                      alt="Alt text"
+                ></p>
+<p> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/29.png"
+                      alt="Alt text"
+                ></p>
+</li>
+<li><p>执行append方法，将字符串添加到char[]数组，可以看到<code>append(String str)</code>方法被$synchronized$修饰，所以StringBuffer是<strong>线程安全</strong>的。<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/30.png"
+                      alt="Alt text"
+                ></p>
+<p> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/31.png"
+                      alt="Alt text"
+                ></p>
+</li>
+<li><p>最后完成数据存储<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/32.png"
+                      alt="Alt text"
+                ></p>
+</li>
+</ol>
+<p><strong>常见方法</strong>：</p>
+<ol>
+<li>**append(String str)**：将指定的字符串附加到当前字符串的末尾。</li>
+<li>**insert(int offset, String str)**：在指定的偏移量位置插入指定的字符串。</li>
+<li>**delete(int start, int end)**：删除从指定开始位置到结束位置之间的字符。</li>
+<li>**deleteCharAt(int index)**：删除指定索引位置的字符。</li>
+<li>**replace(int start, int end, String str)**：用指定的字符串替换从开始位置到结束位置之间的字符。</li>
+<li>**substring(int start)**：返回从指定位置开始到字符串末尾的子字符串。。</li>
+<li>**length()**：返回字符串的长度（字符数）。</li>
+<li>**charAt(int index)**：返回指定索引位置的字符。</li>
+</ol>
+<h2 id="StringBuilder"><a href="#StringBuilder" class="headerlink" title="StringBuilder"></a>StringBuilder</h2><p>一个可变的字符序列。</p>
+<p>StringBuilder是线程不安全的，用在字符串缓冲区被<strong>单个线程</strong>使用的时候。</p>
+<p><strong>父类关系图</strong>：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/33.png"
+                      alt="Alt text"
+                ></p>
+<ol>
+<li>StringBuilder的直接父类是AbstractStringBuilder；</li>
+<li>实现了Serializable接口，对象可以串行化（对象可以网络传输&#x2F;保存到文件）；</li>
+</ol>
+<p><strong>源码分析</strong>：</p>
+<ol>
+<li><p>StringBuilder是final类，无法被继承；<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/34.png"
+                      alt="Alt text"
+                ></p>
+</li>
+<li><p>字符序列存放AbstractStringBuilder的char[] value数组，因此存放在堆中。<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/35.png"
+                      alt="Alt text"
+                ></p>
+</li>
+<li><p>StringBuilder所有的方法没有互斥处理（synchronized），因此推荐在单线程的情况下使用；<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/36.png"
+                      alt="Alt text"
+                ></p>
+</li>
+</ol>
+<h2 id="String-VS-StringBuffer-VS-StringBuilder"><a href="#String-VS-StringBuffer-VS-StringBuilder" class="headerlink" title="String VS StringBuffer VS StringBuilder"></a>String VS StringBuffer VS StringBuilder</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+<th>效率</th>
+<th>优点</th>
+<th>使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>String</td>
+<td>不可变的字符序列</td>
+<td>低</td>
+<td>复用率高</td>
+<td>字符串很少修改</td>
+</tr>
+<tr>
+<td>StringBuffer</td>
+<td>可变的字符序列</td>
+<td>较高</td>
+<td>线程安全</td>
+<td>字符串存在大量修改，并在多线程</td>
+</tr>
+<tr>
+<td>StringBuilder</td>
+<td>可变的字符序列</td>
+<td>最高（单线程）</td>
+<td>线程不安全</td>
+<td>字符串存在大量修改，并在单线程</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-Object类</title>
+    <url>/rainbow-jie-blog/2023/11/07/Java/Object-Oriented/Java-Object/</url>
+    <content><![CDATA[<h2 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h2><p>Object类是一个特殊的类，是所有类的父类。主要提供了一下几个方法</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于返回当前运行时对象的 Class 对象，使用了 final 关键字修饰，故不允许子类重写。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> Class&lt;?&gt; getClass()</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于返回对象的哈希码，主要使用在哈希表中，比如 JDK 中的HashMap。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 用于比较 2 个对象的内存地址是否相等，String 类对该方法进行了重写以用于比较字符串的值是否相等。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">equals</span><span class="params">(Object obj)</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于创建并返回当前对象的一份拷贝。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">native</span> Object <span class="title function_">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 返回类的名字实例的哈希码的 16 进制的字符串。建议 Object 所有的子类都重写这个方法。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，并且不能重写。唤醒一个在此对象监视器上等待的线程(监视器相当于就是锁的概念)。如果有多个线程在等待只会任意唤醒一个。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notify</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，并且不能重写。跟 notify 一样，唯一的区别就是会唤醒在此对象监视器上等待的所有线程，而不是一个线程。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notifyAll</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native方法，并且不能重写。暂停线程的执行。注意：sleep 方法没有释放锁，而 wait 方法释放了锁 ，timeout 是等待时间。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout)</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 多了 nanos 参数，这个参数表示额外时间（以纳秒为单位，范围是 0-999999）。 所以超时的时间还需要加上 nanos 纳秒。。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout, <span class="type">int</span> nanos)</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 跟之前的2个wait方法一样，只不过该方法一直等待，没有超时时间这个概念</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 实例被垃圾回收器回收的时候触发的操作</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">finalize</span><span class="params">()</span> <span class="keyword">throws</span> Throwable &#123; &#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="和-equals-的区别"><a href="#和-equals-的区别" class="headerlink" title="&#x3D;&#x3D; 和 equals() 的区别"></a><strong><strong>&#x3D;&#x3D; 和 equals() 的区别</strong></strong></h2><p><strong><code>==</code></strong> 对于基本类型和引用类型的作用效果是不同的：</p>
+<ol>
+<li>对于<strong>基本数据类型</strong>来说，<code>==</code> 比较的是<strong>内容</strong>。</li>
+<li>对于<strong>引用数据类型</strong>来说，<code>==</code> 比较的是对象的<strong>内存地址</strong>。</li>
+</ol>
+<p><code>equals()</code> 不能用于判断基本数据类型的变量，只能用来判断两个对象是否相等。</p>
+<p><code>equals()</code> 方法存在两种使用情况：</p>
+<ol>
+<li><strong>类没有重写了equals()方法</strong>：比较两个对象的内存地址。</li>
+<li><strong>类重写了equals()方法</strong>：一般都会重写该方法用于比较对象的属性<strong>。</strong></li>
+</ol>
+<p><strong>String</strong>类型，默认重写了<code>equls()</code>方法，使用时比较的是内容。</p>
+<h2 id="hashCode-方法"><a href="#hashCode-方法" class="headerlink" title="hashCode()方法"></a>hashCode()方法</h2><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/39.png"
+                      alt="Alt text"
+                ></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span>&#123;&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li>两个引用，如果指向同一个对象，则哈希值相同；</li>
+<li>两个引用，如果指向不是同一个对象，则哈希值不相同；</li>
+<li>哈希值并不是内存地址，哈希值是使用对象的内存地址计算哈希码。</li>
+</ol>
+<p>💡 <strong>为什么有<code>hashCode()</code>方法？</strong></p>
+<ol>
+<li><strong>快速查找和存储</strong>：通过使用哈希码，可以将对象分散到数组中的不同位置，从而实现高效的数据访问</li>
+<li><strong>性能优化</strong>：使用哈希码可以提高集合和映射操作的性能。</li>
+</ol>
+<h2 id="toString-方法"><a href="#toString-方法" class="headerlink" title="toString()方法"></a>toString()方法</h2><p>在Java中，<code>Object</code>类的<code>toString()</code>方法用于返回表示对象的字符串。<br>默认情况下，<code>toString()</code>方法返回一个字符串，其中包含了<strong>对象的类名</strong>和<strong>对象的哈希码的十六进制</strong>表示。</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> getClass().getName() + <span class="string">&quot;@&quot;</span> + Integer.toHexString(hashCode());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>同时，我也也可以重写<code>toString()</code>方法来输出自定义的内容。</p>
+<h2 id="Clone-方法"><a href="#Clone-方法" class="headerlink" title="Clone()方法"></a>Clone()方法</h2><p><code>clone()</code> 方法主要用于创建对象的拷贝，但在 Java 中存在浅拷贝和深拷贝两种不同的拷贝方式，而引用拷贝通常是指浅拷贝中的一种情况。</p>
+<p>让我们解释这三种拷贝方式：</p>
+<ol>
+<li><p><strong>深拷贝</strong>：完全复制整个对象，包括对象中所包含的引用对象。<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/40.png"
+                      alt="Alt text"
+                ></p>
+</li>
+<li><p><strong>浅拷贝</strong>：在堆上创建一个新对象，如果内部存在引用类型的对象，则拷贝对象和原对象共用同一个内部引用对象。<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/41.png"
+                      alt="Alt text"
+                ></p>
+</li>
+<li><p><strong>引用拷贝</strong>：原对象和拷贝对象的内部引用对象相同。<br> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/rainbow-jie-blog/images/42.png"
+                      alt="Alt text"
+                ></p>
+</li>
+</ol>
+<h3 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h3><p>在Java中，要执行浅拷贝，可以使用以下方法：</p>
+<ol>
+<li><p><strong>使用 <code>clone()</code> 方法</strong>：某些类实现了 <code>Cloneable</code> 接口，可以通过 重写<code>clone()</code> 方法来创建对象的浅拷贝。这包括数组和一些标准类，如 <code>String</code>。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 使用 clone() 方法进行浅拷贝</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> <span class="keyword">implements</span> <span class="title class_">Cloneable</span> &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> MyClass <span class="title function_">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException &#123;</span><br><span class="line">        <span class="keyword">return</span> (MyClass) <span class="built_in">super</span>.clone();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>手动实现浅拷贝：你可以编写自定义代码来创建一个新对象并复制原始对象的字段值。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 手动实现浅拷贝</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> MyClass <span class="title function_">shallowCopy</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">MyClass</span> <span class="variable">copy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">        copy.field1 = <span class="built_in">this</span>.field1;</span><br><span class="line">        copy.field2 = <span class="built_in">this</span>.field2;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">        <span class="keyword">return</span> copy;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h3><p>在 Java 中，深拷贝是一种复制对象，包括对象本身及其所有嵌套对象的所有属性。</p>
+<p>深拷贝的目的是创建一个新的对象，使其在内存中独立于原始对象，而不共享引用对象。</p>
+<p>在 Java 中，实现深拷贝的方法通常包括以下几种：</p>
+<ol>
+<li><p><strong>使用序列化和反序列化</strong>：通过将对象序列化为字节数组，然后反序列化为新对象，可以实现深拷贝。这需要确保所有对象及其嵌套对象都是可序列化的。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.ByteArrayInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ByteArrayOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectOutputStream;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">deepCopy</span><span class="params">(T object)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">ByteArrayOutputStream</span> <span class="variable">bos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ByteArrayOutputStream</span>();</span><br><span class="line">            <span class="type">ObjectOutputStream</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ObjectOutputStream</span>(bos);</span><br><span class="line">            out.writeObject(object);</span><br><span class="line">            out.flush();</span><br><span class="line"></span><br><span class="line">            <span class="type">ByteArrayInputStream</span> <span class="variable">bis</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ByteArrayInputStream</span>(bos.toByteArray());</span><br><span class="line">            <span class="type">ObjectInputStream</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ObjectInputStream</span>(bis);</span><br><span class="line">            <span class="keyword">return</span> (T) in.readObject();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p> 请注意，要使对象可序列化，它必须实现 <code>Serializable</code> 接口。</p>
+</li>
+<li><p><strong>使用第三方库</strong>：Java中有一些第三方库，如 Apache Commons Lang 或 Gson，提供了深拷贝方法。这些库通常提供了更简单的方式来实现深拷贝。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.commons.lang3.SerializationUtils;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">deepCopy</span><span class="params">(T object)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> SerializationUtils.clone(object);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>自定义递归复制</strong>：手动编写递归方法，遍历对象及其嵌套对象的属性，并创建新的对象进行复制。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">MyObject</span> <span class="keyword">implements</span> <span class="title class_">Serializable</span> &#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="type">int</span> value;</span><br><span class="line">        <span class="keyword">private</span> MyObject nestedObject;   <span class="comment">//引用类型对象</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// Constructor, getters, and setters</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> MyObject <span class="title function_">deepCopy</span><span class="params">(MyObject object)</span> &#123;</span><br><span class="line">        <span class="type">MyObject</span> <span class="variable">copy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyObject</span>();</span><br><span class="line">        copy.setValue(object.getValue());</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (object.getNestedObject() != <span class="literal">null</span>) &#123;</span><br><span class="line">            copy.setNestedObject(deepCopy(object.getNestedObject()));</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> copy;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java-面向对象核心思想（Object-Oriented）</title>
-    <url>/lqj3021809270/rainbow-jie-blog.git/2023/11/07/Java/Object-Oriented/Java-Object-Oriented/</url>
+    <url>/rainbow-jie-blog/2023/11/07/Java/Object-Oriented/Java-Object-Oriented/</url>
     <content><![CDATA[<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写是指子类在继承父类的方法后，重新定义该方法以实现子类特定的行为。</p>
 <p>在方法重写中，子类使用与父类相同的方法名、返回类型和参数列表来覆盖（override）父类的方法。</p>
 <p>方法重写是实现<strong>运行时多态性（动态多态性）</strong>的一种方式。</p>
@@ -626,103 +837,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-Object类</title>
-    <url>/lqj3021809270/rainbow-jie-blog.git/2023/11/07/Java/Object-Oriented/Java-Object/</url>
-    <content><![CDATA[<h2 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h2><p>Object类是一个特殊的类，是所有类的父类。主要提供了一下几个方法</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于返回当前运行时对象的 Class 对象，使用了 final 关键字修饰，故不允许子类重写。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> Class&lt;?&gt; getClass()</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于返回对象的哈希码，主要使用在哈希表中，比如 JDK 中的HashMap。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 用于比较 2 个对象的内存地址是否相等，String 类对该方法进行了重写以用于比较字符串的值是否相等。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">equals</span><span class="params">(Object obj)</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，用于创建并返回当前对象的一份拷贝。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">native</span> Object <span class="title function_">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 返回类的名字实例的哈希码的 16 进制的字符串。建议 Object 所有的子类都重写这个方法。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，并且不能重写。唤醒一个在此对象监视器上等待的线程(监视器相当于就是锁的概念)。如果有多个线程在等待只会任意唤醒一个。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notify</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native 方法，并且不能重写。跟 notify 一样，唯一的区别就是会唤醒在此对象监视器上等待的所有线程，而不是一个线程。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">notifyAll</span><span class="params">()</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * native方法，并且不能重写。暂停线程的执行。注意：sleep 方法没有释放锁，而 wait 方法释放了锁 ，timeout 是等待时间。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout)</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 多了 nanos 参数，这个参数表示额外时间（以纳秒为单位，范围是 0-999999）。 所以超时的时间还需要加上 nanos 纳秒。。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">long</span> timeout, <span class="type">int</span> nanos)</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 跟之前的2个wait方法一样，只不过该方法一直等待，没有超时时间这个概念</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 实例被垃圾回收器回收的时候触发的操作</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">finalize</span><span class="params">()</span> <span class="keyword">throws</span> Throwable &#123; &#125;</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="和-equals-的区别"><a href="#和-equals-的区别" class="headerlink" title="&#x3D;&#x3D; 和 equals() 的区别"></a><strong><strong>&#x3D;&#x3D; 和 equals() 的区别</strong></strong></h2><p><strong><code>==</code></strong> 对于基本类型和引用类型的作用效果是不同的：</p>
-<ol>
-<li>对于<strong>基本数据类型</strong>来说，<code>==</code> 比较的是<strong>内容</strong>。</li>
-<li>对于<strong>引用数据类型</strong>来说，<code>==</code> 比较的是对象的<strong>内存地址</strong>。</li>
-</ol>
-<p><code>equals()</code> 不能用于判断基本数据类型的变量，只能用来判断两个对象是否相等。</p>
-<p><code>equals()</code> 方法存在两种使用情况：</p>
-<ol>
-<li><strong>类没有重写了equals()方法</strong>：比较两个对象的内存地址。</li>
-<li><strong>类重写了equals()方法</strong>：一般都会重写该方法用于比较对象的属性<strong>。</strong></li>
-</ol>
-<p><strong>String</strong>类型，默认重写了<code>equls()</code>方法，使用时比较的是内容。</p>
-<h2 id="hashCode-方法"><a href="#hashCode-方法" class="headerlink" title="hashCode()方法"></a>hashCode()方法</h2><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/39.png"
-                      alt="Alt text"
-                ></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">native</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span>&#123;&#125;</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li>两个引用，如果指向同一个对象，则哈希值相同；</li>
-<li>两个引用，如果指向不是同一个对象，则哈希值不相同；</li>
-<li>哈希值并不是内存地址，哈希值是使用对象的内存地址计算哈希码。</li>
-</ol>
-<p>💡 <strong>为什么有<code>hashCode()</code>方法？</strong></p>
-<ol>
-<li><strong>快速查找和存储</strong>：通过使用哈希码，可以将对象分散到数组中的不同位置，从而实现高效的数据访问</li>
-<li><strong>性能优化</strong>：使用哈希码可以提高集合和映射操作的性能。</li>
-</ol>
-<h2 id="toString-方法"><a href="#toString-方法" class="headerlink" title="toString()方法"></a>toString()方法</h2><p>在Java中，<code>Object</code>类的<code>toString()</code>方法用于返回表示对象的字符串。<br>默认情况下，<code>toString()</code>方法返回一个字符串，其中包含了<strong>对象的类名</strong>和<strong>对象的哈希码的十六进制</strong>表示。</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> getClass().getName() + <span class="string">&quot;@&quot;</span> + Integer.toHexString(hashCode());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>同时，我也也可以重写<code>toString()</code>方法来输出自定义的内容。</p>
-<h2 id="Clone-方法"><a href="#Clone-方法" class="headerlink" title="Clone()方法"></a>Clone()方法</h2><p><code>clone()</code> 方法主要用于创建对象的拷贝，但在 Java 中存在浅拷贝和深拷贝两种不同的拷贝方式，而引用拷贝通常是指浅拷贝中的一种情况。</p>
-<p>让我们解释这三种拷贝方式：</p>
-<ol>
-<li><p><strong>深拷贝</strong>：完全复制整个对象，包括对象中所包含的引用对象。<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/40.png"
-                      alt="Alt text"
-                ></p>
-</li>
-<li><p><strong>浅拷贝</strong>：在堆上创建一个新对象，如果内部存在引用类型的对象，则拷贝对象和原对象共用同一个内部引用对象。<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/41.png"
-                      alt="Alt text"
-                ></p>
-</li>
-<li><p><strong>引用拷贝</strong>：原对象和拷贝对象的内部引用对象相同。<br> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/lqj3021809270/rainbow-jie-blog.git/images/42.png"
-                      alt="Alt text"
-                ></p>
-</li>
-</ol>
-<h3 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h3><p>在Java中，要执行浅拷贝，可以使用以下方法：</p>
-<ol>
-<li><p><strong>使用 <code>clone()</code> 方法</strong>：某些类实现了 <code>Cloneable</code> 接口，可以通过 重写<code>clone()</code> 方法来创建对象的浅拷贝。这包括数组和一些标准类，如 <code>String</code>。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 使用 clone() 方法进行浅拷贝</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> <span class="keyword">implements</span> <span class="title class_">Cloneable</span> &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> MyClass <span class="title function_">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException &#123;</span><br><span class="line">        <span class="keyword">return</span> (MyClass) <span class="built_in">super</span>.clone();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>手动实现浅拷贝：你可以编写自定义代码来创建一个新对象并复制原始对象的字段值。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 手动实现浅拷贝</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> MyClass <span class="title function_">shallowCopy</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">MyClass</span> <span class="variable">copy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">        copy.field1 = <span class="built_in">this</span>.field1;</span><br><span class="line">        copy.field2 = <span class="built_in">this</span>.field2;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">        <span class="keyword">return</span> copy;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h3 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h3><p>在 Java 中，深拷贝是一种复制对象，包括对象本身及其所有嵌套对象的所有属性。</p>
-<p>深拷贝的目的是创建一个新的对象，使其在内存中独立于原始对象，而不共享引用对象。</p>
-<p>在 Java 中，实现深拷贝的方法通常包括以下几种：</p>
-<ol>
-<li><p><strong>使用序列化和反序列化</strong>：通过将对象序列化为字节数组，然后反序列化为新对象，可以实现深拷贝。这需要确保所有对象及其嵌套对象都是可序列化的。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.ByteArrayInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ByteArrayOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.ObjectOutputStream;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">deepCopy</span><span class="params">(T object)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">ByteArrayOutputStream</span> <span class="variable">bos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ByteArrayOutputStream</span>();</span><br><span class="line">            <span class="type">ObjectOutputStream</span> <span class="variable">out</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ObjectOutputStream</span>(bos);</span><br><span class="line">            out.writeObject(object);</span><br><span class="line">            out.flush();</span><br><span class="line"></span><br><span class="line">            <span class="type">ByteArrayInputStream</span> <span class="variable">bis</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ByteArrayInputStream</span>(bos.toByteArray());</span><br><span class="line">            <span class="type">ObjectInputStream</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ObjectInputStream</span>(bis);</span><br><span class="line">            <span class="keyword">return</span> (T) in.readObject();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p> 请注意，要使对象可序列化，它必须实现 <code>Serializable</code> 接口。</p>
-</li>
-<li><p><strong>使用第三方库</strong>：Java中有一些第三方库，如 Apache Commons Lang 或 Gson，提供了深拷贝方法。这些库通常提供了更简单的方式来实现深拷贝。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.commons.lang3.SerializationUtils;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">deepCopy</span><span class="params">(T object)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> SerializationUtils.clone(object);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>自定义递归复制</strong>：手动编写递归方法，遍历对象及其嵌套对象的属性，并创建新的对象进行复制。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DeepCopyExample</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">MyObject</span> <span class="keyword">implements</span> <span class="title class_">Serializable</span> &#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="type">int</span> value;</span><br><span class="line">        <span class="keyword">private</span> MyObject nestedObject;   <span class="comment">//引用类型对象</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// Constructor, getters, and setters</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> MyObject <span class="title function_">deepCopy</span><span class="params">(MyObject object)</span> &#123;</span><br><span class="line">        <span class="type">MyObject</span> <span class="variable">copy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyObject</span>();</span><br><span class="line">        copy.setValue(object.getValue());</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (object.getNestedObject() != <span class="literal">null</span>) &#123;</span><br><span class="line">            copy.setNestedObject(deepCopy(object.getNestedObject()));</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> copy;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java-Basical-knowledge</title>
-    <url>/lqj3021809270/rainbow-jie-blog.git/2023/11/07/Java/Basic/Java-Basical-knowledge/</url>
+    <url>/rainbow-jie-blog/2023/11/07/Java/Basic/Java-Basical-knowledge/</url>
     <content><![CDATA[<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><table>
 <thead>
 <tr>
@@ -852,122 +968,6 @@
 </li>
 </ol>
 <!-- More info: [Deployment](https://hexo.io/docs/one-command-deployment.html) -->]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-什么是方法（Methods）？</title>
-    <url>/lqj3021809270/rainbow-jie-blog.git/2023/11/07/Java/Basic/Java-Methods/</url>
-    <content><![CDATA[<h2 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h2><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
-<ol>
-<li><p><strong>无参数无返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f1</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 下面这个方法也没有返回值，虽然用到了 return</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (...) &#123;</span><br><span class="line">        <span class="keyword">return</span>;  <span class="comment">// 表示结束方法的执行,下方的输出语句不会执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>有参数无返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f2</span><span class="params">(Parameter <span class="number">1</span>, ..., Parameter n)</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>无参数有返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f3</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>有返回值有参数方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f4</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h2 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h2><p>静态方法（Static Methods）是与类本身相关联的方法，而不是与类的实例（对象）相关联。它们属于类，而不是属于类的实例。</p>
-<p>以下是关于静态方法的一些重要特点：</p>
-<ol>
-<li><strong>定义静态方法：</strong> <ol>
-<li>静态方法的定义在方法签名中通常包括 <code>static</code> 关键字。</li>
-<li>它们可以访问类级别的成员变量和其他静态方法，<strong>但不能访问实例级别的成员变量或方法</strong>。</li>
-</ol>
-</li>
-<li><strong>无法访问实例变量：</strong><ol>
-<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。</li>
-<li>而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
-</ol>
-</li>
-</ol>
-<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写（Method Overriding）是面向对象编程中的一种重要概念，它允许子类在继承自父类的方法的基础上重新定义（覆盖）这些方法，以满足子类的特定需求。方法重写是多态性的一个重要示例，它允许在运行时动态地选择要执行的方法，具体的方法取决于对象的类型。</p>
-<p>以下是方法重写的一些关键规则和注意事项：</p>
-<ol>
-<li><strong>方法重写的规则：</strong><ol>
-<li><strong>方法的名称</strong>、<strong>参数列表</strong>和<strong>返回类型</strong>必须与父类中的被重写方法相同。</li>
-<li>访问修饰符可以相同或更宽松，但不能更严格（例如，父类的方法是 <code>public</code>，子类的可以是 <code>public</code> 或 <code>protected</code>，但不能是 <code>private</code>）。</li>
-<li>子类方法不能抛出比父类方法更多的已检查异常。</li>
-<li>子类方法不能缩小父类方法的访问权限。</li>
-</ol>
-</li>
-<li><strong>@Override 注解</strong>：为了明确标识方法是重写的，可以使用 <code>@Override</code> 注解来标记子类中的重写方法。这是可选的，但推荐使用。</li>
-</ol>
-<p><strong>Code：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">animal</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        animal.makeSound(); <span class="comment">// 输出：&quot;Dog barks&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>在上述示例中，<code>Dog</code> 类重写了 <code>Animal</code> 类中的 <code>makeSound</code> 方法。即使通过 <code>Animal</code> 类的引用创建了一个 <code>Dog</code> 对象，但在运行时会选择执行 <code>Dog</code> 类中的重写方法，因为它是对象的实际类型。这是方法重写的一个典型示例。</p>
-<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><p>方法重载是指在同一个类中定义多个相同方法名，但是参数列表不同的方法。</p>
-<p><strong>方法名相同</strong></p>
-<ol>
-<li><strong>参数个数</strong>可以不同</li>
-<li><strong>参数类型</strong>可以不同</li>
-<li><strong>方法修饰符</strong>可以不同，但是不作为重载的参考。</li>
-</ol>
-<p>方法重载是实现<strong>编译时多态性</strong>的一种方法。</p>
-<p><strong>特点</strong>:</p>
-<ol>
-<li>方法重载要求方法名相同但参数列表不同。</li>
-<li>返回类型可以相同也可以不同，但方法重载不能仅根据返回类型来区分，否则JVM无法确定调用哪个方法。</li>
-<li>方法重载可以在同一个类中进行，也可以在父类和子类之间进行。</li>
-<li>方法重载与方法的返回值无关，<strong>仅与参数相关</strong>。</li>
-</ol>
-<p><strong>Code：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathOperations</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-变量（Variable）</title>
-    <url>/lqj3021809270/rainbow-jie-blog.git/2023/11/07/Java/Basic/Java-Variable/</url>
-    <content><![CDATA[<h2 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h2><p>成员变量（Instance Variables）和局部变量（Local Variables）是在编程中两种不同的变量类型，它们在作用域、生命周期和用途上有很大的区别。</p>
-<ol>
-<li><strong>访问修饰符</strong><ol>
-<li>成员变量：可以被（public、private、protected、default）修饰</li>
-<li>局部变量：只能在定义的范围内访问，没有访问修饰符</li>
-</ol>
-</li>
-<li><strong>存储方式</strong><ol>
-<li>成员变量：如果是static修饰属于类信息，则存储在方法区，反之，是属于实例，存储在堆中。</li>
-<li>局部变量：存储在虚拟栈。</li>
-</ol>
-</li>
-<li><strong>生命周期</strong><ol>
-<li>成员变量：是对象的一部分，随着对象的创建而存在。</li>
-<li>局部变量：随着方法的调用而存在，随着方法的调用结束而消亡。</li>
-</ol>
-</li>
-<li><strong>初始化</strong><ol>
-<li>成员变量：成员变量可以有默认初始值，如果没有显式初始化，它们将具有默认值（如0、false或null，具体取决于数据类型）。</li>
-<li>局部变量：局部变量必须显式初始化，否则编译器将报错。它们不具有默认初始值。</li>
-</ol>
-</li>
-</ol>
-<p><strong>成员变量与局部变量代码示例：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">VariableExample</span> &#123;</span><br><span class="line">    <span class="comment">// 成员变量</span></span><br><span class="line">    <span class="keyword">private</span> String name;     <span class="comment">//存储在堆</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="type">int</span> id;       <span class="comment">//存储在方法区</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 方法中的局部变量</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">method</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">10</span>;                <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot;Hello, world!&quot;</span>; <span class="comment">// 栈中分配的局部变量</span></span><br><span class="line">        System.out.println(num1);</span><br><span class="line">        System.out.println(str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="静态变量"><a href="#静态变量" class="headerlink" title="静态变量"></a>静态变量</h2><p>静态变量也就是被<code>static</code>关键字修饰的变量。它可以被类的所有实例共享，无论一个类创建了多少个对象，它们都共享同一份静态变量。</p>
-<p>也就是说，静态变量只会被分配一次内存，即使创建多个对象，这样可以节省内存。</p>
-<p>以下是关于静态变量的一些重要特点：</p>
-<ol>
-<li><strong>访问方式</strong>：静态变量可以通过类名来访问，而不需要创建类的实例。例如，<code>ClassName.staticVariable</code>。</li>
-<li>静态变量会被 <code>final</code> 关键字修饰成为常量。</li>
-<li><strong>静态代码块：</strong>也属于静态变量的一部分，程序运行过程中只会被分配一次内存，只执行一次。</li>
-</ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">staticVariable</span> <span class="operator">=</span> <span class="number">42</span>; <span class="comment">// 静态变量的声明和初始化</span></span><br><span class="line">    </span><br><span class="line">		<span class="comment">//静态代码块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        staticVariable = <span class="number">100</span>;   <span class="comment">// 静态块中的初始化</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
       <categories>
         <category>Java</category>
       </categories>
