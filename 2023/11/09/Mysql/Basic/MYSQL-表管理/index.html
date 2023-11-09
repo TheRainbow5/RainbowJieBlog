@@ -17,17 +17,22 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/page/2/"/>
+    <link rel="canonical" href="http://example.com/2023/11/09/mysql/basic/mysql-表管理/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="Rainbow">
-<meta property="og:url" content="http://example.com/page/2/index.html">
+        <meta name="description" content="管理表查看表结构： 1DESC myemp1;  #查看表结构  创建表语法格式： 1234567CREATE TABLE [IF NOT EXISTS] 表名(    字段1, 数据类型 [约束条件] [默认值],    字段2, 数据类型 [约束条件] [默认值],    字段3, 数据类型 [约束条件] [默认值],    ……    [表约束条件]);   假设我们要创建一个名为 user">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MYSQL -表管理">
+<meta property="og:url" content="http://example.com/2023/11/09/Mysql/Basic/MYSQL-%E8%A1%A8%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="Rainbow">
+<meta property="og:description" content="管理表查看表结构： 1DESC myemp1;  #查看表结构  创建表语法格式： 1234567CREATE TABLE [IF NOT EXISTS] 表名(    字段1, 数据类型 [约束条件] [默认值],    字段2, 数据类型 [约束条件] [默认值],    字段3, 数据类型 [约束条件] [默认值],    ……    [表约束条件]);   假设我们要创建一个名为 user">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-11-09T11:24:28.000Z">
+<meta property="article:modified_time" content="2023-11-09T11:24:42.512Z">
 <meta property="article:author" content="RainbowJie">
+<meta property="article:tag" content="MYSQL">
 <meta name="twitter:card" content="summary">
     
     
@@ -39,6 +44,8 @@
     <!--- Page Info-->
     
     <title>
+        
+            MYSQL -表管理 -
         
         RainbowJie&#39;Blog
     </title>
@@ -96,39 +103,6 @@
 <main class="page-container" id="swup">
 
     
-        <style>
-    .home-article-item,
-    .sidebar-links,
-    .sidebar-content,
-    a.page-number,
-    a.extend,
-    .sidebar-links .links:hover,
-    .right-bottom-tools,
-    footer.footer {
-        background-color: var(--background-color-transparent-80) !important;
-    }
-    .right-bottom-tools:hover,
-    a.page-number:hover,
-    a.extend:hover {
-        background-color: var(--primary-color) !important;
-    }
-    .site-info,
-    .home-article-sticky-label {
-        background-color: var(--background-color-transparent-15) !important;
-    }
-    .home-article-sticky-label {
-        backdrop-filter: none !important;
-    }
-    .home-banner-background {
-        filter: blur(15px);
-    }
-</style>
-
-<div class="home-banner-background">
-</div>
-
-
-    
 
     <div class="main-content-container">
 
@@ -140,9 +114,9 @@
         <div class="left">
             
             <a class="logo-title" href="/">
-                <h1>
+                
                 RainbowJie&#39;Blog
-                </h1>
+                
             </a>
         </div>
 
@@ -154,7 +128,7 @@
                         
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active" 
+                                <a class="" 
                                     href="/"  >
                                     
                                         
@@ -270,7 +244,7 @@
             
                 
                     <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
-                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group active" 
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
                         href="/"  >
                              
                                 
@@ -371,58 +345,49 @@
             <div class="main-content">
 
                 
-                    <div class="home-content-container">
-    <ul class="home-article-list">
+                    <div class="post-page-container">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            
+                <h1 class="article-title-regular">MYSQL -表管理</h1>
+            
+            </div>
+            
+                    
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/11/09/Mysql/Basic/MYSQL-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
-                        MYSQL-基础知识
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        基本数据类型
-
-
-数据类型
-描述
-
-
-
-整数类型
-
-
-
-TINYINT
-很小的整数值。有符号范围是 -128 到 127，无符号范围是 0 到 255。
-
-
-SMALLINT
-小整数值。有符号范围是 -32,768 到 32,767，无符号范围是 0...
-                    
+        
+            <div class="article-header flex flex-row gap-2 items-center">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/pig-logo.webp">
                 </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Thu Nov 09 2023 19:01:13 GMT+0800">
-                
-                    2023-11-09
-                
-            </span>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">哪里有彩虹告诉我</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv2</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-11-09 19:24:28</span>
+        <span class="mobile">2023-11-09 19:24:28</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-11-09 19:24:42</span>
+            <span class="mobile">2023-11-09 19:24:42</span>
+            <span class="hover-info">更新</span>
         </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
             <ul>
                 
                 
@@ -436,250 +401,214 @@ SMALLINT
                 
             </ul>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/MYSQL/">MYSQL</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/11/09/Mysql/Basic/MYSQL-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">阅读全文<span class="seo-reader-text">MYSQL-基础知识</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/">
-                        Hexo安装运行
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        <p>Hexo 是一个快速、简单且强大的静态博客框架，基于 Node.js 开发</p>
-
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Tue Nov 07 2023 11:43:08 GMT+0800">
-                
-                    2023-11-07
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
             <ul>
                 
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/Hexo/">Hexo</a>&nbsp;
-                        </li>
-                    
-                    
+                    <li>
+                        <a href="/tags/MYSQL/">MYSQL</a>&nbsp;
+                    </li>
                 
             </ul>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/Hexo/">Hexo</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+    
 
-    <a href="/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/">阅读全文<span class="seo-reader-text">Hexo安装运行</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2022/09/28/Hexo/hello-world/">
-                        Hello World
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, ...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed Sep 28 2022 11:45:14 GMT+0800">
-                
-                    2022-09-28
-                
-            </span>
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>622 字</span>
         </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/Hexo/">Hexo</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 分钟</span>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/Hexo/">Hexo</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2022/09/28/Hexo/hello-world/">阅读全文<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
 </div>
 
-            </li>
-        
-    </ul>
-
-    <div class="home-paginator">
-        <div class="paginator">
-    <a class="extend prev" rel="prev" href="/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-</div>
-
-    </div>
-</div>
-
-                    <div class="comment-container pjax"></div>
-                
-
-            </div>
-
-            
-                <div class="home-sidebar-container">
-    <div class="sticky-container sticky">
-        
-            
-                <div class="sidebar-links">
-                    <div class="site-info">
-                        <div class="site-name">RainbowJie&#39;Blog</div>
-                        
-                            <div class="announcement">
-                                Hello World
-                            </div>
-                        
                     </div>
-                    
-                        
-                            
-                                <a class="links" href="/archives">
-                                    
-                                        <i class="fa-regular fa-archive icon-space"></i>
-                                    
-                                    <span class="link-name">Archives</span>
-                                </a>
-                            
-                        
-                            
-                                <a class="links" href="/tags">
-                                    
-                                        <i class="fa-regular fa-tags icon-space"></i>
-                                    
-                                    <span class="link-name">Tags</span>
-                                </a>
-                            
-                        
-                            
-                                <a class="links" href="/categories">
-                                    
-                                        <i class="fa-regular fa-folder icon-space"></i>
-                                    
-                                    <span class="link-name">Categories</span>
-                                </a>
-                            
-                        
-                    
-                </div>
-            
-            <div class="sidebar-content"  marginTop >
-                <div class="avatar flex justify-center">
-                    <img src="/images/pig-logo.webp">
-                </div>
-                <div class="author flex flex-col justify-center my-2.5 mx-0">
-                    <div class="name">哪里有彩虹告诉我</div>
-                    
-                        <div class="label">Lv2</div>
-                    
-                </div>
-                <div class="statistics">
-                    <a class="item" href="/tags">
-                        <div class="number">3</div>
-                        <div class="label">标签</div>
-                    </a>
-                    <a class="item" href="/categories">
-                        <div class="number">3</div>
-                        <div class="label">分类</div>
-                    </a>
-                    <a class="item" href="/archives">
-                        <div class="number">13</div>
-                        <div class="label">文章</div>
-                    </a>
                 </div>
             </div>
         
 
+        
+
+
+        <div class="article-content markdown-body">
+            <h2 id="管理表"><a href="#管理表" class="headerlink" title="管理表"></a>管理表</h2><p><strong>查看表结构：</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DESC</span> myemp1;  #查看表结构</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><p>语法格式：</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> [IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] 表名(</span><br><span class="line">    字段<span class="number">1</span>, 数据类型 [约束条件] [默认值],</span><br><span class="line">    字段<span class="number">2</span>, 数据类型 [约束条件] [默认值],</span><br><span class="line">    字段<span class="number">3</span>, 数据类型 [约束条件] [默认值],</span><br><span class="line">    ……</span><br><span class="line">    [表约束条件]</span><br><span class="line">);</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li><p>假设我们要创建一个名为 <strong><code>users</code></strong> 的表格，包含 <strong><code>id</code><strong>、</strong><code>username</code></strong> 和 <strong><code>email</code></strong> 列：</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> users (</span><br><span class="line">    id <span class="type">INT</span> AUTO_INCREMENT <span class="keyword">PRIMARY</span> KEY,  <span class="operator">/</span><span class="operator">/</span>设置为主键、自增长</span><br><span class="line">    username <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,      <span class="operator">/</span><span class="operator">/</span>非空约束</span><br><span class="line">    email <span class="type">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">UNIQUE</span>  <span class="operator">/</span><span class="operator">/</span>唯一性约束</span><br><span class="line">);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>基于现有的表进行创建（复制）</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> myemp2</span><br><span class="line">	<span class="keyword">AS</span></span><br><span class="line">	<span class="keyword">SELECT</span> employee_id,last_name,salary</span><br><span class="line">	<span class="keyword">FROM</span> employees;</span><br><span class="line"></span><br><span class="line">#说明<span class="number">1</span>：查询语句中的别名可以作为新表的字段名称</span><br><span class="line">#说明<span class="number">2</span>：查询语句可以结构丰富</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> myemp3</span><br><span class="line">	<span class="keyword">AS</span> </span><br><span class="line">	<span class="keyword">SELECT</span> e.employee_id emp_id,e.last_name emp_name,d.department_name </span><br><span class="line">	<span class="keyword">FROM</span> employees e <span class="keyword">JOIN</span> departments d</span><br><span class="line">	<span class="keyword">ON</span> e.department_id<span class="operator">=</span>d.department_id;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h2 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h2><p>基本语法：</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">ADD</span> 【<span class="keyword">COLUMN</span>】 字段名 字段类型 【<span class="keyword">FIRST</span><span class="operator">|</span>AFTER 字段名】;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="添加属性"><a href="#添加属性" class="headerlink" title="添加属性"></a>添加属性</h3><ol>
+<li><p><strong>添加属性到末尾</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> myemp1</span><br><span class="line">	<span class="keyword">ADD</span> salary <span class="keyword">DOUBLE</span>(<span class="number">10</span>,<span class="number">2</span>)  #一共<span class="number">10</span>位<span class="operator">=</span>整数位<span class="number">8</span>位<span class="operator">+</span>小数位<span class="number">2</span>位，默认添加到表的最后一个字段</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>插入属性首位</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> myemp1</span><br><span class="line">	<span class="keyword">ADD</span> phone_number <span class="type">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">FIRST</span>;  #将字段放在首位</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>属性<strong>放在某个字段的前面</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> myemp1</span><br><span class="line">	<span class="keyword">ADD</span> email <span class="type">VARCHAR</span>(<span class="number">40</span>) AFTER emp_name; #将字段放在emp_name后面</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="修改属性"><a href="#修改属性" class="headerlink" title="修改属性"></a>修改属性</h3><ol>
+<li><p><strong><strong>修改列属性（数据类型、约束等）</strong></strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line">MODIFY <span class="keyword">COLUMN</span> email <span class="type">VARCHAR</span>(<span class="number">255</span>);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>重命名列</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line">CHANGE <span class="keyword">COLUMN</span> username user_name <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>删除约束</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">CONSTRAINT</span> unique_username</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="重命名表"><a href="#重命名表" class="headerlink" title="重命名表"></a>重命名表</h3><ol>
+<li><p>使用RENAME</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RENAME <span class="keyword">TABLE</span> users <span class="keyword">TO</span> new_users</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>使用ALTER，</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users RENAME <span class="keyword">TO</span> new_users;   <span class="operator">/</span><span class="operator">/</span><span class="keyword">TO</span>可以省略</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>增加约束</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> unique_username <span class="keyword">UNIQUE</span> (user_name);</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><ol>
+<li>在MySQL中，当一张数据表<strong>没有与其他任何数据表形成关联关系</strong>时，可以将当前数据表直接删除。</li>
+<li><strong>数据</strong>和<strong>创建语句结构</strong>都被删除；</li>
+<li>所有相关索引被删除</li>
+</ol>
+<p>基本语法：</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> [IF <span class="keyword">EXISTS</span>] 数据表<span class="number">1</span> [, 数据表<span class="number">2</span>, …, 数据表n];</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="清空表"><a href="#清空表" class="headerlink" title="清空表"></a>清空表</h3><ol>
+<li><p><strong>TRUNCATE</strong></p>
+<ol>
+<li>删除表中所有的数据</li>
+<li><strong>保留创建语句结构</strong></li>
+<li>不持支回滚，清空后表数据无法恢复</li>
+</ol>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">TRUNCATE</span> <span class="keyword">TABLE</span> users;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>DELETE FROM</strong></p>
+<ol>
+<li>删除表中所有数据；</li>
+<li>保留创建的语句结构</li>
+<li>设置相关参数，则支持<strong>回滚，表数据可以恢复；</strong></li>
+</ol>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SET</span> autocommit<span class="operator">=</span><span class="literal">FALSE</span>    <span class="operator">/</span><span class="operator">/</span>不自动提交</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> myemp3  #清空表中数据</span><br><span class="line"></span><br><span class="line"><span class="keyword">ROLLBACK</span>  #回滚到最近一次</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<p><strong>说明：</strong></p>
+<ol>
+<li>TRUNCATE TABLE 在功能上与不带 WHERE 子句的 DELETE 语句相同。</li>
+</ol>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> MYSQL -表管理</li>
+        <li><strong>作者:</strong> 哪里有彩虹告诉我</li>
+        <li><strong>创建于
+                :</strong> 2023-11-09 19:24:28</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2023-11-09 19:24:42
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://therainbow5.github.io/2023/11/09/Mysql/Basic/MYSQL-表管理/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+            本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a> 进行许可。
+            
+
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/MYSQL/">#MYSQL</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                        rel="next"
+                        href="/2023/11/09/Mysql/Basic/MYSQL-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">MYSQL -数据库管理</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">MYSQL -表管理</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%A1%E7%90%86%E8%A1%A8"><span class="nav-text">管理表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E8%A1%A8"><span class="nav-text">创建表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E8%A1%A8"><span class="nav-text">修改表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%B1%9E%E6%80%A7"><span class="nav-text">添加属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E5%B1%9E%E6%80%A7"><span class="nav-text">修改属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E5%91%BD%E5%90%8D%E8%A1%A8"><span class="nav-text">重命名表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E8%A1%A8"><span class="nav-text">删除表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B8%85%E7%A9%BA%E8%A1%A8"><span class="nav-text">清空表</span></a></li></ol></li></ol>
+
     </div>
 </div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
 
             
 
@@ -748,6 +677,23 @@ SMALLINT
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
@@ -849,7 +795,6 @@ SMALLINT
         containers: ["#swup"],
     });
 </script>
-
 
 
 
