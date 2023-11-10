@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/09/28/Hexo/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo安装运行</title>
     <url>/2023/11/07/Hexo/Hexo%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8C/</url>
     <content><![CDATA[<h2 id="安装-Node-js-和-Git"><a href="#安装-Node-js-和-Git" class="headerlink" title="安装 Node.js 和 Git"></a><strong>安装 Node.js 和 Git</strong></h2><p>确保你的系统上已经安装了 Node.js 和 Git。你可以从它们的官方网站上下载并安装：</p>
@@ -28,240 +52,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-Basical-knowledge</title>
-    <url>/2023/11/07/Java/Basic/Java-Basical-knowledge/</url>
-    <content><![CDATA[<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><table>
-<thead>
-<tr>
-<th>访问修饰符</th>
-<th>类内部</th>
-<th>同一包内</th>
-<th>子类</th>
-<th>其他包</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>private</td>
-<td>✔️</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>default</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>❌</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>protected</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>public</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-</tbody></table>
-<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>Java中有八大基本数据类型，它们可以分为两类：数值类型和字符类型。</p>
-<p><strong>数值类型：</strong></p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>大小</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>byte（字节）</td>
-<td>8位</td>
-<td>-128 ~ 127</td>
-</tr>
-<tr>
-<td>short（短整数）</td>
-<td>16位</td>
-<td>-32,768 ~ 32,767</td>
-</tr>
-<tr>
-<td>int（整数）</td>
-<td>32位</td>
-<td>2^31 ~ 2^31 - 1。</td>
-</tr>
-<tr>
-<td>long（长整数）</td>
-<td>64位</td>
-<td>2^63 ~ 2^63 - 1。</td>
-</tr>
-<tr>
-<td>float（单精度浮点数）</td>
-<td>32位</td>
-<td>浮点数类型（小数），如2.0f</td>
-</tr>
-<tr>
-<td>double（双精度整数）</td>
-<td>64位</td>
-<td>更高精度的浮点数类型，如2.0</td>
-</tr>
-</tbody></table>
-<p><strong>字符类型：</strong></p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>大小</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>char（字符）</td>
-<td>16位</td>
-<td>用于表示Unicode字符，1字符&#x3D;2个字节</td>
-</tr>
-</tbody></table>
-<p><strong>布尔类型：</strong></p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>大小</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>boolean（布尔）</td>
-<td>表示逻辑值</td>
-<td>true  &amp;  false</td>
-</tr>
-</tbody></table>
-<h2 id="为什么浮点运算的时候会有精度丢失的风险？"><a href="#为什么浮点运算的时候会有精度丢失的风险？" class="headerlink" title="为什么浮点运算的时候会有精度丢失的风险？"></a>为什么浮点运算的时候会有精度丢失的风险？</h2><p>浮点数运算精度丢失代码演示：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">float</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">2.0f</span> - <span class="number">1.9f</span>;</span><br><span class="line"><span class="type">float</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">1.8f</span> - <span class="number">1.7f</span>;</span><br><span class="line">System.out.println(a);       <span class="comment">// 0.100000024</span></span><br><span class="line">System.out.println(b);       <span class="comment">// 0.099999905</span></span><br><span class="line">System.out.println(a == b);  <span class="comment">// false</span></span><br></pre></td></tr></table></figure></div>
-
-<p>为什么会出现这个问题呢？</p>
-<p>这个和计算机保存浮点数的机制有很大关系。我们知道计算机是二进制的，而且计算机在表示一个数字时，宽度是有限的，无限循环的小数存储在计算机时，只能被截断，所以就会导致小数精度发生损失的情况。这也就是解释了为什么浮点数没有办法用二进制精确表示。</p>
-<p><strong>解决办法：</strong></p>
-<ol>
-<li><p><strong>BigDecimal</strong>：使用BigDecimal类来进行高精度的十进制数值运算，可以精确表示和计算小数，而不会出现读点书的精度问题。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.math.BigDecimal;</span><br><span class="line"></span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;2.0&quot;</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;1.1&quot;</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">result</span> <span class="operator">=</span> num1.subtract(num2);   <span class="comment">//减法</span></span><br><span class="line">System.out.println(result);                <span class="comment">//0.9</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>限制小数位数</strong>：如果你知道你的计算结果应该具有特定的小数位数，可以限制结果的小数位数，从而减少精度丢失。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">2.0</span> - <span class="number">1.1</span>; <span class="comment">// 限制小数位数</span></span><br><span class="line">System.out.printf(<span class="string">&quot;%.2f%n&quot;</span>, result);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>尽量避免浮点数比较</strong>：避免使用&#x3D;&#x3D;或!&#x3D;运算符来来比较两个浮点数，因为浮点数的精度问题可能导致不准确的结果。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">2.0</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">1.1</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">epsilon</span> <span class="operator">=</span> <span class="number">1e-10</span>; <span class="comment">// 定义一个足够小的误差范围</span></span><br><span class="line"><span class="keyword">if</span> (Math.abs(num1 - num2) &lt; epsilon) &#123;</span><br><span class="line">    <span class="comment">// 数值相等</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p> <code>1e-10</code> 表示科学计数法中的一个小数，具体为 0.0000000001。这是一个非常接近零的小数，通常用于表示非常小的数值或误差范围，以在浮点数比较中避免精度问题。</p>
-</li>
-</ol>
-<!-- More info: [Deployment](https://hexo.io/docs/one-command-deployment.html) -->]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/09/28/Hexo/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java-什么是方法（Methods）？</title>
-    <url>/2023/11/07/Java/Basic/Java-Methods/</url>
-    <content><![CDATA[<h2 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h2><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
-<ol>
-<li><p><strong>无参数无返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f1</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 下面这个方法也没有返回值，虽然用到了 return</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (...) &#123;</span><br><span class="line">        <span class="keyword">return</span>;  <span class="comment">// 表示结束方法的执行,下方的输出语句不会执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>有参数无返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f2</span><span class="params">(Parameter <span class="number">1</span>, ..., Parameter n)</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>无参数有返回值方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f3</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>有返回值有参数方法</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f4</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h2 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h2><p>静态方法（Static Methods）是与类本身相关联的方法，而不是与类的实例（对象）相关联。它们属于类，而不是属于类的实例。</p>
-<p>以下是关于静态方法的一些重要特点：</p>
-<ol>
-<li><strong>定义静态方法：</strong> <ol>
-<li>静态方法的定义在方法签名中通常包括 <code>static</code> 关键字。</li>
-<li>它们可以访问类级别的成员变量和其他静态方法，<strong>但不能访问实例级别的成员变量或方法</strong>。</li>
-</ol>
-</li>
-<li><strong>无法访问实例变量：</strong><ol>
-<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。</li>
-<li>而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
-</ol>
-</li>
-</ol>
-<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写（Method Overriding）是面向对象编程中的一种重要概念，它允许子类在继承自父类的方法的基础上重新定义（覆盖）这些方法，以满足子类的特定需求。方法重写是多态性的一个重要示例，它允许在运行时动态地选择要执行的方法，具体的方法取决于对象的类型。</p>
-<p>以下是方法重写的一些关键规则和注意事项：</p>
-<ol>
-<li><strong>方法重写的规则：</strong><ol>
-<li><strong>方法的名称</strong>、<strong>参数列表</strong>和<strong>返回类型</strong>必须与父类中的被重写方法相同。</li>
-<li>访问修饰符可以相同或更宽松，但不能更严格（例如，父类的方法是 <code>public</code>，子类的可以是 <code>public</code> 或 <code>protected</code>，但不能是 <code>private</code>）。</li>
-<li>子类方法不能抛出比父类方法更多的已检查异常。</li>
-<li>子类方法不能缩小父类方法的访问权限。</li>
-</ol>
-</li>
-<li><strong>@Override 注解</strong>：为了明确标识方法是重写的，可以使用 <code>@Override</code> 注解来标记子类中的重写方法。这是可选的，但推荐使用。</li>
-</ol>
-<p><strong>Code：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">animal</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        animal.makeSound(); <span class="comment">// 输出：&quot;Dog barks&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>在上述示例中，<code>Dog</code> 类重写了 <code>Animal</code> 类中的 <code>makeSound</code> 方法。即使通过 <code>Animal</code> 类的引用创建了一个 <code>Dog</code> 对象，但在运行时会选择执行 <code>Dog</code> 类中的重写方法，因为它是对象的实际类型。这是方法重写的一个典型示例。</p>
-<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><p>方法重载是指在同一个类中定义多个相同方法名，但是参数列表不同的方法。</p>
-<p><strong>方法名相同</strong></p>
-<ol>
-<li><strong>参数个数</strong>可以不同</li>
-<li><strong>参数类型</strong>可以不同</li>
-<li><strong>方法修饰符</strong>可以不同，但是不作为重载的参考。</li>
-</ol>
-<p>方法重载是实现<strong>编译时多态性</strong>的一种方法。</p>
-<p><strong>特点</strong>:</p>
-<ol>
-<li>方法重载要求方法名相同但参数列表不同。</li>
-<li>返回类型可以相同也可以不同，但方法重载不能仅根据返回类型来区分，否则JVM无法确定调用哪个方法。</li>
-<li>方法重载可以在同一个类中进行，也可以在父类和子类之间进行。</li>
-<li>方法重载与方法的返回值无关，<strong>仅与参数相关</strong>。</li>
-</ol>
-<p><strong>Code：</strong></p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathOperations</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -511,52 +301,69 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-什么是类（Class）？</title>
-    <url>/2023/11/07/Java/Object-Oriented/Java-Class/</url>
-    <content><![CDATA[<h2 id="快速理解"><a href="#快速理解" class="headerlink" title="快速理解"></a>快速理解</h2><p>对象表示具有<strong>状态</strong>和<strong>行为</strong>的实体，例如：一辆汽车是一个对象，汽车的颜色、价格。。</p>
-<p>更具体的就是</p>
+    <title>Java-什么是方法（Methods）？</title>
+    <url>/2023/11/07/Java/Basic/Java-Methods/</url>
+    <content><![CDATA[<h2 id="普通方法"><a href="#普通方法" class="headerlink" title="普通方法"></a>普通方法</h2><p>我们可以按照方法的返回值和参数类型将方法分为下面这几种：</p>
 <ol>
-<li><strong>状态（类的属性）</strong>：车的颜色、价格。。</li>
-<li><strong>行为（类的方法）</strong>：车可以前进、倒车、加速等行为；</li>
+<li><p><strong>无参数无返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f1</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 下面这个方法也没有返回值，虽然用到了 return</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> a)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (...) &#123;</span><br><span class="line">        <span class="keyword">return</span>;  <span class="comment">// 表示结束方法的执行,下方的输出语句不会执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>有参数无返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">f2</span><span class="params">(Parameter <span class="number">1</span>, ..., Parameter n)</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>无参数有返回值方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f3</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>有返回值有参数方法</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">f4</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a * b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
 </ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">hosue</span>&#123;</span><br><span class="line">	<span class="comment">//状态</span></span><br><span class="line">    String address;     <span class="comment">//</span></span><br><span class="line">   	String color;</span><br><span class="line">   	<span class="type">double</span> area;</span><br><span class="line">    <span class="comment">//行为</span></span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">openDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">closeDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line"> ...</span><br><span class="line"> ... </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>细节说明：</strong></p>
+<h2 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h2><p>静态方法（Static Methods）是与类本身相关联的方法，而不是与类的实例（对象）相关联。它们属于类，而不是属于类的实例。</p>
+<p>以下是关于静态方法的一些重要特点：</p>
 <ol>
-<li>类名必须和文件名相同。</li>
+<li><strong>定义静态方法：</strong> <ol>
+<li>静态方法的定义在方法签名中通常包括 <code>static</code> 关键字。</li>
+<li>它们可以访问类级别的成员变量和其他静态方法，<strong>但不能访问实例级别的成员变量或方法</strong>。</li>
 </ol>
-<h2 id="构造方法的特点"><a href="#构造方法的特点" class="headerlink" title="构造方法的特点"></a>构造方法的特点</h2><ol>
-<li>名字和类名相同</li>
-<li>不能被void修饰</li>
-<li>可以进行重载，这就是为什么有无参构造和有参构造</li>
+</li>
+<li><strong>无法访问实例变量：</strong><ol>
+<li>静态方法是属于类的，在类加载的时候就会分配内存，可以通过类名直接访问。</li>
+<li>而非静态成员属于实例对象，只有在对象实例化之后才存在，需要通过类的实例对象去访问。</li>
 </ol>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">		String name;</span><br><span class="line">    Animal()&#123;&#125;   <span class="comment">//无参构造</span></span><br><span class="line">		Animal(String name)&#123;  <span class="comment">//有参构造</span></span><br><span class="line">			。。。	</span><br><span class="line">	&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+</ol>
+<h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><p>方法重写（Method Overriding）是面向对象编程中的一种重要概念，它允许子类在继承自父类的方法的基础上重新定义（覆盖）这些方法，以满足子类的特定需求。方法重写是多态性的一个重要示例，它允许在运行时动态地选择要执行的方法，具体的方法取决于对象的类型。</p>
+<p>以下是方法重写的一些关键规则和注意事项：</p>
+<ol>
+<li><strong>方法重写的规则：</strong><ol>
+<li><strong>方法的名称</strong>、<strong>参数列表</strong>和<strong>返回类型</strong>必须与父类中的被重写方法相同。</li>
+<li>访问修饰符可以相同或更宽松，但不能更严格（例如，父类的方法是 <code>public</code>，子类的可以是 <code>public</code> 或 <code>protected</code>，但不能是 <code>private</code>）。</li>
+<li>子类方法不能抛出比父类方法更多的已检查异常。</li>
+<li>子类方法不能缩小父类方法的访问权限。</li>
+</ol>
+</li>
+<li><strong>@Override 注解</strong>：为了明确标识方法是重写的，可以使用 <code>@Override</code> 注解来标记子类中的重写方法。这是可选的，但推荐使用。</li>
+</ol>
+<p><strong>Code：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal makes a sound&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">makeSound</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog barks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Animal</span> <span class="variable">animal</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();</span><br><span class="line">        animal.makeSound(); <span class="comment">// 输出：&quot;Dog barks&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-<h2 id="类相关操作"><a href="#类相关操作" class="headerlink" title="类相关操作"></a>类相关操作</h2><h3 id="初始化类变量有哪些方式？"><a href="#初始化类变量有哪些方式？" class="headerlink" title="初始化类变量有哪些方式？"></a>初始化类变量有哪些方式？</h3><ol>
-<li><p><strong>初始化自定义变量</strong></p>
-<p> 在变量定义时直接对变量进行赋值初始化。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">10</span>; <span class="comment">// 在定义时直接初始化变量 x 为 10</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>构造器初始化变量</strong></p>
-<p> 在类的构造函数（构造器）中对成员变量进行初始化。构造函数是在创建对象时调用的特殊方法。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> y;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyClass</span><span class="params">()</span> &#123;</span><br><span class="line">        y = <span class="number">20</span>; <span class="comment">// 在构造器中初始化变量 y 为 20</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>代码块中初始化</strong></p>
-<p> 使用初始化块（包括静态初始化块和非静态初始化块）来对成员变量进行初始化。静态初始化块用于静态变量的初始化，非静态初始化块用于实例变量的初始化。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">AnotherClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> z;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 非静态初始化块</span></span><br><span class="line">    &#123;</span><br><span class="line">        z = <span class="number">30</span>; <span class="comment">// 在初始化块中初始化变量 z 为 30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+<p>在上述示例中，<code>Dog</code> 类重写了 <code>Animal</code> 类中的 <code>makeSound</code> 方法。即使通过 <code>Animal</code> 类的引用创建了一个 <code>Dog</code> 对象，但在运行时会选择执行 <code>Dog</code> 类中的重写方法，因为它是对象的实际类型。这是方法重写的一个典型示例。</p>
+<h2 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h2><p>方法重载是指在同一个类中定义多个相同方法名，但是参数列表不同的方法。</p>
+<p><strong>方法名相同</strong></p>
+<ol>
+<li><strong>参数个数</strong>可以不同</li>
+<li><strong>参数类型</strong>可以不同</li>
+<li><strong>方法修饰符</strong>可以不同，但是不作为重载的参考。</li>
 </ol>
-<h3 id="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"><a href="#获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。" class="headerlink" title="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"></a><strong>获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。</strong></h3><ol>
-<li><p><strong>通过类的 <code>.class</code> 属性获取：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = MyClass.class; <span class="comment">// MyClass 是你要获取 Class 对象的类名</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>使用 <code>getClass()</code> 方法获取对象的 Class 对象：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">MyClass</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">Class&lt;?&gt; classObj = obj.getClass();</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>使用 <code>Class.forName()</code> 方法根据类名获取：</strong></p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = Class.forName(<span class="string">&quot;com.example.MyClass&quot;</span>); <span class="comment">// 根据类的全限定名获取 Class 对象</span></span><br></pre></td></tr></table></figure></div></li>
+<p>方法重载是实现<strong>编译时多态性</strong>的一种方法。</p>
+<p><strong>特点</strong>:</p>
+<ol>
+<li>方法重载要求方法名相同但参数列表不同。</li>
+<li>返回类型可以相同也可以不同，但方法重载不能仅根据返回类型来区分，否则JVM无法确定调用哪个方法。</li>
+<li>方法重载可以在同一个类中进行，也可以在父类和子类之间进行。</li>
+<li>方法重载与方法的返回值无关，<strong>仅与参数相关</strong>。</li>
 </ol>
-<p>这种方法都可以用来获取特定类的 <code>Class</code> 对象，但它们的应用场景有所不同。<code>.class</code> 属性和 <code>Class.forName()</code> 用于编译时或者运行时动态地获取类的 <code>Class</code> 对象，而 <code>getClass()</code> 方法通常用于已经存在对象的情况下获取其 <code>Class</code> 对象。</p>
-]]></content>
+<p><strong>Code：</strong></p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathOperations</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -682,6 +489,199 @@
 
 <h3 id="Documented"><a href="#Documented" class="headerlink" title="@Documented"></a>@Documented</h3><p>@Documented 注解表示该注解应该被包含在Java文档中。</p>
 <h3 id="Inherited"><a href="#Inherited" class="headerlink" title="@Inherited"></a>@Inherited</h3><p>如果某个类使用了被@Inherited修饰的Annotation，则其子类将自动具有该注解</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-Basical-knowledge</title>
+    <url>/2023/11/07/Java/Basic/Java-Basical-knowledge/</url>
+    <content><![CDATA[<h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><table>
+<thead>
+<tr>
+<th>访问修饰符</th>
+<th>类内部</th>
+<th>同一包内</th>
+<th>子类</th>
+<th>其他包</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>private</td>
+<td>✔️</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>default</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>public</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+</tbody></table>
+<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>Java中有八大基本数据类型，它们可以分为两类：数值类型和字符类型。</p>
+<p><strong>数值类型：</strong></p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>大小</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte（字节）</td>
+<td>8位</td>
+<td>-128 ~ 127</td>
+</tr>
+<tr>
+<td>short（短整数）</td>
+<td>16位</td>
+<td>-32,768 ~ 32,767</td>
+</tr>
+<tr>
+<td>int（整数）</td>
+<td>32位</td>
+<td>2^31 ~ 2^31 - 1。</td>
+</tr>
+<tr>
+<td>long（长整数）</td>
+<td>64位</td>
+<td>2^63 ~ 2^63 - 1。</td>
+</tr>
+<tr>
+<td>float（单精度浮点数）</td>
+<td>32位</td>
+<td>浮点数类型（小数），如2.0f</td>
+</tr>
+<tr>
+<td>double（双精度整数）</td>
+<td>64位</td>
+<td>更高精度的浮点数类型，如2.0</td>
+</tr>
+</tbody></table>
+<p><strong>字符类型：</strong></p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>大小</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>char（字符）</td>
+<td>16位</td>
+<td>用于表示Unicode字符，1字符&#x3D;2个字节</td>
+</tr>
+</tbody></table>
+<p><strong>布尔类型：</strong></p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>大小</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>boolean（布尔）</td>
+<td>表示逻辑值</td>
+<td>true  &amp;  false</td>
+</tr>
+</tbody></table>
+<h2 id="为什么浮点运算的时候会有精度丢失的风险？"><a href="#为什么浮点运算的时候会有精度丢失的风险？" class="headerlink" title="为什么浮点运算的时候会有精度丢失的风险？"></a>为什么浮点运算的时候会有精度丢失的风险？</h2><p>浮点数运算精度丢失代码演示：</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">float</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">2.0f</span> - <span class="number">1.9f</span>;</span><br><span class="line"><span class="type">float</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">1.8f</span> - <span class="number">1.7f</span>;</span><br><span class="line">System.out.println(a);       <span class="comment">// 0.100000024</span></span><br><span class="line">System.out.println(b);       <span class="comment">// 0.099999905</span></span><br><span class="line">System.out.println(a == b);  <span class="comment">// false</span></span><br></pre></td></tr></table></figure></div>
+
+<p>为什么会出现这个问题呢？</p>
+<p>这个和计算机保存浮点数的机制有很大关系。我们知道计算机是二进制的，而且计算机在表示一个数字时，宽度是有限的，无限循环的小数存储在计算机时，只能被截断，所以就会导致小数精度发生损失的情况。这也就是解释了为什么浮点数没有办法用二进制精确表示。</p>
+<p><strong>解决办法：</strong></p>
+<ol>
+<li><p><strong>BigDecimal</strong>：使用BigDecimal类来进行高精度的十进制数值运算，可以精确表示和计算小数，而不会出现读点书的精度问题。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.math.BigDecimal;</span><br><span class="line"></span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;2.0&quot;</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;1.1&quot;</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">result</span> <span class="operator">=</span> num1.subtract(num2);   <span class="comment">//减法</span></span><br><span class="line">System.out.println(result);                <span class="comment">//0.9</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>限制小数位数</strong>：如果你知道你的计算结果应该具有特定的小数位数，可以限制结果的小数位数，从而减少精度丢失。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">2.0</span> - <span class="number">1.1</span>; <span class="comment">// 限制小数位数</span></span><br><span class="line">System.out.printf(<span class="string">&quot;%.2f%n&quot;</span>, result);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>尽量避免浮点数比较</strong>：避免使用&#x3D;&#x3D;或!&#x3D;运算符来来比较两个浮点数，因为浮点数的精度问题可能导致不准确的结果。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">2.0</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">1.1</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">epsilon</span> <span class="operator">=</span> <span class="number">1e-10</span>; <span class="comment">// 定义一个足够小的误差范围</span></span><br><span class="line"><span class="keyword">if</span> (Math.abs(num1 - num2) &lt; epsilon) &#123;</span><br><span class="line">    <span class="comment">// 数值相等</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p> <code>1e-10</code> 表示科学计数法中的一个小数，具体为 0.0000000001。这是一个非常接近零的小数，通常用于表示非常小的数值或误差范围，以在浮点数比较中避免精度问题。</p>
+</li>
+</ol>
+<!-- More info: [Deployment](https://hexo.io/docs/one-command-deployment.html) -->]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java-什么是类（Class）？</title>
+    <url>/2023/11/07/Java/Object-Oriented/Java-Class/</url>
+    <content><![CDATA[<h2 id="快速理解"><a href="#快速理解" class="headerlink" title="快速理解"></a>快速理解</h2><p>对象表示具有<strong>状态</strong>和<strong>行为</strong>的实体，例如：一辆汽车是一个对象，汽车的颜色、价格。。</p>
+<p>更具体的就是</p>
+<ol>
+<li><strong>状态（类的属性）</strong>：车的颜色、价格。。</li>
+<li><strong>行为（类的方法）</strong>：车可以前进、倒车、加速等行为；</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">hosue</span>&#123;</span><br><span class="line">	<span class="comment">//状态</span></span><br><span class="line">    String address;     <span class="comment">//</span></span><br><span class="line">   	String color;</span><br><span class="line">   	<span class="type">double</span> area;</span><br><span class="line">    <span class="comment">//行为</span></span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">openDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">void</span> <span class="title function_">closeDoor</span><span class="params">()</span> &#123;</span><br><span class="line">      <span class="comment">//Write code here</span></span><br><span class="line">   	&#125;</span><br><span class="line"> ...</span><br><span class="line"> ... </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>细节说明：</strong></p>
+<ol>
+<li>类名必须和文件名相同。</li>
+</ol>
+<h2 id="构造方法的特点"><a href="#构造方法的特点" class="headerlink" title="构造方法的特点"></a>构造方法的特点</h2><ol>
+<li>名字和类名相同</li>
+<li>不能被void修饰</li>
+<li>可以进行重载，这就是为什么有无参构造和有参构造</li>
+</ol>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span> &#123;</span><br><span class="line">		String name;</span><br><span class="line">    Animal()&#123;&#125;   <span class="comment">//无参构造</span></span><br><span class="line">		Animal(String name)&#123;  <span class="comment">//有参构造</span></span><br><span class="line">			。。。	</span><br><span class="line">	&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="类相关操作"><a href="#类相关操作" class="headerlink" title="类相关操作"></a>类相关操作</h2><h3 id="初始化类变量有哪些方式？"><a href="#初始化类变量有哪些方式？" class="headerlink" title="初始化类变量有哪些方式？"></a>初始化类变量有哪些方式？</h3><ol>
+<li><p><strong>初始化自定义变量</strong></p>
+<p> 在变量定义时直接对变量进行赋值初始化。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">10</span>; <span class="comment">// 在定义时直接初始化变量 x 为 10</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>构造器初始化变量</strong></p>
+<p> 在类的构造函数（构造器）中对成员变量进行初始化。构造函数是在创建对象时调用的特殊方法。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> y;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyClass</span><span class="params">()</span> &#123;</span><br><span class="line">        y = <span class="number">20</span>; <span class="comment">// 在构造器中初始化变量 y 为 20</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>代码块中初始化</strong></p>
+<p> 使用初始化块（包括静态初始化块和非静态初始化块）来对成员变量进行初始化。静态初始化块用于静态变量的初始化，非静态初始化块用于实例变量的初始化。</p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">AnotherClass</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> z;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 非静态初始化块</span></span><br><span class="line">    &#123;</span><br><span class="line">        z = <span class="number">30</span>; <span class="comment">// 在初始化块中初始化变量 z 为 30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"><a href="#获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。" class="headerlink" title="获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。"></a><strong>获得Class类的JAVA访问方法有几种？并利用主要代码方法简述。</strong></h3><ol>
+<li><p><strong>通过类的 <code>.class</code> 属性获取：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = MyClass.class; <span class="comment">// MyClass 是你要获取 Class 对象的类名</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>使用 <code>getClass()</code> 方法获取对象的 Class 对象：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">MyClass</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyClass</span>();</span><br><span class="line">Class&lt;?&gt; classObj = obj.getClass();</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>使用 <code>Class.forName()</code> 方法根据类名获取：</strong></p>
+ <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">Class&lt;?&gt; classObj = Class.forName(<span class="string">&quot;com.example.MyClass&quot;</span>); <span class="comment">// 根据类的全限定名获取 Class 对象</span></span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<p>这种方法都可以用来获取特定类的 <code>Class</code> 对象，但它们的应用场景有所不同。<code>.class</code> 属性和 <code>Class.forName()</code> 用于编译时或者运行时动态地获取类的 <code>Class</code> 对象，而 <code>getClass()</code> 方法通常用于已经存在对象的情况下获取其 <code>Class</code> 对象。</p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -976,51 +976,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MYSQL-基本查询</title>
-    <url>/2023/11/10/Mysql/Basic/MYSQL-%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2/</url>
-    <content><![CDATA[<p>在 MySQL 中，使用 SELECT 语句进行基本的查询操作。</p>
-<h2 id="查看表结构"><a href="#查看表结构" class="headerlink" title="查看表结构"></a>查看表结构</h2><p>查看表的基本属性</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DESCRIBE</span> users;</span><br><span class="line">或</span><br><span class="line"><span class="keyword">DESC</span> users;</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">mysql<span class="operator">&gt;</span> <span class="keyword">desc</span> users;</span><br><span class="line"><span class="operator">+</span><span class="comment">----------------+-------------+------+-----+---------+-------+</span></span><br><span class="line"><span class="operator">|</span> Field          <span class="operator">|</span> Type        <span class="operator">|</span> <span class="keyword">Null</span> <span class="operator">|</span> Key <span class="operator">|</span> <span class="keyword">Default</span> <span class="operator">|</span> Extra <span class="operator">|</span></span><br><span class="line"><span class="operator">+</span><span class="comment">----------------+-------------+------+-----+---------+-------+</span></span><br><span class="line"><span class="operator">|</span> employee_id    <span class="operator">|</span> <span class="type">int</span>(<span class="number">6</span>)      <span class="operator">|</span> <span class="keyword">NO</span>   <span class="operator">|</span> PRI <span class="operator">|</span> <span class="number">0</span>       <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> first_name     <span class="operator">|</span> <span class="type">varchar</span>(<span class="number">20</span>) <span class="operator">|</span> YES  <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> last_name      <span class="operator">|</span> <span class="type">varchar</span>(<span class="number">25</span>) <span class="operator">|</span> <span class="keyword">NO</span>   <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> email          <span class="operator">|</span> <span class="type">varchar</span>(<span class="number">25</span>) <span class="operator">|</span> <span class="keyword">NO</span>   <span class="operator">|</span> UNI <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> phone_number   <span class="operator">|</span> <span class="type">varchar</span>(<span class="number">20</span>) <span class="operator">|</span> YES  <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> hire_date      <span class="operator">|</span> <span class="type">date</span>        <span class="operator">|</span> <span class="keyword">NO</span>   <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> job_id         <span class="operator">|</span> <span class="type">varchar</span>(<span class="number">10</span>) <span class="operator">|</span> <span class="keyword">NO</span>   <span class="operator">|</span> MUL <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> salary         <span class="operator">|</span> <span class="keyword">double</span>(<span class="number">8</span>,<span class="number">2</span>) <span class="operator">|</span> YES  <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> commission_pct <span class="operator">|</span> <span class="keyword">double</span>(<span class="number">2</span>,<span class="number">2</span>) <span class="operator">|</span> YES  <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> manager_id     <span class="operator">|</span> <span class="type">int</span>(<span class="number">6</span>)      <span class="operator">|</span> YES  <span class="operator">|</span> MUL <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> department_id  <span class="operator">|</span> <span class="type">int</span>(<span class="number">4</span>)      <span class="operator">|</span> YES  <span class="operator">|</span> MUL <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">+</span><span class="comment">----------------+-------------+------+-----+---------+-------+</span></span><br><span class="line"><span class="number">11</span> <span class="keyword">rows</span> <span class="keyword">in</span> <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="基本的SELECT语法"><a href="#基本的SELECT语法" class="headerlink" title="基本的SELECT语法"></a>基本的SELECT语法</h2><div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2, ...</span><br><span class="line"><span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li><strong><code>SELECT</code></strong> 关键字用于指定要检索的列。</li>
-<li><strong><code>column1, column2, ...</code></strong> 是要选择的列名，用逗号分隔。</li>
-<li><strong><code>FROM table_name</code></strong> 表示从哪个表中检索数据。</li>
-</ol>
-<h2 id="常见操作"><a href="#常见操作" class="headerlink" title="常见操作"></a><strong>常见操作</strong></h2><h3 id="查询所有列"><a href="#查询所有列" class="headerlink" title="查询所有列"></a><strong>查询所有列</strong></h3><div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> users;</span><br></pre></td></tr></table></figure></div>
-
-<p>这将检索 <strong><code>users</code></strong> 表中的所有列的数据。</p>
-<h3 id="选择特定列的数据"><a href="#选择特定列的数据" class="headerlink" title="选择特定列的数据"></a><strong>选择特定列的数据</strong></h3><div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> first_name, last_name <span class="keyword">FROM</span> users;</span><br></pre></td></tr></table></figure></div>
-
-<p>这将只检索 <strong><code>users</code></strong> 表中 <strong><code>first_name</code></strong> 和 <strong><code>last_name</code></strong> 列的数据。</p>
-<h3 id="去除重复行"><a href="#去除重复行" class="headerlink" title="去除重复行"></a>去除重复行</h3><p>查询的数据中，有多行数据相同，则可以通过DISTINCT来去重。</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> name</span><br><span class="line"><span class="keyword">FROM</span> users;</span><br></pre></td></tr></table></figure></div>
-
-<p>这将检索<code>**users**</code>表中相同<code>**name**</code>的行去重，只保留一行。</p>
-<h3 id="添加一列常量数据"><a href="#添加一列常量数据" class="headerlink" title="添加一列常量数据"></a>添加一列常量数据</h3><p>可以使用<code>**[字符串/数字] as 列名**</code>，添加一列常量数据，与查询的数据进行合并。</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2, <span class="string">&#x27;constant_value&#x27;</span> <span class="keyword">AS</span> new_column_name</span><br><span class="line"><span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li><strong><code>AS new_column_name</code></strong> 用于为新添加的常量列指定列名。</li>
-</ol>
-<h2 id="添加条件WHERE子句"><a href="#添加条件WHERE子句" class="headerlink" title="添加条件WHERE子句"></a><strong><strong>添加条件WHERE子句</strong></strong></h2><p>要筛选特定的行，可以使用 <strong><code>WHERE</code></strong> 子句添加条件。</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2, ...</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">condition</span>;</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>例子</strong></p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> users <span class="keyword">WHERE</span> age <span class="operator">&gt;</span> <span class="number">25</span>;</span><br></pre></td></tr></table></figure></div>
-
-<p>查询user表中选择所有age大于25的用户数据。</p>
-]]></content>
-      <categories>
-        <category>MYSQL</category>
-      </categories>
-      <tags>
-        <tag>MYSQL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MYSQL-基础知识</title>
     <url>/2023/11/09/Mysql/Basic/MYSQL-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><table>
@@ -1184,24 +1139,42 @@
       </tags>
   </entry>
   <entry>
-    <title>MYSQL-增删改</title>
-    <url>/2023/11/10/Mysql/Basic/MYSQL-%E5%A2%9E%E5%88%A0%E6%94%B9/</url>
-    <content><![CDATA[<p>MySQL是一个流行的关系型数据库管理系统，支持四种主要类型的操作：</p>
-<p><strong>增加（INSERT）、删除（DELETE）、修改（UPDATE）、以及查询（SELECT）</strong>，通常简称为CRUD操作。以下是这些操作的简要说明：</p>
+    <title>MYSQL-基本查询</title>
+    <url>/2023/11/10/Mysql/Basic/MYSQL-%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2/</url>
+    <content><![CDATA[<p>在 MySQL 中，使用 SELECT 语句进行基本的查询操作。</p>
+<h2 id="查看表结构"><a href="#查看表结构" class="headerlink" title="查看表结构"></a>查看表结构</h2><p>查看表的基本属性</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DESCRIBE</span> users;</span><br><span class="line">或</span><br><span class="line"><span class="keyword">DESC</span> users;</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">mysql<span class="operator">&gt;</span> <span class="keyword">desc</span> users;</span><br><span class="line"><span class="operator">+</span><span class="comment">----------------+-------------+------+-----+---------+-------+</span></span><br><span class="line"><span class="operator">|</span> Field          <span class="operator">|</span> Type        <span class="operator">|</span> <span class="keyword">Null</span> <span class="operator">|</span> Key <span class="operator">|</span> <span class="keyword">Default</span> <span class="operator">|</span> Extra <span class="operator">|</span></span><br><span class="line"><span class="operator">+</span><span class="comment">----------------+-------------+------+-----+---------+-------+</span></span><br><span class="line"><span class="operator">|</span> employee_id    <span class="operator">|</span> <span class="type">int</span>(<span class="number">6</span>)      <span class="operator">|</span> <span class="keyword">NO</span>   <span class="operator">|</span> PRI <span class="operator">|</span> <span class="number">0</span>       <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> first_name     <span class="operator">|</span> <span class="type">varchar</span>(<span class="number">20</span>) <span class="operator">|</span> YES  <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> last_name      <span class="operator">|</span> <span class="type">varchar</span>(<span class="number">25</span>) <span class="operator">|</span> <span class="keyword">NO</span>   <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> email          <span class="operator">|</span> <span class="type">varchar</span>(<span class="number">25</span>) <span class="operator">|</span> <span class="keyword">NO</span>   <span class="operator">|</span> UNI <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> phone_number   <span class="operator">|</span> <span class="type">varchar</span>(<span class="number">20</span>) <span class="operator">|</span> YES  <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> hire_date      <span class="operator">|</span> <span class="type">date</span>        <span class="operator">|</span> <span class="keyword">NO</span>   <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> job_id         <span class="operator">|</span> <span class="type">varchar</span>(<span class="number">10</span>) <span class="operator">|</span> <span class="keyword">NO</span>   <span class="operator">|</span> MUL <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> salary         <span class="operator">|</span> <span class="keyword">double</span>(<span class="number">8</span>,<span class="number">2</span>) <span class="operator">|</span> YES  <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> commission_pct <span class="operator">|</span> <span class="keyword">double</span>(<span class="number">2</span>,<span class="number">2</span>) <span class="operator">|</span> YES  <span class="operator">|</span>     <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> manager_id     <span class="operator">|</span> <span class="type">int</span>(<span class="number">6</span>)      <span class="operator">|</span> YES  <span class="operator">|</span> MUL <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> department_id  <span class="operator">|</span> <span class="type">int</span>(<span class="number">4</span>)      <span class="operator">|</span> YES  <span class="operator">|</span> MUL <span class="operator">|</span> <span class="keyword">NULL</span>    <span class="operator">|</span>       <span class="operator">|</span></span><br><span class="line"><span class="operator">+</span><span class="comment">----------------+-------------+------+-----+---------+-------+</span></span><br><span class="line"><span class="number">11</span> <span class="keyword">rows</span> <span class="keyword">in</span> <span class="keyword">set</span> (<span class="number">0.00</span> sec)</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="基本的SELECT语法"><a href="#基本的SELECT语法" class="headerlink" title="基本的SELECT语法"></a>基本的SELECT语法</h2><div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2, ...</span><br><span class="line"><span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></table></figure></div>
+
 <ol>
-<li><p><strong>增加数据（INSERT）</strong></p>
-<p> <code>**INSERT**</code>命令用于将新的行插入到数据库表中。语法如下：</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name (column1, column2, column3, ...)</span><br><span class="line"><span class="keyword">VALUES</span> (value1, value2, value3, ...);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>删除数据（DELETE）</strong></p>
-<p> **<code>DELETE</code>**命令用于从数据库表中删除行。语法如下：</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">condition</span>;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>修改数据（UPDATE）</strong></p>
-<p> **<code>UPDATE</code>**命令用于更新数据库表中的现有行。语法如下：</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> table_name</span><br><span class="line"><span class="keyword">SET</span> column1 <span class="operator">=</span> value1, column2 <span class="operator">=</span> value2, ...</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">condition</span>;</span><br></pre></td></tr></table></figure></div></li>
+<li><strong><code>SELECT</code></strong> 关键字用于指定要检索的列。</li>
+<li><strong><code>column1, column2, ...</code></strong> 是要选择的列名，用逗号分隔。</li>
+<li><strong><code>FROM table_name</code></strong> 表示从哪个表中检索数据。</li>
 </ol>
-<p>这些CRUD操作构成了对MySQL数据库进行常见操作的基础。通过这些操作，可以添加新数据、修改现有数据、删除数据或从数据库中检索数据。</p>
+<h2 id="常见操作"><a href="#常见操作" class="headerlink" title="常见操作"></a><strong>常见操作</strong></h2><h3 id="查询所有列"><a href="#查询所有列" class="headerlink" title="查询所有列"></a><strong>查询所有列</strong></h3><div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> users;</span><br></pre></td></tr></table></figure></div>
+
+<p>这将检索 <strong><code>users</code></strong> 表中的所有列的数据。</p>
+<h3 id="选择特定列的数据"><a href="#选择特定列的数据" class="headerlink" title="选择特定列的数据"></a><strong>选择特定列的数据</strong></h3><div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> first_name, last_name <span class="keyword">FROM</span> users;</span><br></pre></td></tr></table></figure></div>
+
+<p>这将只检索 <strong><code>users</code></strong> 表中 <strong><code>first_name</code></strong> 和 <strong><code>last_name</code></strong> 列的数据。</p>
+<h3 id="去除重复行"><a href="#去除重复行" class="headerlink" title="去除重复行"></a>去除重复行</h3><p>查询的数据中，有多行数据相同，则可以通过DISTINCT来去重。</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> name</span><br><span class="line"><span class="keyword">FROM</span> users;</span><br></pre></td></tr></table></figure></div>
+
+<p>这将检索<code>**users**</code>表中相同<code>**name**</code>的行去重，只保留一行。</p>
+<h3 id="添加一列常量数据"><a href="#添加一列常量数据" class="headerlink" title="添加一列常量数据"></a>添加一列常量数据</h3><p>可以使用<code>**[字符串/数字] as 列名**</code>，添加一列常量数据，与查询的数据进行合并。</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2, <span class="string">&#x27;constant_value&#x27;</span> <span class="keyword">AS</span> new_column_name</span><br><span class="line"><span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li><strong><code>AS new_column_name</code></strong> 用于为新添加的常量列指定列名。</li>
+</ol>
+<h2 id="添加条件WHERE子句"><a href="#添加条件WHERE子句" class="headerlink" title="添加条件WHERE子句"></a><strong><strong>添加条件WHERE子句</strong></strong></h2><p>要筛选特定的行，可以使用 <strong><code>WHERE</code></strong> 子句添加条件。</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2, ...</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">condition</span>;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>例子</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> users <span class="keyword">WHERE</span> age <span class="operator">&gt;</span> <span class="number">25</span>;</span><br></pre></td></tr></table></figure></div>
+
+<p>查询user表中选择所有age大于25的用户数据。</p>
 ]]></content>
       <categories>
         <category>MYSQL</category>
@@ -1211,7 +1184,7 @@
       </tags>
   </entry>
   <entry>
-    <title>MYSQL -数据库管理</title>
+    <title>MYSQL-数据库管理</title>
     <url>/2023/11/09/Mysql/Basic/MYSQL-%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<h2 id="管理数据库"><a href="#管理数据库" class="headerlink" title="管理数据库"></a>管理数据库</h2><h3 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h3><ol>
 <li><p><strong>使用的是默认字符集</strong></p>
@@ -1249,6 +1222,92 @@
 </li>
 <li><p><strong>删除指定的数据库（推荐）</strong></p>
  <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> DATABASE IF <span class="keyword">EXISTS</span> 数据库名;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+]]></content>
+      <categories>
+        <category>MYSQL</category>
+      </categories>
+      <tags>
+        <tag>MYSQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MYSQL-表管理</title>
+    <url>/2023/11/09/Mysql/Basic/MYSQL-%E8%A1%A8%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<h2 id="管理表"><a href="#管理表" class="headerlink" title="管理表"></a>管理表</h2><p><strong>查看表结构：</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DESC</span> myemp1;  #查看表结构</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><p>语法格式：</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> [IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] 表名(</span><br><span class="line">    字段<span class="number">1</span>, 数据类型 [约束条件] [默认值],</span><br><span class="line">    字段<span class="number">2</span>, 数据类型 [约束条件] [默认值],</span><br><span class="line">    字段<span class="number">3</span>, 数据类型 [约束条件] [默认值],</span><br><span class="line">    ……</span><br><span class="line">    [表约束条件]</span><br><span class="line">);</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li><p>假设我们要创建一个名为 <strong><code>users</code></strong> 的表格，包含 <strong><code>id</code><strong>、</strong><code>username</code></strong> 和 <strong><code>email</code></strong> 列：</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> users (</span><br><span class="line">    id <span class="type">INT</span> AUTO_INCREMENT <span class="keyword">PRIMARY</span> KEY,  <span class="operator">/</span><span class="operator">/</span>设置为主键、自增长</span><br><span class="line">    username <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,      <span class="operator">/</span><span class="operator">/</span>非空约束</span><br><span class="line">    email <span class="type">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">UNIQUE</span>  <span class="operator">/</span><span class="operator">/</span>唯一性约束</span><br><span class="line">);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>基于现有的表进行创建（复制）</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> myemp2</span><br><span class="line">	<span class="keyword">AS</span></span><br><span class="line">	<span class="keyword">SELECT</span> employee_id,last_name,salary</span><br><span class="line">	<span class="keyword">FROM</span> employees;</span><br><span class="line"></span><br><span class="line">#说明<span class="number">1</span>：查询语句中的别名可以作为新表的字段名称</span><br><span class="line">#说明<span class="number">2</span>：查询语句可以结构丰富</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> myemp3</span><br><span class="line">	<span class="keyword">AS</span> </span><br><span class="line">	<span class="keyword">SELECT</span> e.employee_id emp_id,e.last_name emp_name,d.department_name </span><br><span class="line">	<span class="keyword">FROM</span> employees e <span class="keyword">JOIN</span> departments d</span><br><span class="line">	<span class="keyword">ON</span> e.department_id<span class="operator">=</span>d.department_id;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h2 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h2><p>基本语法：</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">ADD</span> 【<span class="keyword">COLUMN</span>】 字段名 字段类型 【<span class="keyword">FIRST</span><span class="operator">|</span>AFTER 字段名】;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="添加属性"><a href="#添加属性" class="headerlink" title="添加属性"></a>添加属性</h3><ol>
+<li><p><strong>添加属性到末尾</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> myemp1</span><br><span class="line">	<span class="keyword">ADD</span> salary <span class="keyword">DOUBLE</span>(<span class="number">10</span>,<span class="number">2</span>)  #一共<span class="number">10</span>位<span class="operator">=</span>整数位<span class="number">8</span>位<span class="operator">+</span>小数位<span class="number">2</span>位，默认添加到表的最后一个字段</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>插入属性首位</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> myemp1</span><br><span class="line">	<span class="keyword">ADD</span> phone_number <span class="type">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">FIRST</span>;  #将字段放在首位</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>属性<strong>放在某个字段的前面</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> myemp1</span><br><span class="line">	<span class="keyword">ADD</span> email <span class="type">VARCHAR</span>(<span class="number">40</span>) AFTER emp_name; #将字段放在emp_name后面</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="修改属性"><a href="#修改属性" class="headerlink" title="修改属性"></a>修改属性</h3><ol>
+<li><p><strong><strong>修改列属性（数据类型、约束等）</strong></strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line">MODIFY <span class="keyword">COLUMN</span> email <span class="type">VARCHAR</span>(<span class="number">255</span>);</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>重命名列</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line">CHANGE <span class="keyword">COLUMN</span> username user_name <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>删除约束</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">CONSTRAINT</span> unique_username</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="重命名表"><a href="#重命名表" class="headerlink" title="重命名表"></a>重命名表</h3><ol>
+<li><p>使用RENAME</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">RENAME <span class="keyword">TABLE</span> users <span class="keyword">TO</span> new_users</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>使用ALTER，</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users RENAME <span class="keyword">TO</span> new_users;   <span class="operator">/</span><span class="operator">/</span><span class="keyword">TO</span>可以省略</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>增加约束</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> unique_username <span class="keyword">UNIQUE</span> (user_name);</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><ol>
+<li>在MySQL中，当一张数据表<strong>没有与其他任何数据表形成关联关系</strong>时，可以将当前数据表直接删除。</li>
+<li><strong>数据</strong>和<strong>创建语句结构</strong>都被删除；</li>
+<li>所有相关索引被删除</li>
+</ol>
+<p>基本语法：</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> [IF <span class="keyword">EXISTS</span>] 数据表<span class="number">1</span> [, 数据表<span class="number">2</span>, …, 数据表n];</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="清空表"><a href="#清空表" class="headerlink" title="清空表"></a>清空表</h3><ol>
+<li><p><strong>TRUNCATE</strong></p>
+<ol>
+<li>删除表中所有的数据</li>
+<li><strong>保留创建语句结构</strong></li>
+<li>不持支回滚，清空后表数据无法恢复</li>
+</ol>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">TRUNCATE</span> <span class="keyword">TABLE</span> users;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>DELETE FROM</strong></p>
+<ol>
+<li>删除表中所有数据；</li>
+<li>保留创建的语句结构</li>
+<li>设置相关参数，则支持<strong>回滚，表数据可以恢复；</strong></li>
+</ol>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SET</span> autocommit<span class="operator">=</span><span class="literal">FALSE</span>    <span class="operator">/</span><span class="operator">/</span>不自动提交</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> myemp3  #清空表中数据</span><br><span class="line"></span><br><span class="line"><span class="keyword">ROLLBACK</span>  #回滚到最近一次</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<p><strong>说明：</strong></p>
+<ol>
+<li>TRUNCATE TABLE 在功能上与不带 WHERE 子句的 DELETE 语句相同。</li>
 </ol>
 ]]></content>
       <categories>
@@ -1403,83 +1462,24 @@
       </tags>
   </entry>
   <entry>
-    <title>MYSQL -表管理</title>
-    <url>/2023/11/09/Mysql/Basic/MYSQL-%E8%A1%A8%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<h2 id="管理表"><a href="#管理表" class="headerlink" title="管理表"></a>管理表</h2><p><strong>查看表结构：</strong></p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DESC</span> myemp1;  #查看表结构</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><p>语法格式：</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> [IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] 表名(</span><br><span class="line">    字段<span class="number">1</span>, 数据类型 [约束条件] [默认值],</span><br><span class="line">    字段<span class="number">2</span>, 数据类型 [约束条件] [默认值],</span><br><span class="line">    字段<span class="number">3</span>, 数据类型 [约束条件] [默认值],</span><br><span class="line">    ……</span><br><span class="line">    [表约束条件]</span><br><span class="line">);</span><br></pre></td></tr></table></figure></div>
-
+    <title>MYSQL-增删改</title>
+    <url>/2023/11/10/Mysql/Basic/MYSQL-%E5%A2%9E%E5%88%A0%E6%94%B9/</url>
+    <content><![CDATA[<p>MySQL是一个流行的关系型数据库管理系统，支持四种主要类型的操作：</p>
+<p><strong>增加（INSERT）、删除（DELETE）、修改（UPDATE）、以及查询（SELECT）</strong>，通常简称为CRUD操作。以下是这些操作的简要说明：</p>
 <ol>
-<li><p>假设我们要创建一个名为 <strong><code>users</code></strong> 的表格，包含 <strong><code>id</code><strong>、</strong><code>username</code></strong> 和 <strong><code>email</code></strong> 列：</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> users (</span><br><span class="line">    id <span class="type">INT</span> AUTO_INCREMENT <span class="keyword">PRIMARY</span> KEY,  <span class="operator">/</span><span class="operator">/</span>设置为主键、自增长</span><br><span class="line">    username <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,      <span class="operator">/</span><span class="operator">/</span>非空约束</span><br><span class="line">    email <span class="type">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">UNIQUE</span>  <span class="operator">/</span><span class="operator">/</span>唯一性约束</span><br><span class="line">);</span><br></pre></td></tr></table></figure></div>
+<li><p><strong>增加数据（INSERT）</strong></p>
+<p> <code>**INSERT**</code>命令用于将新的行插入到数据库表中。语法如下：</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name (column1, column2, column3, ...)</span><br><span class="line"><span class="keyword">VALUES</span> (value1, value2, value3, ...);</span><br></pre></td></tr></table></figure></div>
 </li>
-<li><p>基于现有的表进行创建（复制）</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> myemp2</span><br><span class="line">	<span class="keyword">AS</span></span><br><span class="line">	<span class="keyword">SELECT</span> employee_id,last_name,salary</span><br><span class="line">	<span class="keyword">FROM</span> employees;</span><br><span class="line"></span><br><span class="line">#说明<span class="number">1</span>：查询语句中的别名可以作为新表的字段名称</span><br><span class="line">#说明<span class="number">2</span>：查询语句可以结构丰富</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> myemp3</span><br><span class="line">	<span class="keyword">AS</span> </span><br><span class="line">	<span class="keyword">SELECT</span> e.employee_id emp_id,e.last_name emp_name,d.department_name </span><br><span class="line">	<span class="keyword">FROM</span> employees e <span class="keyword">JOIN</span> departments d</span><br><span class="line">	<span class="keyword">ON</span> e.department_id<span class="operator">=</span>d.department_id;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h2 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h2><p>基本语法：</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">ADD</span> 【<span class="keyword">COLUMN</span>】 字段名 字段类型 【<span class="keyword">FIRST</span><span class="operator">|</span>AFTER 字段名】;</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="添加属性"><a href="#添加属性" class="headerlink" title="添加属性"></a>添加属性</h3><ol>
-<li><p><strong>添加属性到末尾</strong></p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> myemp1</span><br><span class="line">	<span class="keyword">ADD</span> salary <span class="keyword">DOUBLE</span>(<span class="number">10</span>,<span class="number">2</span>)  #一共<span class="number">10</span>位<span class="operator">=</span>整数位<span class="number">8</span>位<span class="operator">+</span>小数位<span class="number">2</span>位，默认添加到表的最后一个字段</span><br></pre></td></tr></table></figure></div>
+<li><p><strong>删除数据（DELETE）</strong></p>
+<p> **<code>DELETE</code>**命令用于从数据库表中删除行。语法如下：</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">condition</span>;</span><br></pre></td></tr></table></figure></div>
 </li>
-<li><p><strong>插入属性首位</strong></p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> myemp1</span><br><span class="line">	<span class="keyword">ADD</span> phone_number <span class="type">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">FIRST</span>;  #将字段放在首位</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>属性<strong>放在某个字段的前面</strong></p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> myemp1</span><br><span class="line">	<span class="keyword">ADD</span> email <span class="type">VARCHAR</span>(<span class="number">40</span>) AFTER emp_name; #将字段放在emp_name后面</span><br></pre></td></tr></table></figure></div></li>
+<li><p><strong>修改数据（UPDATE）</strong></p>
+<p> **<code>UPDATE</code>**命令用于更新数据库表中的现有行。语法如下：</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> table_name</span><br><span class="line"><span class="keyword">SET</span> column1 <span class="operator">=</span> value1, column2 <span class="operator">=</span> value2, ...</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">condition</span>;</span><br></pre></td></tr></table></figure></div></li>
 </ol>
-<h3 id="修改属性"><a href="#修改属性" class="headerlink" title="修改属性"></a>修改属性</h3><ol>
-<li><p><strong><strong>修改列属性（数据类型、约束等）</strong></strong></p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line">MODIFY <span class="keyword">COLUMN</span> email <span class="type">VARCHAR</span>(<span class="number">255</span>);</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>重命名列</strong></p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line">CHANGE <span class="keyword">COLUMN</span> username user_name <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>删除约束</strong></p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">CONSTRAINT</span> unique_username</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h3 id="重命名表"><a href="#重命名表" class="headerlink" title="重命名表"></a>重命名表</h3><ol>
-<li><p>使用RENAME</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">RENAME <span class="keyword">TABLE</span> users <span class="keyword">TO</span> new_users</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>使用ALTER，</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users RENAME <span class="keyword">TO</span> new_users;   <span class="operator">/</span><span class="operator">/</span><span class="keyword">TO</span>可以省略</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>增加约束</strong></p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> users</span><br><span class="line"><span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> unique_username <span class="keyword">UNIQUE</span> (user_name);</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><ol>
-<li>在MySQL中，当一张数据表<strong>没有与其他任何数据表形成关联关系</strong>时，可以将当前数据表直接删除。</li>
-<li><strong>数据</strong>和<strong>创建语句结构</strong>都被删除；</li>
-<li>所有相关索引被删除</li>
-</ol>
-<p>基本语法：</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> [IF <span class="keyword">EXISTS</span>] 数据表<span class="number">1</span> [, 数据表<span class="number">2</span>, …, 数据表n];</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="清空表"><a href="#清空表" class="headerlink" title="清空表"></a>清空表</h3><ol>
-<li><p><strong>TRUNCATE</strong></p>
-<ol>
-<li>删除表中所有的数据</li>
-<li><strong>保留创建语句结构</strong></li>
-<li>不持支回滚，清空后表数据无法恢复</li>
-</ol>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">TRUNCATE</span> <span class="keyword">TABLE</span> users;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>DELETE FROM</strong></p>
-<ol>
-<li>删除表中所有数据；</li>
-<li>保留创建的语句结构</li>
-<li>设置相关参数，则支持<strong>回滚，表数据可以恢复；</strong></li>
-</ol>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SET</span> autocommit<span class="operator">=</span><span class="literal">FALSE</span>    <span class="operator">/</span><span class="operator">/</span>不自动提交</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> myemp3  #清空表中数据</span><br><span class="line"></span><br><span class="line"><span class="keyword">ROLLBACK</span>  #回滚到最近一次</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<p><strong>说明：</strong></p>
-<ol>
-<li>TRUNCATE TABLE 在功能上与不带 WHERE 子句的 DELETE 语句相同。</li>
-</ol>
+<p>这些CRUD操作构成了对MySQL数据库进行常见操作的基础。通过这些操作，可以添加新数据、修改现有数据、删除数据或从数据库中检索数据。</p>
 ]]></content>
       <categories>
         <category>MYSQL</category>
