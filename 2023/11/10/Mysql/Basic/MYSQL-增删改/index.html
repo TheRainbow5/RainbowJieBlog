@@ -13,22 +13,22 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/11/07/java/basic/java-basical-knowledge/"/>
+    <link rel="canonical" href="http://example.com/2023/11/10/mysql/basic/mysql-增删改/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="在Java编程语言中，基本数据类型指的是原始数据类型，它们是用于存储简单值的数据类型。Java的基本数据类型包括数值类型、字符类型和布尔类型。">
+        <meta name="description" content="MySQL是一个流行的关系型数据库管理系统，支持四种主要类型的操作： 增加（INSERT）、删除（DELETE）、修改（UPDATE）、以及查询（SELECT），通常简称为CRUD操作。以下是这些操作的简要说明：  增加数据（INSERT）  **INSERT**命令用于将新的行插入到数据库表中。语法如下：  12INSERT INTO table_name (column1, column2,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java-Basical-knowledge">
-<meta property="og:url" content="http://example.com/2023/11/07/Java/Basic/Java-Basical-knowledge/index.html">
+<meta property="og:title" content="MYSQL-增删改">
+<meta property="og:url" content="http://example.com/2023/11/10/Mysql/Basic/MYSQL-%E5%A2%9E%E5%88%A0%E6%94%B9/index.html">
 <meta property="og:site_name" content="Rainbow">
-<meta property="og:description" content="在Java编程语言中，基本数据类型指的是原始数据类型，它们是用于存储简单值的数据类型。Java的基本数据类型包括数值类型、字符类型和布尔类型。">
+<meta property="og:description" content="MySQL是一个流行的关系型数据库管理系统，支持四种主要类型的操作： 增加（INSERT）、删除（DELETE）、修改（UPDATE）、以及查询（SELECT），通常简称为CRUD操作。以下是这些操作的简要说明：  增加数据（INSERT）  **INSERT**命令用于将新的行插入到数据库表中。语法如下：  12INSERT INTO table_name (column1, column2,">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-07T02:17:14.000Z">
-<meta property="article:modified_time" content="2023-11-07T12:50:43.722Z">
+<meta property="article:published_time" content="2023-11-10T06:11:19.000Z">
+<meta property="article:modified_time" content="2023-11-10T06:35:18.181Z">
 <meta property="article:author" content="RainbowJie">
-<meta property="article:tag" content="Java">
+<meta property="article:tag" content="MYSQL">
 <meta name="twitter:card" content="summary">
     
     
@@ -41,7 +41,7 @@
     
     <title>
         
-            Java-Basical-knowledge -
+            MYSQL-增删改 -
         
         RainbowJie&#39;Blog
     </title>
@@ -362,7 +362,7 @@
 
         <div class="article-title">
             
-                <h1 class="article-title-regular">Java-Basical-knowledge</h1>
+                <h1 class="article-title-regular">MYSQL-增删改</h1>
             
             </div>
             
@@ -384,15 +384,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-11-07 10:17:14</span>
-        <span class="mobile">2023-11-07 10:17:14</span>
+        <span class="desktop">2023-11-10 14:11:19</span>
+        <span class="mobile">2023-11-10 14:11:19</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-11-07 20:50:43</span>
-            <span class="mobile">2023-11-07 20:50:43</span>
+            <span class="desktop">2023-11-10 14:35:18</span>
+            <span class="mobile">2023-11-10 14:35:18</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -406,7 +406,7 @@
                     
                         
                         <li>
-                            <a href="/categories/Java/">Java</a>&nbsp;
+                            <a href="/categories/MYSQL/">MYSQL</a>&nbsp;
                         </li>
                     
                     
@@ -420,7 +420,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/Java/">Java</a>&nbsp;
+                        <a href="/tags/MYSQL/">MYSQL</a>&nbsp;
                     </li>
                 
             </ul>
@@ -430,12 +430,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>689 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>212 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>1 分钟</span>
         </span>
     
     
@@ -454,153 +454,41 @@
 
 
         <div class="article-content markdown-body">
-            <h2 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h2><table>
-<thead>
-<tr>
-<th>访问修饰符</th>
-<th>类内部</th>
-<th>同一包内</th>
-<th>子类</th>
-<th>其他包</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>private</td>
-<td>✔️</td>
-<td>❌</td>
-<td>❌</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>default</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>❌</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>protected</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>public</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-<td>✔️</td>
-</tr>
-</tbody></table>
-<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>Java中有八大基本数据类型，它们可以分为两类：数值类型和字符类型。</p>
-<p><strong>数值类型：</strong></p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>大小</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>byte（字节）</td>
-<td>8位</td>
-<td>-128 ~ 127</td>
-</tr>
-<tr>
-<td>short（短整数）</td>
-<td>16位</td>
-<td>-32,768 ~ 32,767</td>
-</tr>
-<tr>
-<td>int（整数）</td>
-<td>32位</td>
-<td>2^31 ~ 2^31 - 1。</td>
-</tr>
-<tr>
-<td>long（长整数）</td>
-<td>64位</td>
-<td>2^63 ~ 2^63 - 1。</td>
-</tr>
-<tr>
-<td>float（单精度浮点数）</td>
-<td>32位</td>
-<td>浮点数类型（小数），如2.0f</td>
-</tr>
-<tr>
-<td>double（双精度整数）</td>
-<td>64位</td>
-<td>更高精度的浮点数类型，如2.0</td>
-</tr>
-</tbody></table>
-<p><strong>字符类型：</strong></p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>大小</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>char（字符）</td>
-<td>16位</td>
-<td>用于表示Unicode字符，1字符&#x3D;2个字节</td>
-</tr>
-</tbody></table>
-<p><strong>布尔类型：</strong></p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>大小</th>
-<th>取值范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>boolean（布尔）</td>
-<td>表示逻辑值</td>
-<td>true  &amp;  false</td>
-</tr>
-</tbody></table>
-<h2 id="为什么浮点运算的时候会有精度丢失的风险？"><a href="#为什么浮点运算的时候会有精度丢失的风险？" class="headerlink" title="为什么浮点运算的时候会有精度丢失的风险？"></a>为什么浮点运算的时候会有精度丢失的风险？</h2><p>浮点数运算精度丢失代码演示：</p>
-<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">float</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">2.0f</span> - <span class="number">1.9f</span>;</span><br><span class="line"><span class="type">float</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">1.8f</span> - <span class="number">1.7f</span>;</span><br><span class="line">System.out.println(a);       <span class="comment">// 0.100000024</span></span><br><span class="line">System.out.println(b);       <span class="comment">// 0.099999905</span></span><br><span class="line">System.out.println(a == b);  <span class="comment">// false</span></span><br></pre></td></tr></table></figure></div>
-
-<p>为什么会出现这个问题呢？</p>
-<p>这个和计算机保存浮点数的机制有很大关系。我们知道计算机是二进制的，而且计算机在表示一个数字时，宽度是有限的，无限循环的小数存储在计算机时，只能被截断，所以就会导致小数精度发生损失的情况。这也就是解释了为什么浮点数没有办法用二进制精确表示。</p>
-<p><strong>解决办法：</strong></p>
+            <p>MySQL是一个流行的关系型数据库管理系统，支持四种主要类型的操作：</p>
+<p><strong>增加（INSERT）、删除（DELETE）、修改（UPDATE）、以及查询（SELECT）</strong>，通常简称为CRUD操作。以下是这些操作的简要说明：</p>
 <ol>
-<li><p><strong>BigDecimal</strong>：使用BigDecimal类来进行高精度的十进制数值运算，可以精确表示和计算小数，而不会出现读点书的精度问题。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.math.BigDecimal;</span><br><span class="line"></span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;2.0&quot;</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BigDecimal</span>(<span class="string">&quot;1.1&quot;</span>);</span><br><span class="line"><span class="type">BigDecimal</span> <span class="variable">result</span> <span class="operator">=</span> num1.subtract(num2);   <span class="comment">//减法</span></span><br><span class="line">System.out.println(result);                <span class="comment">//0.9</span></span><br></pre></td></tr></table></figure></div>
+<li><p><strong>增加数据（INSERT）</strong></p>
+<p> <code>**INSERT**</code>命令用于将新的行插入到数据库表中。语法如下：</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name (column1, column2, column3, ...)</span><br><span class="line"><span class="keyword">VALUES</span> (value1, value2, value3, ...);</span><br></pre></td></tr></table></figure></div>
 </li>
-<li><p><strong>限制小数位数</strong>：如果你知道你的计算结果应该具有特定的小数位数，可以限制结果的小数位数，从而减少精度丢失。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">2.0</span> - <span class="number">1.1</span>; <span class="comment">// 限制小数位数</span></span><br><span class="line">System.out.printf(<span class="string">&quot;%.2f%n&quot;</span>, result);</span><br></pre></td></tr></table></figure></div>
+<li><p><strong>删除数据（DELETE）</strong></p>
+<p> **<code>DELETE</code>**命令用于从数据库表中删除行。语法如下：</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">condition</span>;</span><br></pre></td></tr></table></figure></div>
 </li>
-<li><p><strong>尽量避免浮点数比较</strong>：避免使用&#x3D;&#x3D;或!&#x3D;运算符来来比较两个浮点数，因为浮点数的精度问题可能导致不准确的结果。</p>
- <div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">2.0</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">1.1</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">epsilon</span> <span class="operator">=</span> <span class="number">1e-10</span>; <span class="comment">// 定义一个足够小的误差范围</span></span><br><span class="line"><span class="keyword">if</span> (Math.abs(num1 - num2) &lt; epsilon) &#123;</span><br><span class="line">    <span class="comment">// 数值相等</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p> <code>1e-10</code> 表示科学计数法中的一个小数，具体为 0.0000000001。这是一个非常接近零的小数，通常用于表示非常小的数值或误差范围，以在浮点数比较中避免精度问题。</p>
-</li>
+<li><p><strong>修改数据（UPDATE）</strong></p>
+<p> **<code>UPDATE</code>**命令用于更新数据库表中的现有行。语法如下：</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> table_name</span><br><span class="line"><span class="keyword">SET</span> column1 <span class="operator">=</span> value1, column2 <span class="operator">=</span> value2, ...</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">condition</span>;</span><br></pre></td></tr></table></figure></div></li>
 </ol>
-<!-- More info: [Deployment](https://hexo.io/docs/one-command-deployment.html) -->
+<p>这些CRUD操作构成了对MySQL数据库进行常见操作的基础。通过这些操作，可以添加新数据、修改现有数据、删除数据或从数据库中检索数据。</p>
+
         </div>
 
         
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> Java-Basical-knowledge</li>
+        <li><strong>标题:</strong> MYSQL-增删改</li>
         <li><strong>作者:</strong> 哪里有彩虹告诉我</li>
         <li><strong>创建于
-                :</strong> 2023-11-07 10:17:14</li>
+                :</strong> 2023-11-10 14:11:19</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-11-07 20:50:43
+                    :</strong> 2023-11-10 14:35:18
             </li>
         
         <li>
-            <strong>链接:</strong> https://therainbow5.github.io/2023/11/07/Java/Basic/Java-Basical-knowledge/
+            <strong>链接:</strong> https://therainbow5.github.io/2023/11/10/Mysql/Basic/MYSQL-增删改/
         </li>
         <li>
             <strong>
@@ -621,7 +509,7 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/tags/Java/">#Java</a>&nbsp;
+                        <a href="/tags/MYSQL/">#MYSQL</a>&nbsp;
                     </li>
                 
             </ul>
@@ -635,13 +523,13 @@
                     <div class="article-prev">
                         <a class="prev"
                         rel="prev"
-                        href="/2023/11/07/Java/Basic/Java-Methods/"
+                        href="/2023/11/10/Mysql/Basic/MYSQL-%E8%BF%90%E7%AE%97%E7%AC%A6/"
                         >
                             <span class="left arrow-icon flex justify-center items-center">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Java-什么是方法（Methods）？</span>
+                                <span class="post-nav-title-item">MYSQL-运算符</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -651,10 +539,10 @@
                     <div class="article-next">
                         <a class="next"
                         rel="next"
-                        href="/2022/09/28/Hexo/hello-world/"
+                        href="/2023/11/10/Mysql/Basic/MYSQL-%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-title-item">MYSQL-基本查询</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -675,8 +563,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">Java-Basical-knowledge</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="nav-text">访问修饰符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-text">基本数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97%E7%9A%84%E6%97%B6%E5%80%99%E4%BC%9A%E6%9C%89%E7%B2%BE%E5%BA%A6%E4%B8%A2%E5%A4%B1%E7%9A%84%E9%A3%8E%E9%99%A9%EF%BC%9F"><span class="nav-text">为什么浮点运算的时候会有精度丢失的风险？</span></a></li></ol>
+        <div class="page-title">MYSQL-增删改</div>
+        
 
     </div>
 </div>
