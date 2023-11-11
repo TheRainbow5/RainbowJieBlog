@@ -13,23 +13,28 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/11/10/mysql/basic/mysql-运算符/"/>
+    <link rel="canonical" href="http://example.com/2023/11/11/mysql/basic/mysql-多表查询/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="在 MySQL 中，运算符主要用于执行各种算术、逻辑和比较操作。以下是 MySQL 中常用的运算符和它们的基本操作： 算法运算符 加法：执行加法操作。  1SELECT column1 + column2 AS sum_result FROM table_name;  减法  1SELECT column1 - column2 AS difference FROM table_name;   乘法">
+        <meta name="description" content="分类多表查询根据连接方式可以分类：内连接、外连接、交叉链接、自连接。 多表查询是用于从多个表中联合提取数据的技术。在 SQL 中，多表查询通常涉及使用 JOIN 子句来连接不同的表。 基本语法： 123SELECT * FROM table1 [INNER|LEFT|RIGHT|FULL|CROSS] JOIN table2 ON [过滤条件]  内连接内连接，又叫等值连接，顾名思义只有两张表中匹">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MYSQL-运算符">
-<meta property="og:url" content="http://example.com/2023/11/10/Mysql/Basic/MYSQL-%E8%BF%90%E7%AE%97%E7%AC%A6/index.html">
+<meta property="og:title" content="MYSQL-多表查询">
+<meta property="og:url" content="http://example.com/2023/11/11/Mysql/Basic/MYSQL-%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2/index.html">
 <meta property="og:site_name" content="Rainbow">
-<meta property="og:description" content="在 MySQL 中，运算符主要用于执行各种算术、逻辑和比较操作。以下是 MySQL 中常用的运算符和它们的基本操作： 算法运算符 加法：执行加法操作。  1SELECT column1 + column2 AS sum_result FROM table_name;  减法  1SELECT column1 - column2 AS difference FROM table_name;   乘法">
+<meta property="og:description" content="分类多表查询根据连接方式可以分类：内连接、外连接、交叉链接、自连接。 多表查询是用于从多个表中联合提取数据的技术。在 SQL 中，多表查询通常涉及使用 JOIN 子句来连接不同的表。 基本语法： 123SELECT * FROM table1 [INNER|LEFT|RIGHT|FULL|CROSS] JOIN table2 ON [过滤条件]  内连接内连接，又叫等值连接，顾名思义只有两张表中匹">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-10T06:34:41.000Z">
-<meta property="article:modified_time" content="2023-11-10T06:35:16.518Z">
+<meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/629064ab-b54a-4f3e-88c3-c662b06c0e72/Untitled.png">
+<meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/6c0daa57-8c8f-44bd-9e0a-1a3d9e6196f6/Untitled.png">
+<meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/cd8f31b9-99d7-4665-a68b-a96e1996e974/Untitled.png">
+<meta property="og:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/6a03d5bf-a310-46cc-8169-9b116c26942c/Untitled.png">
+<meta property="article:published_time" content="2023-11-11T13:05:24.000Z">
+<meta property="article:modified_time" content="2023-11-11T13:06:51.423Z">
 <meta property="article:author" content="RainbowJie">
 <meta property="article:tag" content="MYSQL">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/629064ab-b54a-4f3e-88c3-c662b06c0e72/Untitled.png">
     
     
     <!--- Icon Part-->
@@ -41,7 +46,7 @@
     
     <title>
         
-            MYSQL-运算符 -
+            MYSQL-多表查询 -
         
         RainbowJie&#39;Blog
     </title>
@@ -362,7 +367,7 @@
 
         <div class="article-title">
             
-                <h1 class="article-title-regular">MYSQL-运算符</h1>
+                <h1 class="article-title-regular">MYSQL-多表查询</h1>
             
             </div>
             
@@ -384,15 +389,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-11-10 14:34:41</span>
-        <span class="mobile">2023-11-10 14:34:41</span>
+        <span class="desktop">2023-11-11 21:05:24</span>
+        <span class="mobile">2023-11-11 21:05:24</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-11-10 14:35:16</span>
-            <span class="mobile">2023-11-10 14:35:16</span>
+            <span class="desktop">2023-11-11 21:06:51</span>
+            <span class="mobile">2023-11-11 21:06:51</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -430,12 +435,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>680 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1.5k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>6 分钟</span>
         </span>
     
     
@@ -454,139 +459,539 @@
 
 
         <div class="article-content markdown-body">
-            <p>在 MySQL 中，运算符主要用于执行各种算术、逻辑和比较操作。以下是 MySQL 中常用的运算符和它们的基本操作：</p>
-<h2 id="算法运算符"><a href="#算法运算符" class="headerlink" title="算法运算符"></a>算法运算符</h2><ol>
-<li><p><strong>加法</strong>：执行加法操作。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1 <span class="operator">+</span> column2 <span class="keyword">AS</span> sum_result <span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>减法</strong></p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1 <span class="operator">-</span> column2 <span class="keyword">AS</span> difference <span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></table></figure></div></li>
+            <h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><p>多表查询根据连接方式可以分类：<strong>内连接、外连接、交叉链接、自连接</strong>。</p>
+<p>多表查询是用于从多个表中联合提取数据的技术。在 SQL 中，多表查询通常涉及使用 <strong><code>JOIN</code></strong> 子句来连接不同的表。</p>
+<p><strong>基本语法：</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table1 </span><br><span class="line">[<span class="keyword">INNER</span><span class="operator">|</span><span class="keyword">LEFT</span><span class="operator">|</span><span class="keyword">RIGHT</span><span class="operator">|</span><span class="keyword">FULL</span><span class="operator">|</span><span class="keyword">CROSS</span>] <span class="keyword">JOIN</span> table2 </span><br><span class="line"><span class="keyword">ON</span> [过滤条件]</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="内连接"><a href="#内连接" class="headerlink" title="内连接"></a>内连接</h3><p>内连接，又叫等值连接，顾名思义只有两张表中匹配的数据才会发生连接，如下图所示：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/629064ab-b54a-4f3e-88c3-c662b06c0e72/Untitled.png"
+                      alt="Untitled"
+                ></p>
+<p><strong>基本语法：</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> </span><br><span class="line"><span class="keyword">FROM</span> table1</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> table2 <span class="keyword">ON</span> table1.column_name <span class="operator">=</span> table2.column_name;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>过程解析：</strong></p>
+<ol>
+<li>遍历左表数据，用左表数据的联属性去匹配右表的每一条数据。</li>
+<li>如果关联属性相同，则匹配到一条数据。</li>
 </ol>
-<ul>
-<li><p><strong>乘法</strong></p>
-  <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1 <span class="operator">*</span> column2 <span class="keyword">AS</span> product <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>除法</strong></p>
-  <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1 <span class="operator">/</span> column2 <span class="keyword">AS</span> division_result <span class="keyword">FROM</span> table_nam</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>**取模 <code>%</code>**：获取除法的余数。</p>
-  <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1 <span class="operator">%</span> column2 <span class="keyword">AS</span> modulo_result <span class="keyword">FROM</span> table_name;</span><br></pre></td></tr></table></figure></div></li>
-</ul>
-<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><table>
+<p><strong>示例：</strong></p>
+<p>假设有两个表 <strong><code>orders</code></strong> 和 **<code>customers</code>**，我们将执行一个内连接以查看订单信息及其关联的顾客信息。</p>
+<p>customers 表：</p>
+<table>
 <thead>
 <tr>
-<th>运算符</th>
-<th>说明</th>
+<th>customer_id</th>
+<th>customer_name</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>AND、&amp;&amp;</td>
-<td>和</td>
+<td>1</td>
+<td>John</td>
 </tr>
 <tr>
-<td>OR 、</td>
-<td></td>
+<td>2</td>
+<td>Alice</td>
 </tr>
 <tr>
-<td>NOT、!</td>
-<td>非</td>
+<td>3</td>
+<td>Bob</td>
 </tr>
 </tbody></table>
-<ol>
-<li><p>**与 <code>AND</code> 或 <code>&amp;&amp;</code>**：逻辑与运算符。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name </span><br><span class="line"><span class="keyword">WHERE</span> condition1 <span class="keyword">AND</span> condition2;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>**或 <code>OR</code> 或 <code>||</code>**：逻辑或运算符。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> condition1 <span class="keyword">OR</span> condition2;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>**非 <code>NOT</code> 或 <code>!</code>**：逻辑非运算符。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name </span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">condition</span>;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h2><table>
+<p>orders 表：</p>
+<table>
 <thead>
 <tr>
-<th>运算符</th>
-<th>说明</th>
+<th>order_id</th>
+<th>order_date</th>
+<th>customer_id</th>
+<th>total</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>&#x3D;</td>
-<td>等于</td>
+<td>1</td>
+<td>2023-01-15</td>
+<td>2</td>
+<td>150</td>
 </tr>
 <tr>
-<td>!&#x3D;、&lt;&gt;</td>
-<td>不相等</td>
+<td>2</td>
+<td>2023-01-18</td>
+<td>1</td>
+<td>200</td>
 </tr>
 <tr>
-<td>&gt;</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>&gt; &#x3D;</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>&lt; &#x3D;</td>
-<td>小于等于</td>
+<td>3</td>
+<td>2023-01-20</td>
+<td>4</td>
+<td>100</td>
 </tr>
 </tbody></table>
+<p>以下是一个内连接的 SQL 查询，它将显示所有订单信息，并且显示与之相关联的顾客信息（如果有匹配的顾客信息）：</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> orders</span><br><span class="line"><span class="keyword">INNER</span> <span class="keyword">JOIN</span> customers <span class="keyword">ON</span> orders.customer_id <span class="operator">=</span> customers.customer_id;</span><br></pre></td></tr></table></figure></div>
+
+<p>结果将显示所有订单信息以及与之匹配的顾客信息。对于那些没有匹配的订单（比如 order_id 为 3 的订单，customer_id 为 4，在 customers 表中找不到匹配的 customer_id），将不会显示在结果中。</p>
+<table>
+<thead>
+<tr>
+<th>order_id</th>
+<th>order_date</th>
+<th>customer_id</th>
+<th>total</th>
+<th>customer_id</th>
+<th>customer_name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>2023-01-15</td>
+<td>2</td>
+<td>150</td>
+<td>2</td>
+<td>Alice</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2023-01-18</td>
+<td>1</td>
+<td>200</td>
+<td>1</td>
+<td>John</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="左连接"><a href="#左连接" class="headerlink" title="左连接"></a>左连接</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/6c0daa57-8c8f-44bd-9e0a-1a3d9e6196f6/Untitled.png"
+                      alt="Untitled"
+                ></p>
+<p><strong>基本语法：</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column_name(s)</span><br><span class="line"><span class="keyword">FROM</span> table1</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> table2 <span class="keyword">ON</span> table1.column_name <span class="operator">=</span> table2.column_name;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>过程解析：</strong></p>
 <ol>
-<li><p>**等于 <code>=</code>**：检查两个值是否相等。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> column1 <span class="operator">=</span> <span class="keyword">value</span>;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>**不等于 <code>!=</code> 或 <code>&lt;&gt;</code>**：检查两个值是否不相等。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> column1 <span class="operator">&lt;&gt;</span> <span class="keyword">value</span>;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>**大于 <code>&gt;</code>**：检查左侧值是否大于右侧值。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> column1 <span class="operator">&gt;</span> <span class="keyword">value</span>;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>**小于 <code>&lt;</code>**：检查左侧值是否小于右侧值。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> column1 <span class="operator">&lt;</span> <span class="keyword">value</span>;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>**大于等于 <code>&gt;=</code>**：检查左侧值是否大于或等于右侧值。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> column1 <span class="operator">&gt;=</span> <span class="keyword">value</span>;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>**小于等于 <code>&lt;=</code>**：检查左侧值是否小于或等于右侧值。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> column1 <span class="operator">&lt;=</span> <span class="keyword">value</span>;</span><br></pre></td></tr></table></figure></div></li>
+<li>遍历table1数据，用table1数据的关联属性去匹配table2中的每一条数据。</li>
+<li>如果关联属性相同，则匹配到一条数据；</li>
+<li>如果table1数据没有匹配到table2的任何一条数据，则将右表数据的所有字段置为NULL，仍记作匹配到一条数据。</li>
 </ol>
-<h2 id="其他运算符"><a href="#其他运算符" class="headerlink" title="其他运算符"></a>其他运算符</h2><h3 id="BETWEEN-AND"><a href="#BETWEEN-AND" class="headerlink" title="BETWEEN AND"></a><strong>BETWEEN AND</strong></h3><p>你可以使用 <strong><code>NOT</code></strong> 关键字来取反 <strong><code>BETWEEN</code></strong> 运算符的条件，以选择不在指定范围内的值。</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> price <span class="keyword">NOT</span> <span class="keyword">BETWEEN</span> <span class="number">10</span> <span class="keyword">AND</span> <span class="number">50</span>;</span><br></pre></td></tr></table></figure></div>
+<p><strong>示例：</strong></p>
+<p>假设有两个表 <strong><code>departments</code></strong> 和 **<code>employees</code>**，我们将执行一个左连接操作以查看部门信息以及与之相关联的员工信息。</p>
+<p>departments 表：</p>
+<table>
+<thead>
+<tr>
+<th>dept_id</th>
+<th>dept_name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>2</td>
+<td>IT</td>
+</tr>
+<tr>
+<td>3</td>
+<td>HR</td>
+</tr>
+</tbody></table>
+<p>employees 表：</p>
+<table>
+<thead>
+<tr>
+<th>emp_id</th>
+<th>emp_name</th>
+<th>emp_department_id</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>John</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Alice</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Bob</td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Emily</td>
+<td>4</td>
+</tr>
+</tbody></table>
+<p>以下是一个左连接的 SQL 查询，它将显示所有部门信息，并且与之相关联的员工信息（如果有）：</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> departments</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> employees <span class="keyword">ON</span> departments.dept_id <span class="operator">=</span> employees.emp_department_id;</span><br></pre></td></tr></table></figure></div>
 
-<p>这将选择价格不在 10 到 50 范围内的产品。</p>
-<h3 id="IN"><a href="#IN" class="headerlink" title="IN"></a><strong>IN</strong></h3><p><strong><code>IN</code></strong> 运算符用于在一组值中进行匹配，类似于多个 OR 条件的简写形式。</p>
-<p><strong>基本语法</strong></p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column_name(s)</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> column_name <span class="keyword">IN</span> (value1, value2, ...);</span><br></pre></td></tr></table></figure></div>
+<p>结果将显示所有部门信息以及与之匹配的员工信息，如果员工信息不存在，对应列将会显示 NULL：</p>
+<table>
+<thead>
+<tr>
+<th>dept_id</th>
+<th>dept_name</th>
+<th>emp_id</th>
+<th>emp_name</th>
+<th>emp_department_id</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Sales</td>
+<td>2</td>
+<td>Alice</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>IT</td>
+<td>1</td>
+<td>John</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>IT</td>
+<td>3</td>
+<td>Bob</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>HR</td>
+<td>NULL</td>
+<td>NULL</td>
+<td>NULL</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="右连接"><a href="#右连接" class="headerlink" title="右连接"></a>右连接</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/cd8f31b9-99d7-4665-a68b-a96e1996e974/Untitled.png"
+                      alt="Untitled"
+                ></p>
+<p><strong>基本语法：</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column_name(s)</span><br><span class="line"><span class="keyword">FROM</span> table1</span><br><span class="line"><span class="keyword">RIGHT</span> <span class="keyword">JOIN</span> table2 <span class="keyword">ON</span> table1.column_name <span class="operator">=</span> table2.column_name;</span><br></pre></td></tr></table></figure></div>
 
-<p><strong>例子</strong></p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">IN</span> (<span class="string">&#x27;Electronics&#x27;</span>, <span class="string">&#x27;Clothing&#x27;</span>, <span class="string">&#x27;Books&#x27;</span>);</span><br></pre></td></tr></table></figure></div>
-
-<p>这将从 <strong><code>products</code></strong> 表中选择类别为 ‘Electronics’、’Clothing’ 或 ‘Books’ 的产品。</p>
-<h3 id="NOT-IN"><a href="#NOT-IN" class="headerlink" title="NOT IN"></a><strong>NOT IN</strong></h3><p><strong><code>NOT IN</code></strong> 与 <strong><code>IN</code></strong> 相反，用于从一组值之外进行筛选。</p>
-<p><strong>基本语法</strong></p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column_name(s)</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> column_name <span class="keyword">NOT</span> <span class="keyword">IN</span> (value1, value2, ...);</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>例子</strong></p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> products</span><br><span class="line"><span class="keyword">WHERE</span> category <span class="keyword">NOT</span> <span class="keyword">IN</span> (<span class="string">&#x27;Furniture&#x27;</span>, <span class="string">&#x27;Toys&#x27;</span>);</span><br></pre></td></tr></table></figure></div>
-
-<p>这将从 <strong><code>products</code></strong> 表中选择类别不是 ‘Furniture’ 或 ‘Toys’ 的产品。</p>
-<h3 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE"></a><strong>LIKE</strong></h3><p><strong><code>LIKE</code></strong> 运算符用于基于模式匹配来检索匹配特定模式的值。</p>
-<p>基本语法</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column_name(s)</span><br><span class="line"><span class="keyword">FROM</span> table_name</span><br><span class="line"><span class="keyword">WHERE</span> column_name <span class="keyword">LIKE</span> <span class="keyword">pattern</span>;</span><br></pre></td></tr></table></figure></div>
-
+<p><strong>过程解析：</strong></p>
 <ol>
-<li><strong><code>pattern</code></strong> 是要匹配的模式。通常使用 <strong><code>%</code></strong> 表示零个或多个字符，或使用 <strong><code>_</code></strong> 表示单个字符。</li>
+<li>遍历table2数据，用table1数据的关联属性去匹配table1中的每一条数据。</li>
+<li>如果关联属性相同，则匹配到一条数据；</li>
+<li>如果table2数据没有匹配到table1的任何一条数据，则将右表数据的所有字段置为NULL，仍记作匹配到一条数据。</li>
 </ol>
-<p><strong>例子</strong></p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> users</span><br><span class="line"><span class="keyword">WHERE</span> username <span class="keyword">LIKE</span> <span class="string">&#x27;a%&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
+<p><strong>示例：</strong></p>
+<p>假设有两个表 <strong><code>students</code></strong> 和 <strong><code>grades</code></strong> ，我们尝试执行右连接以查看学生及其对应的成绩，即显示所有成绩表中的数据，以及与之匹配的学生信息。</p>
+<p>students 表：</p>
+<table>
+<thead>
+<tr>
+<th>student_id</th>
+<th>student_name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Alice</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bob</td>
+</tr>
+<tr>
+<td>3</td>
+<td>John</td>
+</tr>
+</tbody></table>
+<p>grades 表：</p>
+<table>
+<thead>
+<tr>
+<th>student_id</th>
+<th>grade</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>3</td>
+<td>B</td>
+</tr>
+<tr>
+<td>4</td>
+<td>C</td>
+</tr>
+</tbody></table>
+<p>执行右连接</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> students</span><br><span class="line"><span class="keyword">RIGHT</span> <span class="keyword">JOIN</span> grades <span class="keyword">ON</span> students.student_id <span class="operator">=</span> grades.student_id;</span><br></pre></td></tr></table></figure></div>
 
-<p>这将从 <strong><code>users</code></strong> 表中选择用户名以字母 ‘a’ 开头的所有用户。</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> users</span><br><span class="line"><span class="keyword">WHERE</span> email <span class="keyword">LIKE</span> <span class="string">&#x27;%@gmail.com&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
+<p>结果会显示 grades 表中的所有数据，并且匹配的学生信息（student_id 存在于 students 表中）：</p>
+<table>
+<thead>
+<tr>
+<th>student_id</th>
+<th>student_name</th>
+<th>student_id</th>
+<th>grade</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Alice</td>
+<td>1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>3</td>
+<td>John</td>
+<td>3</td>
+<td>B</td>
+</tr>
+<tr>
+<td>NULL</td>
+<td>NULL</td>
+<td>4</td>
+<td>C</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="全外连接"><a href="#全外连接" class="headerlink" title="全外连接"></a>全外连接</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/d0cb0889-16a1-478b-89f7-56969f412d28/6a03d5bf-a310-46cc-8169-9b116c26942c/Untitled.png"
+                      alt="Untitled"
+                ></p>
+<p>在 MySQL 中，实际上并没有直接支持全连接（FULL JOIN）的语法。而是可以通过模拟来完成全连接的操作，常见的方法是使用**<code>UNION</code>** 和 LEFT JOIN 与 RIGHT JOIN 结合。</p>
+<p><strong>基本语法：</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> table1</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> table2 <span class="keyword">ON</span> table1.column_name <span class="operator">=</span> table2.column_name</span><br><span class="line"></span><br><span class="line"><span class="keyword">UNION</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> table1</span><br><span class="line"><span class="keyword">RIGHT</span> <span class="keyword">JOIN</span> table2 <span class="keyword">ON</span> table1.column_name <span class="operator">=</span> table2.column_name;</span><br></pre></td></tr></table></figure></div>
 
-<p>这将从 <strong><code>users</code></strong> 表中选择邮箱地址以 ‘@gmail.com’ 结尾的所有用户。</p>
+<p><strong>过程解析：</strong></p>
+<ol>
+<li>先对左右表做左连接，再对左右表做右连接</li>
+<li>使用 UNION 运算符将两个结果集合并起来，去重，这样就得到了类似于全连接的结果，包含了两个表中的所有行。</li>
+<li>如果不想去重，则使用**<code>UNION ALL</code>**运算符。</li>
+</ol>
+<p><strong><strong>示例：</strong></strong></p>
+<p>employees 表：</p>
+<table>
+<thead>
+<tr>
+<th>emp_id</th>
+<th>emp_name</th>
+<th>emp_department_id</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>John</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Alice</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Bob</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<p>departments 表：</p>
+<table>
+<thead>
+<tr>
+<th>dept_id</th>
+<th>dept_name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>2</td>
+<td>IT</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Marketing</td>
+</tr>
+</tbody></table>
+<p>执行全外连接：</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> employees</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> departments <span class="keyword">ON</span> employees.emp_department_id <span class="operator">=</span> departments.dept_id</span><br><span class="line"></span><br><span class="line"><span class="keyword">UNION</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> employees</span><br><span class="line"><span class="keyword">RIGHT</span> <span class="keyword">JOIN</span> departments <span class="keyword">ON</span> employees.emp_department_id <span class="operator">=</span> departments.dept_id;</span><br></pre></td></tr></table></figure></div>
+
+<p>结果将包含了两个表中的不匹配的行和匹配的行。假设要观察员工和部门信息的匹配与不匹配情况：</p>
+<table>
+<thead>
+<tr>
+<th>emp_id</th>
+<th>emp_name</th>
+<th>emp_department_id</th>
+<th>dept_id</th>
+<th>dept_name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>John</td>
+<td>2</td>
+<td>2</td>
+<td>IT</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Alice</td>
+<td>1</td>
+<td>1</td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Bob</td>
+<td>2</td>
+<td>2</td>
+<td>IT</td>
+</tr>
+<tr>
+<td>NULL</td>
+<td>NULL</td>
+<td>NULL</td>
+<td>4</td>
+<td>Marketing</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="交叉连接（笛卡儿积）"><a href="#交叉连接（笛卡儿积）" class="headerlink" title="交叉连接（笛卡儿积）"></a>交叉连接（笛卡儿积）</h3><p>在 MySQL 中，交叉连接（CROSS JOIN）是一种连接类型，它返回两个表的笛卡尔积，也就是第一个表的每一行与第二个表的每一行进行组合。在没有指定任何条件的情况下，交叉连接会返回两个表中的所有可能组合。</p>
+<p><strong>基本语法：</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> table1</span><br><span class="line"><span class="keyword">CROSS</span> <span class="keyword">JOIN</span> table2;</span><br></pre></td></tr></table></figure></div>
+
+<p>这个语句将返回 <strong><code>table1</code></strong> 和 <strong><code>table2</code></strong> 中所有行的组合。如果 <strong><code>table1</code></strong> 有 5 行，而 <strong><code>table2</code></strong> 有 3 行，则交叉连接将返回 5 × 3 &#x3D; 15 行。</p>
+<p><strong><strong>示例：</strong></strong></p>
+<p>假设有两个简单的表：</p>
+<p>Table1:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>John</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Alice</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Bob</td>
+</tr>
+</tbody></table>
+<p>Table2:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Product</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>101</td>
+<td>Apple</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Orange</td>
+</tr>
+<tr>
+<td>103</td>
+<td>Banana</td>
+</tr>
+</tbody></table>
+<p>执行交叉连接：</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> Table1</span><br><span class="line"><span class="keyword">CROSS</span> <span class="keyword">JOIN</span> Table2;</span><br></pre></td></tr></table></figure></div>
+
+<p>这将返回 <strong><code>Table1</code></strong> 和 <strong><code>Table2</code></strong> 的笛卡尔积，得到的结果将包含 3 × 3 &#x3D; 9 行：</p>
+<table>
+<thead>
+<tr>
+<th>Table1.ID</th>
+<th>Table1.Name</th>
+<th>Table2.ID</th>
+<th>Table2.Product</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>John</td>
+<td>101</td>
+<td>Apple</td>
+</tr>
+<tr>
+<td>1</td>
+<td>John</td>
+<td>102</td>
+<td>Orange</td>
+</tr>
+<tr>
+<td>1</td>
+<td>John</td>
+<td>103</td>
+<td>Banana</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Alice</td>
+<td>101</td>
+<td>Apple</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Alice</td>
+<td>102</td>
+<td>Orange</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Alice</td>
+<td>103</td>
+<td>Banana</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Bob</td>
+<td>101</td>
+<td>Apple</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Bob</td>
+<td>102</td>
+<td>Orange</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Bob</td>
+<td>103</td>
+<td>Banana</td>
+</tr>
+</tbody></table>
 
         </div>
 
@@ -594,18 +999,18 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> MYSQL-运算符</li>
+        <li><strong>标题:</strong> MYSQL-多表查询</li>
         <li><strong>作者:</strong> 哪里有彩虹告诉我</li>
         <li><strong>创建于
-                :</strong> 2023-11-10 14:34:41</li>
+                :</strong> 2023-11-11 21:05:24</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-11-10 14:35:16
+                    :</strong> 2023-11-11 21:06:51
             </li>
         
         <li>
-            <strong>链接:</strong> https://therainbow5.github.io/2023/11/10/Mysql/Basic/MYSQL-运算符/
+            <strong>链接:</strong> https://therainbow5.github.io/2023/11/11/Mysql/Basic/MYSQL-多表查询/
         </li>
         <li>
             <strong>
@@ -640,13 +1045,13 @@
                     <div class="article-prev">
                         <a class="prev"
                         rel="prev"
-                        href="/2023/11/11/Mysql/Basic/MYSQL-%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/"
+                        href="/2023/11/11/Mysql/Basic/MYSQL-%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0/"
                         >
                             <span class="left arrow-icon flex justify-center items-center">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">MYSQL-分页查询</span>
+                                <span class="post-nav-title-item">MYSQL-常见函数</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -656,10 +1061,10 @@
                     <div class="article-next">
                         <a class="next"
                         rel="next"
-                        href="/2023/11/10/Mysql/Basic/MYSQL-%E5%A2%9E%E5%88%A0%E6%94%B9/"
+                        href="/2023/11/11/Mysql/Basic/MYSQL-%E6%8E%92%E5%BA%8F/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">MYSQL-增删改</span>
+                                <span class="post-nav-title-item">MYSQL-排序</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -680,8 +1085,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">MYSQL-运算符</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">算法运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-text">其他运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#BETWEEN-AND"><span class="nav-text">BETWEEN AND</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IN"><span class="nav-text">IN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NOT-IN"><span class="nav-text">NOT IN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LIKE"><span class="nav-text">LIKE</span></a></li></ol></li></ol>
+        <div class="page-title">MYSQL-多表查询</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E7%B1%BB"><span class="nav-text">分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E8%BF%9E%E6%8E%A5"><span class="nav-text">内连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%A6%E8%BF%9E%E6%8E%A5"><span class="nav-text">左连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%B3%E8%BF%9E%E6%8E%A5"><span class="nav-text">右连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E5%A4%96%E8%BF%9E%E6%8E%A5"><span class="nav-text">全外连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%A4%E5%8F%89%E8%BF%9E%E6%8E%A5%EF%BC%88%E7%AC%9B%E5%8D%A1%E5%84%BF%E7%A7%AF%EF%BC%89"><span class="nav-text">交叉连接（笛卡儿积）</span></a></li></ol></li></ol>
 
     </div>
 </div>
