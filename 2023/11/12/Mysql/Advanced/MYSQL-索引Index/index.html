@@ -13,23 +13,27 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/11/11/mysql/basic/mysql-聚合函数/"/>
+    <link rel="canonical" href="http://example.com/2023/11/12/mysql/advanced/mysql-索引index/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="在 MySQL 中，聚合函数用于对数据进行汇总或计算，并返回单个值。 常见类型   函数 描述    COUNT(column) 计算行数或满足特定条件的行数   SUM(column) 计算数值列的总和   AVG(column) 计算数值列的平均值   MIN(column) 找到数值列的最小值   MAX(column) 找到数值列的最大值    COUNT()  COUNT()函数用于计算">
+        <meta name="description" content="为什么有索引？在MySql数据库中，索引是用于加快数据检索操作的数据结构。索引允许数据库管理系统快速的定位数据的行，而无需扫描整个表。 前沿现一张sutdent表，有800万条数据， 123456CREATE TABLE students(	id INT  AUTO_INCREMENT,   	name VARCAHR(255) NOT NULL ,         &#x2F;&#x2F;name不为空	age I">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MYSQL-聚合函数">
-<meta property="og:url" content="http://example.com/2023/11/11/Mysql/Basic/MYSQL-%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0/index.html">
+<meta property="og:title" content="MYSQL-索引Index">
+<meta property="og:url" content="http://example.com/2023/11/12/Mysql/Advanced/MYSQL-%E7%B4%A2%E5%BC%95Index/index.html">
 <meta property="og:site_name" content="Rainbow">
-<meta property="og:description" content="在 MySQL 中，聚合函数用于对数据进行汇总或计算，并返回单个值。 常见类型   函数 描述    COUNT(column) 计算行数或满足特定条件的行数   SUM(column) 计算数值列的总和   AVG(column) 计算数值列的平均值   MIN(column) 找到数值列的最小值   MAX(column) 找到数值列的最大值    COUNT()  COUNT()函数用于计算">
+<meta property="og:description" content="为什么有索引？在MySql数据库中，索引是用于加快数据检索操作的数据结构。索引允许数据库管理系统快速的定位数据的行，而无需扫描整个表。 前沿现一张sutdent表，有800万条数据， 123456CREATE TABLE students(	id INT  AUTO_INCREMENT,   	name VARCAHR(255) NOT NULL ,         &#x2F;&#x2F;name不为空	age I">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-11T13:08:24.000Z">
-<meta property="article:modified_time" content="2023-11-11T13:08:40.301Z">
+<meta property="og:image" content="http://example.com/images%5CMYSQL%5C1.webp">
+<meta property="og:image" content="http://example.com/images%5CMYSQL%5C2.webp">
+<meta property="og:image" content="http://example.com/images%5CMYSQL%5C3.webp">
+<meta property="article:published_time" content="2023-11-12T07:34:01.000Z">
+<meta property="article:modified_time" content="2023-11-12T07:36:17.061Z">
 <meta property="article:author" content="RainbowJie">
 <meta property="article:tag" content="MYSQL">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images%5CMYSQL%5C1.webp">
     
     
     <!--- Icon Part-->
@@ -41,7 +45,7 @@
     
     <title>
         
-            MYSQL-聚合函数 -
+            MYSQL-索引Index -
         
         RainbowJie&#39;Blog
     </title>
@@ -362,7 +366,7 @@
 
         <div class="article-title">
             
-                <h1 class="article-title-regular">MYSQL-聚合函数</h1>
+                <h1 class="article-title-regular">MYSQL-索引Index</h1>
             
             </div>
             
@@ -384,15 +388,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-11-11 21:08:24</span>
-        <span class="mobile">2023-11-11 21:08:24</span>
+        <span class="desktop">2023-11-12 15:34:01</span>
+        <span class="mobile">2023-11-12 15:34:01</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-11-11 21:08:40</span>
-            <span class="mobile">2023-11-11 21:08:40</span>
+            <span class="desktop">2023-11-12 15:36:17</span>
+            <span class="mobile">2023-11-12 15:36:17</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -454,188 +458,151 @@
 
 
         <div class="article-content markdown-body">
-            <p>在 MySQL 中，聚合函数用于对数据进行<strong>汇总</strong>或计算，并返回单个值。</p>
-<h2 id="常见类型"><a href="#常见类型" class="headerlink" title="常见类型"></a>常见类型</h2><table>
+            <h2 id="为什么有索引？"><a href="#为什么有索引？" class="headerlink" title="为什么有索引？"></a>为什么有索引？</h2><p>在MySql数据库中，索引是用于加快数据检索操作的数据结构。<br>索引允许数据库管理系统快速的定位数据的行，而无需扫描整个表。</p>
+<h2 id="前沿"><a href="#前沿" class="headerlink" title="前沿"></a>前沿</h2><p>现一张sutdent表，有800万条数据，</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> students(</span><br><span class="line">	id <span class="type">INT</span>  AUTO_INCREMENT,   </span><br><span class="line">	name VARCAHR(<span class="number">255</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> ,         <span class="operator">/</span><span class="operator">/</span>name不为空</span><br><span class="line">	age <span class="type">INT</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,                    <span class="operator">/</span><span class="operator">/</span>age不为空，且大于<span class="number">0</span></span><br><span class="line">	<span class="keyword">CHECK</span> (age<span class="operator">&gt;=</span><span class="number">0</span>)      </span><br><span class="line">)</span><br></pre></td></tr></table></figure></div>
+
+<p>此时<code>**students.ibd**</code>数据文件的大小为523M。</p>
+<ol>
+<li><p>查询id&#x3D;50万这条数据</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> students <span class="keyword">WHERE</span> id<span class="operator">=</span><span class="number">500000</span>;</span><br><span class="line"></span><br><span class="line">查询时间<span class="operator">=</span><span class="number">4.35</span>秒</span><br></pre></td></tr></table></figure></div>
+<p> 对于计算机来说，查询一条数据需要花费4.35秒是完全不能接受的。此时，就可以使用索引来优化查询。</p>
+</li>
+<li><p>创建索引，查询id&#x3D;500万这条数据</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> INDEX age_index <span class="keyword">on</span> student(age)   <span class="operator">/</span><span class="operator">/</span>创建id属性的索引</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> students <span class="keyword">WHERE</span> age<span class="operator">=</span><span class="number">50</span>;</span><br><span class="line"></span><br><span class="line">查询时间<span class="operator">=</span><span class="number">0.003</span>秒</span><br></pre></td></tr></table></figure></div>
+<p> 创建索引后，此时<code>**students.ibd**</code>数据文件的大小为634M，说明索引占用一定量的空间。</p>
+<p> 使用索引后，在不用加内存、修改程序、调整sql的情况下，查询的效率得到了质的飞跃。</p>
+ <aside>
+ 💡 **MySql只对创建了索引的列进行查询，才能使用索引提高效率。**
+ 
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> students <span class="keyword">WHERE</span> age<span class="operator">=</span><span class="number">50</span>;</span><br><span class="line"></span><br><span class="line">查询时间<span class="operator">=</span><span class="number">4.35</span>秒</span><br></pre></td></tr></table></figure></div>
+<p> 此时，查询仍是4.35秒。</p>
+ </aside></li>
+</ol>
+<h2 id="索引的机制"><a href="#索引的机制" class="headerlink" title="索引的机制"></a>索引的机制</h2><table>
 <thead>
 <tr>
-<th>函数</th>
-<th>描述</th>
+<th>类型</th>
+<th>速度</th>
+<th>机制</th>
+<th>空间</th>
+<th>局限</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>COUNT(column)</td>
-<td>计算行数或满足特定条件的行数</td>
+<td>普通检索</td>
+<td>慢</td>
+<td>线性扫描每一行数据</td>
+<td>不占用空间</td>
+<td></td>
 </tr>
 <tr>
-<td>SUM(column)</td>
-<td>计算数值列的总和</td>
-</tr>
-<tr>
-<td>AVG(column)</td>
-<td>计算数值列的平均值</td>
-</tr>
-<tr>
-<td>MIN(column)</td>
-<td>找到数值列的最小值</td>
-</tr>
-<tr>
-<td>MAX(column)</td>
-<td>找到数值列的最大值</td>
+<td>索引检索</td>
+<td>超快</td>
+<td>数据索引结构为二叉树</td>
+<td>需要占用空间</td>
+<td>对delet、update、insert会速度有一定的影响</td>
 </tr>
 </tbody></table>
-<ol>
-<li><p><strong>COUNT()</strong></p>
-<p> COUNT()函数用于计算行的数量或满足特定条件的行数。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(column_name) <span class="keyword">FROM</span> your_table;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>SUM()</strong></p>
-<p> SUM()函数用于计算数值列的总和。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUM</span>(column_name) <span class="keyword">FROM</span> your_table;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>AVG()</strong></p>
-<p> AVG()函数用于计算数值列的平均值。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">AVG</span>(column_name) <span class="keyword">FROM</span> your_table;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>MIN()</strong></p>
-<p> MIN()函数用于找到数值列的最小值。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">MIN</span>(column_name) <span class="keyword">FROM</span> your_table;</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p><strong>MAX()</strong></p>
-<p> MAX()函数用于找到数值列的最大值。</p>
- <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">MAX</span>(column_name) <span class="keyword">FROM</span> your_table;</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h2 id="GROUP-BY"><a href="#GROUP-BY" class="headerlink" title="GROUP BY"></a>GROUP BY</h2><p>GROUP BY 语句用于将结果集按照一个或多个列进行分组。它通常与聚合函数（如 COUNT()、SUM()、AVG() 等）一起使用，以对每个分组进行汇总或计算。</p>
-<p><strong>基本语法：</strong></p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> column1, column2, AGGREGATE_FUNCTION(column3)</span><br><span class="line"><span class="keyword">FROM</span> your_table</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> column1, column2;</span><br></pre></td></tr></table></figure></div>
+<p>详细说明如下。</p>
+<h3 id="普通检索机制"><a href="#普通检索机制" class="headerlink" title="普通检索机制"></a>普通检索机制</h3><div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> students <span class="keyword">WHERE</span> age<span class="operator">=</span><span class="number">50</span>;</span><br></pre></td></tr></table></figure></div>
 
-<p><strong>例子：</strong></p>
-<p>假设有一个名为 <strong><code>orders</code></strong> 的表，存储了顾客订单的信息，其中包括 **<code>customer_id</code><strong>（顾客ID）、</strong><code>product_id</code>**（产品ID）和 **<code>amount</code>**（订单数量）。</p>
+<p>在没有查询没有索引的数据时，数据库系统查询的机制是线性s扫描每一行元素</p>
+<p>知道满足查询条件为止，查询速度慢。如下如所示：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images%5CMYSQL%5C1.webp"
+                      alt="Alt text"
+                ></p>
+<h3 id="索引检索机制"><a href="#索引检索机制" class="headerlink" title="索引检索机制"></a>索引检索机制</h3><p>现在对id属性创建索引，数据库系统会形成一个数据结构，比如<strong>二叉树</strong>、B**+树**等等，如下如所示：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images%5CMYSQL%5C2.webp"
+                      alt="Alt text"
+                ></p>
+<p>如果我们比较了3次，覆盖的表范围：$2^3&#x3D;8$。</p>
+<p><strong>局限性：</strong></p>
+<p>虽然索引对于Select语句的查询速度有着质的飞跃，但是对<code>update、insert、delete</code>速度有一定的影响。</p>
+<p>这里以delete操作为例：</p>
+<p>当执行了delete操作后，数据的删除导致索引的结构就会发生改变，如下如所示:<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images%5CMYSQL%5C3.webp"
+                      alt="Alt text"
+                ></p>
+<p>insert、delete同理。</p>
+<h3 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h3><p>MySql支持多种类型的索引，以下是常用的索引类型：</p>
 <table>
 <thead>
 <tr>
-<th>order_id</th>
-<th>customer_id</th>
-<th>product_id</th>
-<th>amount</th>
+<th>类型</th>
+<th>说明</th>
+<th>适用范围</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>1</td>
-<td>101</td>
-<td>201</td>
-<td>2</td>
+<td>主键索引（UNIQUE）</td>
+<td>用于唯一标识表中的每一行，本身就是索引</td>
+<td>列的数据没有重复</td>
 </tr>
 <tr>
-<td>2</td>
-<td>102</td>
-<td>202</td>
-<td>3</td>
+<td>普通索引（INDEX）</td>
+<td>用于普通检索操作</td>
+<td>列的数据重复</td>
 </tr>
 <tr>
-<td>3</td>
-<td>101</td>
-<td>203</td>
-<td>1</td>
-</tr>
-<tr>
-<td>4</td>
-<td>103</td>
-<td>201</td>
-<td>2</td>
-</tr>
-<tr>
-<td>5</td>
-<td>101</td>
-<td>202</td>
-<td>4</td>
+<td>全文索引（FALLTEXT）</td>
+<td>用于全文搜索，适用于MyISAM引擎，但是效率较低，开发中不使用，而是使用ElasticSearch</td>
+<td></td>
 </tr>
 </tbody></table>
+<p>详细说明如下。</p>
 <ol>
-<li><p>现在，我们希望按照顾客ID对订单进行分组，并计算每个顾客的总订单数量。这是一个使用 <strong><code>GROUP BY</code></strong> 的简单示例：</p>
-<p> 现在，我们使用 <strong><code>GROUP BY</code></strong> 来按 <strong><code>customer_id</code></strong> 对订单进行分组，使用<code>**SUM()**</code>含糊计算每个顾客的总订单数量：</p>
+<li><p><strong>主键索引（UNIQUE）</strong></p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> students(</span><br><span class="line">	id <span class="type">INT</span> <span class="keyword">PRIMARY</span> KEY AUTO_INCREMENT,   <span class="operator">/</span><span class="operator">/</span>主键自增长</span><br><span class="line">	name VARCAHR(<span class="number">255</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> ,         <span class="operator">/</span><span class="operator">/</span>name不为空</span><br><span class="line">	age <span class="type">INT</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,                    <span class="operator">/</span><span class="operator">/</span>age不为空，且大于<span class="number">0</span></span><br><span class="line">	<span class="keyword">CHECK</span> (age<span class="operator">&gt;=</span><span class="number">0</span>)      </span><br><span class="line">)</span><br></pre></td></tr></table></figure></div>
+<p> 在创建主键时，主键本身就是一种索引，所以在根据id查询数据时，速度很快。</p>
+<p> id是唯一的，同时也是索引，成为unique索引。</p>
+</li>
+<li><p><strong>全文索引（FALLTEXT）</strong></p>
+<p> 用于全文搜索，一段文章的字段上建立索引。</p>
+<p> 适用于MyISAM引擎，但是效率较低，开发中不使用，而是使用ElasticSearch。</p>
 </li>
 </ol>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> customer_id, <span class="built_in">SUM</span>(amount) <span class="keyword">AS</span> total_orders</span><br><span class="line"><span class="keyword">FROM</span> orders</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> customer_id;</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line"><span class="operator">|</span> customer_id <span class="operator">|</span> total_orders <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span><span class="comment">-------------|--------------|</span></span><br><span class="line"><span class="operator">|</span> <span class="number">101</span>         <span class="operator">|</span> <span class="number">7</span>            <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> <span class="number">102</span>         <span class="operator">|</span> <span class="number">3</span>            <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> <span class="number">103</span>         <span class="operator">|</span> <span class="number">2</span>            <span class="operator">|</span></span><br></pre></td></tr></table></figure></div>
+<h2 id="相关操作"><a href="#相关操作" class="headerlink" title="相关操作"></a>相关操作</h2><h3 id="查看索引"><a href="#查看索引" class="headerlink" title="查看索引"></a>查看索引</h3><div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> INDEXES <span class="keyword">FROM</span> [表名]</span><br><span class="line"></span><br><span class="line"><span class="keyword">SHOW</span> INDEX <span class="keyword">FROM</span> [表名]</span><br><span class="line"></span><br><span class="line"><span class="keyword">DESC</span> [表名]</span><br></pre></td></tr></table></figure></div>
 
-<p>此外，你还可以使用<code>**WITH ROLLUP**</code>在所有查询出的分组记录之后增加一条记录，该记录计算查询出的所有记录的总和，即统计记录数量。</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> customer_id, <span class="built_in">SUM</span>(amount) <span class="keyword">AS</span> total_orders</span><br><span class="line"><span class="keyword">FROM</span> orders</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> customer_id  <span class="keyword">WITH</span> <span class="keyword">ROLLUP</span>;</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line"> <span class="operator">|</span> customer_id <span class="operator">|</span> total_orders <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span><span class="comment">-------------|--------------|</span></span><br><span class="line"><span class="operator">|</span> <span class="number">101</span>         <span class="operator">|</span> <span class="number">7</span>            <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> <span class="number">102</span>         <span class="operator">|</span> <span class="number">3</span>            <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> <span class="number">103</span>         <span class="operator">|</span> <span class="number">2</span>            <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span> <span class="keyword">NULL</span>        <span class="operator">|</span> <span class="number">12</span>           <span class="operator">|</span></span><br></pre></td></tr></table></figure></div>
-
-<h2 id="HAVING"><a href="#HAVING" class="headerlink" title="HAVING"></a>HAVING</h2><p><strong><code>HAVING</code></strong> 关键字通常与 <strong><code>GROUP BY</code></strong> 语句结合使用，允许在对分组数据进行筛选时使用条件来过滤结果。</p>
-<p>它与 <strong><code>WHERE</code></strong> 关键字类似，但 <strong><code>HAVING</code></strong> 用于筛选基于聚合操作后的结果，而 <strong><code>WHERE</code></strong> 用于筛选原始的行数据。</p>
-<p><strong>例子：</strong></p>
-<p>假设有一个存储订单信息的表 **<code>orders</code>**，我们想查找订单总金额大于 100 的顾客。我们可以使用 <strong><code>GROUP BY</code></strong> 和 <strong><code>HAVING</code></strong> 来执行这个查询。</p>
-<table>
-<thead>
-<tr>
-<th>order_id</th>
-<th>customer_id</th>
-<th>total_amount</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>101</td>
-<td>50</td>
-</tr>
-<tr>
-<td>2</td>
-<td>102</td>
-<td>120</td>
-</tr>
-<tr>
-<td>3</td>
-<td>101</td>
-<td>70</td>
-</tr>
-<tr>
-<td>4</td>
-<td>103</td>
-<td>90</td>
-</tr>
-<tr>
-<td>5</td>
-<td>101</td>
-<td>40</td>
-</tr>
-</tbody></table>
-<p>现在，我们想找到总金额大于 100 的顾客。我们可以使用 <strong><code>GROUP BY</code></strong> 汇总每个顾客的总金额，然后使用 <strong><code>HAVING</code></strong> 过滤掉总金额不大于 100 的顾客：</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> customer_id, <span class="built_in">SUM</span>(total_amount) <span class="keyword">AS</span> total_spent</span><br><span class="line"><span class="keyword">FROM</span> orders</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> customer_id</span><br><span class="line"><span class="keyword">HAVING</span> <span class="built_in">SUM</span>(total_amount) <span class="operator">&gt;</span> <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line"><span class="operator">|</span> customer_id <span class="operator">|</span> total_spent <span class="operator">|</span></span><br><span class="line"><span class="operator">|</span><span class="comment">-------------|-------------|</span></span><br><span class="line"><span class="operator">|</span> <span class="number">102</span>         <span class="operator">|</span> <span class="number">120</span>         <span class="operator">|</span></span><br></pre></td></tr></table></figure></div>
-
-<h2 id="HAVING-vs-WHERE"><a href="#HAVING-vs-WHERE" class="headerlink" title="HAVING vs WHERE"></a>HAVING vs WHERE</h2><table>
-<thead>
-<tr>
-<th></th>
-<th>优点</th>
-<th>缺点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>WHERE</td>
-<td>先筛选数据再关联，执行效率高</td>
-<td>不能使用分组中的计算函数进行筛选</td>
-</tr>
-<tr>
-<td>HAVING</td>
-<td>可以使用分组中的计算函数</td>
-<td>在最后的结果集中进行筛选，执行效率较低</td>
-</tr>
-</tbody></table>
-<ol>
-<li><strong>上述sql语句中，where和HAVING都可以进行过滤，在条件满足的情况下，哪一种的方式更好？</strong><ol>
-<li>WHERE 可以直接使用表中的字段作为筛选条件，但不能使用分组中的计算函数作为筛选条件；</li>
-<li>HAVING 必须要与 GROUP BY 配合使用，可以把分组计算的函数和分组字段作为筛选条件。</li>
-</ol>
+<h3 id="添加索引"><a href="#添加索引" class="headerlink" title="添加索引"></a>添加索引</h3><ol>
+<li><p>添加唯一索引</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">UNIQUE</span> INDEX id_index <span class="keyword">on</span> student(id);</span><br></pre></td></tr></table></figure></div>
 </li>
-<li><strong>如果需要通过连接从关联表中获取需要的数据，WHERE 是先筛选后连接，而 HAVING 是先连接后筛选</strong><ol>
-<li>这一点，就决定了在关联查询中，WHERE 比 HAVING 更高效。因为 WHERE 可以先筛选，用一个筛选后的较小数据集和关联表进行连接，这样占用的资源比较少，执行效率也比较高。</li>
-<li>HAVING 则需要先把结果集准备好，也就是用未被筛选的数据集进行关联，然后对这个大的数据集进行筛选，这样占用的资源就比较多，执行效率也较低。</li>
-</ol>
+<li><p>添加普通索引</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> INDEX id_index <span class="keyword">on</span> student(id);</span><br></pre></td></tr></table></figure></div>
 </li>
+<li><p>添加主键索引</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> students(</span><br><span class="line">	id <span class="type">INT</span> <span class="keyword">PRIMARY</span> KEY,   <span class="operator">/</span><span class="operator">/</span>主键自增长，指定为主键</span><br><span class="line">)</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>alter</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> student <span class="keyword">ADD</span> INDEX id_index (id)</span><br></pre></td></tr></table></figure></div></li>
 </ol>
-<p><strong>使用场景：</strong></p>
+<h3 id="删除索引"><a href="#删除索引" class="headerlink" title="删除索引"></a>删除索引</h3><ol>
+<li><p>使用<code>DROP INDEX</code>语句删除索引：</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> INDEX id_index <span class="keyword">ON</span> student;</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>使用<code>ALTER TABLE</code>语句删除索引：</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> student <span class="keyword">DROP</span> INDEX id_index</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>删除主键索引</p>
+ <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> student <span class="keyword">DROP</span> <span class="keyword">PRIMARY</span> KEY;</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h1 id="使用索引的情况？"><a href="#使用索引的情况？" class="headerlink" title="使用索引的情况？"></a>使用索引的情况？</h1><p><strong>适合</strong></p>
 <ol>
-<li>包含分组统计函数的条件用 HAVING，普通条件用 WHERE。</li>
-<li>这样，我们就既利用了 WHERE 条件的高效快速，又发挥了 HAVING 可以使用包含分组统计函数的查询条件的优点。当数据量特别大的时候，运行效率会有很大的差别。</li>
+<li>频繁作为查询条件字段，适合创建索引；</li>
+</ol>
+<p><strong>不适合</strong></p>
+<ol>
+<li>唯一性太差的字段，不适合创建索引；</li>
+<li>更新十分频繁的字段，不适合创建索引；</li>
+<li>不会出现在where子句的字段，不适合创建索引；</li>
 </ol>
 
         </div>
@@ -644,18 +611,18 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> MYSQL-聚合函数</li>
+        <li><strong>标题:</strong> MYSQL-索引Index</li>
         <li><strong>作者:</strong> 哪里有彩虹告诉我</li>
         <li><strong>创建于
-                :</strong> 2023-11-11 21:08:24</li>
+                :</strong> 2023-11-12 15:34:01</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-11-11 21:08:40
+                    :</strong> 2023-11-12 15:36:17
             </li>
         
         <li>
-            <strong>链接:</strong> https://therainbow5.github.io/2023/11/11/Mysql/Basic/MYSQL-聚合函数/
+            <strong>链接:</strong> https://therainbow5.github.io/2023/11/12/Mysql/Advanced/MYSQL-索引Index/
         </li>
         <li>
             <strong>
@@ -687,29 +654,14 @@
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2023/11/12/Mysql/Advanced/MYSQL-%E7%BA%A6%E6%9D%9FConstraint/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">MYSQL-约束Constraint</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                         rel="next"
-                        href="/2023/11/11/Mysql/Basic/MYSQL-%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0/"
+                        href="/2023/11/12/Mysql/Advanced/MYSQL-%E7%BA%A6%E6%9D%9FConstraint/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">MYSQL-常见函数</span>
+                                <span class="post-nav-title-item">MYSQL-约束Constraint</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -730,8 +682,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">MYSQL-聚合函数</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%9E%8B"><span class="nav-text">常见类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GROUP-BY"><span class="nav-text">GROUP BY</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HAVING"><span class="nav-text">HAVING</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HAVING-vs-WHERE"><span class="nav-text">HAVING vs WHERE</span></a></li></ol>
+        <div class="page-title">MYSQL-索引Index</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%B4%A2%E5%BC%95%EF%BC%9F"><span class="nav-text">为什么有索引？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E6%B2%BF"><span class="nav-text">前沿</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E7%9A%84%E6%9C%BA%E5%88%B6"><span class="nav-text">索引的机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%99%AE%E9%80%9A%E6%A3%80%E7%B4%A2%E6%9C%BA%E5%88%B6"><span class="nav-text">普通检索机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E6%A3%80%E7%B4%A2%E6%9C%BA%E5%88%B6"><span class="nav-text">索引检索机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E5%88%86%E7%B1%BB"><span class="nav-text">索引分类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C"><span class="nav-text">相关操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%B4%A2%E5%BC%95"><span class="nav-text">查看索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E7%B4%A2%E5%BC%95"><span class="nav-text">添加索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E7%B4%A2%E5%BC%95"><span class="nav-text">删除索引</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E7%B4%A2%E5%BC%95%E7%9A%84%E6%83%85%E5%86%B5%EF%BC%9F"><span class="nav-text">使用索引的情况？</span></a>
 
     </div>
 </div>
