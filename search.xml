@@ -510,7 +510,7 @@
 <h2 id="前沿"><a href="#前沿" class="headerlink" title="前沿"></a>前沿</h2><p>现一张sutdent表，有800万条数据，</p>
 <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> students(</span><br><span class="line">	id <span class="type">INT</span>  AUTO_INCREMENT,   </span><br><span class="line">	name VARCAHR(<span class="number">255</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> ,         <span class="operator">/</span><span class="operator">/</span>name不为空</span><br><span class="line">	age <span class="type">INT</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>,                    <span class="operator">/</span><span class="operator">/</span>age不为空，且大于<span class="number">0</span></span><br><span class="line">	<span class="keyword">CHECK</span> (age<span class="operator">&gt;=</span><span class="number">0</span>)      </span><br><span class="line">)</span><br></pre></td></tr></table></figure></div>
 
-<p>此时<code>**students.ibd**</code>数据文件的大小为523M。</p>
+<p>此时<code>students.ibd</code>数据文件的大小为523M。</p>
 <ol>
 <li><p>查询id&#x3D;50万这条数据</p>
  <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> students <span class="keyword">WHERE</span> id<span class="operator">=</span><span class="number">500000</span>;</span><br><span class="line"></span><br><span class="line">查询时间<span class="operator">=</span><span class="number">4.35</span>秒</span><br></pre></td></tr></table></figure></div>
@@ -518,7 +518,7 @@
 </li>
 <li><p>创建索引，查询id&#x3D;500万这条数据</p>
  <div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> INDEX age_index <span class="keyword">on</span> student(age)   <span class="operator">/</span><span class="operator">/</span>创建id属性的索引</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> students <span class="keyword">WHERE</span> age<span class="operator">=</span><span class="number">50</span>;</span><br><span class="line"></span><br><span class="line">查询时间<span class="operator">=</span><span class="number">0.003</span>秒</span><br></pre></td></tr></table></figure></div>
-<p> 创建索引后，此时<code>**students.ibd**</code>数据文件的大小为634M，说明索引占用一定量的空间。</p>
+<p> 创建索引后，此时<code>students.ibd</code>数据文件的大小为634M，说明索引占用一定量的空间。</p>
 <p> 使用索引后，在不用加内存、修改程序、调整sql的情况下，查询的效率得到了质的飞跃。</p>
  <aside>
  💡 **MySql只对创建了索引的列进行查询，才能使用索引提高效率。**
@@ -560,10 +560,10 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5CMYSQL%5C1.webp"
+                     data-src="/images%5C43.webp"
                       alt="Alt text"
                 ></p>
-<h3 id="索引检索机制"><a href="#索引检索机制" class="headerlink" title="索引检索机制"></a>索引检索机制</h3><p>现在对id属性创建索引，数据库系统会形成一个数据结构，比如<strong>二叉树</strong>、B**+树**等等，如下如所示：<br><img  
+<h3 id="索引检索机制"><a href="#索引检索机制" class="headerlink" title="索引检索机制"></a>索引检索机制</h3><p>现在对id属性创建索引，数据库系统会形成一个数据结构，比如<strong>二叉树</strong>、<strong>B+树</strong>等等，如下如所示：<br><img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="/images%5CMYSQL%5C2.webp"
