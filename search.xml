@@ -495,13 +495,13 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5C43.webp"
+                     data-src="/images/43.webp"
                       alt="Alt text"
                 ></p>
 <h3 id="索引检索机制"><a href="#索引检索机制" class="headerlink" title="索引检索机制"></a>索引检索机制</h3><p>现在对id属性创建索引，数据库系统会形成一个数据结构，比如<strong>二叉树</strong>、<strong>B+树</strong>等等，如下如所示：<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5C44.webp"
+                     data-src="/images/44.webp"
                       alt="Alt text"
                 ></p>
 <p>如果我们比较了3次，覆盖的表范围：$2^3&#x3D;8$。</p>
@@ -511,7 +511,7 @@
 <p>当执行了delete操作后，数据的删除导致索引的结构就会发生改变，如下如所示:<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images%5C45.webp"
+                     data-src="/images/45.webp"
                       alt="Alt text"
                 ></p>
 <p>insert、delete同理。</p>
